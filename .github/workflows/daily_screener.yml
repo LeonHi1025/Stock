@@ -1,0 +1,49 @@
+name: 台股每日盤後自動篩選與 GitHub Pages 部署
+
+on:
+  schedule:
+    # 台灣時間每個交易日 (週一至週五) 下午 14:00 (UTC 06:00) 盤後自動執行
+    - cron: '0 6 * * 1-5'
+  workflow_dispatch: # 支援在 GitHub 網頁手動一鍵點擊觸發
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+      pages: write
+      id-token: write
+
+    steps:
+      - name: 檢出專案程式碼
+        uses: actions/checkout@v4
+
+      - name: 設定 Python 3.10 環境
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+          cache: 'pip'
+
+      - name: 安裝依賴套件
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: 執行台股選股與報告產出
+        run: |
+          python stock_screener.py
+          cp stock_report.html index.html
+
+      - name: 自動提交最新篩選結果至 GitHub 儲存庫
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add index.html stock_report.html last_results.json taiwan_stocks_cache.json
+          git diff --quiet && git diff --staged --quiet || (git commit -m "🤖 [Auto Update] 自動更新每日盤後選股數據與 K 線分析報告" && git push)
+
+      - name: 部署至 GitHub Pages 網站
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./

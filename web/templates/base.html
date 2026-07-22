@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-Hant" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>台股上市櫃多指標買賣篩選器 & 即時分析儀表板</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- 頁頭與模式切換導覽列 -->
+        <header>
+            <div class="header-brand">
+                <h1>📈 台股多指標戰略儀表板</h1>
+                <div class="time-tag">最後更新時間: <span id="updateTime">__NOW_STR__</span> (資料篩選門檻: 成交量 &gt; 5,000張)</div>
+            </div>
+
+            <!-- 本日復盤 vs 即時分析 模式切換鈕 -->
+            <nav class="mode-nav">
+                <button class="nav-tab active" id="tabDailyReview">
+                    📊 本日復盤
+                </button>
+                <button class="nav-tab" id="tabRealtimeAnalysis" style="opacity:0.85; position:relative;">
+                    🔒 即時分析 <span class="badge" style="font-size:0.68rem; padding:0.1rem 0.45rem; margin-left:0.25rem; background:#f59e0b; color:#0f172a; font-weight:bold;">開發中</span>
+                </button>
+            </nav>
+
+            <div class="header-actions">
+                <button class="btn-action" id="themeToggleBtn">☀️ 亮色模式</button>
+                <button class="btn-action btn-primary" id="refreshBtn" onclick="triggerRefresh()">🔄 線上更新資料</button>
+            </div>
+        </header>
+
+        <!-- 大盤指數與台指期跑馬燈卡片區 -->
+        <div class="index-grid" id="indexGrid">
+            <!-- JavaScript 自動動態載入大盤資料 -->
+        </div>
+
+        <!-- 視圖模組 (本日復盤 & 即時分析) -->
+        <main>
+            __DAILY_REVIEW_CONTENT__
+            __REALTIME_ANALYSIS_CONTENT__
+        </main>
+    </div>
+
+    <!-- 個股詳細剖析 Modal 對話框 -->
+    <div class="modal-overlay" id="stockModal">
+        <div class="modal-card">
+            <button class="modal-close" onclick="closeModal()">✕</button>
+            <h3 id="modalTitle" style="margin-bottom: 1rem; color: var(--text-primary);">個股詳細數據</h3>
+            <div id="modalContent"></div>
+        </div>
+    </div>
+
+    <!-- 將後端計算完成的 JSON 數據安全注入至前端全域變數 -->
+    <script>
+        window.INITIAL_STOCK_DATA = __RESULTS_JSON__;
+        window.INITIAL_MARKET_DATA = __MARKET_JSON__;
+    </script>
+    <script src="/static/js/app.js"></script>
+</body>
+</html>
