@@ -10,7 +10,11 @@ let activeSignalFilter = 'all'; // 'all', 'bullish', 'neutral', 'bearish'
 let searchQuery = '';
 let selectedStockSymbol = null;
 
-document.addEventListener('DOMContentLoaded', () => {
+/**
+ * 初始化應用程式：繫結事件、載入資料、渲染首頁
+ * 使用具名函式以便在 DOMContentLoaded 已觸發時也能直接呼叫
+ */
+function initApp() {
     // 1. 初始化資料
     rawStockData = window.INITIAL_STOCK_DATA || [];
     marketData = window.INITIAL_MARKET_DATA || [];
@@ -35,7 +39,8 @@ document.addEventListener('DOMContentLoaded', () => {
     // 4. 渲染大盤卡片與初次檢視模式
     renderIndexGrid();
     switchMode('daily');
-});
+}
+
 
 // 主題切換 (Dark / Light)
 function toggleTheme() {
@@ -838,4 +843,12 @@ function triggerRefresh() {
                 refreshBtn.innerText = '🔄 線上更新資料';
             }
         });
+}
+
+// ─── 安全啟動：無論 DOMContentLoaded 是否已觸發都確保初始化 ───
+// 若文件已解析完成 (interactive/complete)，直接呼叫；否則等 DOMContentLoaded
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initApp);
+} else {
+    initApp();
 }
