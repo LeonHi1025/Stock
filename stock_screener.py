@@ -1012,8 +1012,12 @@ class StockServerHandler(BaseHTTPRequestHandler):
                     self.wfile.write(f.read())
             except FileNotFoundError:
                 self.wfile.write("<h3>正在生成初始報告中，請稍後並重新整理網頁...</h3>".encode('utf-8'))
-        elif clean_path.startswith("/static/"):
-            relative_path = clean_path.lstrip("/")
+        elif clean_path.startswith("/static/") or clean_path.startswith("/web/static/"):
+            # 支援兩種路徑前綴：本機舊路徑 /static/ 與 GitHub Pages 路徑 /web/static/
+            if clean_path.startswith("/web/static/"):
+                relative_path = clean_path[len("/web/"):].lstrip("/")  # 去掉 /web/ 前綴
+            else:
+                relative_path = clean_path.lstrip("/")  # 去掉開頭的 /
             file_path = os.path.join(base_dir, "web", relative_path)
             if os.path.exists(file_path):
                 self.send_response(200)
