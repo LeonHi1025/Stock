@@ -391,27 +391,73 @@ function selectStock(symbol) {
 // SVG K線歷史快取 (candlesCache)
 const candlesCache = {};
 
-// 獲取與繪製 SVG 向量 K 線圖
+// 獲取與繪製 SVG 向量 K 線圖 (支援本機 API 及前端直接連線抓取 API)
 function fetchAndDrawSVG(containerId, item) {
     const cleanSymbol = item.symbol.split('.')[0];
-    
+    const fullSymbol = item.market === '上櫃' ? `${cleanSymbol}.TWO` : `${cleanSymbol}.TW`;
+
     if (candlesCache[cleanSymbol]) {
         drawKlineSVG(containerId, candlesCache[cleanSymbol], item);
         return;
     }
-    
+
+    // 1. 先嘗試本機 Python 後端 API
     fetch(`/api/kline?symbol=${cleanSymbol}`)
-        .then(res => res.json())
-        .then(data => {
-            let candles = (data && data.candles && data.candles.length > 0) ? data.candles : generateFallbackCandles(item);
-            candlesCache[cleanSymbol] = candles;
-            drawKlineSVG(containerId, candles, item);
+        .then(res => {
+            if (!res.ok) throw new Error('Local API unavailable');
+            return res.json();
         })
-        .catch(err => {
-            console.error("API 載入 K 線歷史失敗，使用備援數據", err);
-            let candles = generateFallbackCandles(item);
-            candlesCache[cleanSymbol] = candles;
-            drawKlineSVG(containerId, candles, item);
+        .then(data => {
+            if (data && data.candles && data.candles.length > 0) {
+                candlesCache[cleanSymbol] = data.candles;
+                drawKlineSVG(containerId, data.candles, item);
+            } else {
+                throw new Error('Empty local candles');
+            }
+        })
+        .catch(() => {
+            // 2. 本機 API 無連線時 (如在 GitHub Pages 靜態環境)，前端 JavaScript 直接抓取 API
+            const yahooUrl = `https://corsproxy.io/?https://query1.finance.yahoo.com/v8/finance/chart/${fullSymbol}?range=6mo&interval=1d`;
+            fetch(yahooUrl)
+                .then(res => res.json())
+                .then(yData => {
+                    const result = yData?.chart?.result?.[0];
+                    const timestamps = result?.timestamp || [];
+                    const quote = result?.indicators?.quote?.[0] || {};
+                    const opens = quote.open || [];
+                    const highs = quote.high || [];
+                    const lows = quote.low || [];
+                    const closes = quote.close || [];
+                    const vols = quote.volume || [];
+
+                    const candles = [];
+                    for (let i = 0; i < timestamps.length; i++) {
+                        if (closes[i] !== null && closes[i] !== undefined) {
+                            const date = new Date(timestamps[i] * 1000).toISOString().split('T')[0];
+                            candles.push({
+                                time: date,
+                                open: Math.round((opens[i] ?? closes[i]) * 100) / 100,
+                                high: Math.round((highs[i] ?? closes[i]) * 100) / 100,
+                                low: Math.round((lows[i] ?? closes[i]) * 100) / 100,
+                                close: Math.round(closes[i] * 100) / 100,
+                                volume: Math.round((vols[i] ?? 0) / 1000)
+                            });
+                        }
+                    }
+
+                    if (candles.length > 0) {
+                        candlesCache[cleanSymbol] = candles;
+                        drawKlineSVG(containerId, candles, item);
+                    } else {
+                        throw new Error('Empty Yahoo candles');
+                    }
+                })
+                .catch(err => {
+                    console.warn("前端直連 API 抓取失敗，使用備援幾何繪圖", err);
+                    let candles = generateFallbackCandles(item);
+                    candlesCache[cleanSymbol] = candles;
+                    drawKlineSVG(containerId, candles, item);
+                });
         });
 }
 
