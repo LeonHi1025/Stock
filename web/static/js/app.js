@@ -385,7 +385,8 @@ function selectStock(symbol) {
         </div>
     `;
 
-    setTimeout(() => fetchAndDrawSVG('svgKlineContainer', item), 50);
+    // 延長初始等待時間，確保 DOM 容器完整渲染後再繪製
+    setTimeout(() => fetchAndDrawSVG('svgKlineContainer', item), 150);
 }
 
 // SVG K線歷史快取 (candlesCache)
@@ -449,12 +450,19 @@ function fetchAndDrawSVG(containerId, item) {
 
 
 // 原生 SVG 動態 K 線向量圖形繪製引擎
-function drawKlineSVG(containerId, candles, item) {
+function drawKlineSVG(containerId, candles, item, retryCount = 0) {
     const container = document.getElementById(containerId);
     if (!container) return;
-    
-    const width = container.clientWidth || 800;
+
+    let width = container.clientWidth;
     const height = container.clientHeight || 540;
+
+    // 若容器尚未取得寬度（剛插入 DOM），自動延遲重試最多 5 次
+    if (width === 0 && retryCount < 5) {
+        requestAnimationFrame(() => drawKlineSVG(containerId, candles, item, retryCount + 1));
+        return;
+    }
+    width = width || 800;
     
     if (!candles || candles.length === 0) {
         container.innerHTML = `<div style="display:flex; justify-content:center; align-items:center; height:100%; color:var(--text-secondary);">尚無 K 線數據</div>`;
