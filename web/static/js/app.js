@@ -573,30 +573,62 @@ function drawKlineSVG(containerId, candles, item) {
     `;
 }
 
-// 產生備用 K 線圖數據
+// 產生備用 K 線圖數據 (確保靜態網頁與 GitHub Pages 下 100% 有 K 棒繪製)
 function generateFallbackCandles(item) {
-    const closes = item.closes_60 || [];
+    const closes = (item && item.closes_60 && item.closes_60.length > 0) ? item.closes_60 : [];
     const candles = [];
-    const baseDate = new Date();
-    baseDate.setDate(baseDate.getDate() - closes.length);
+    const totalDays = closes.length > 0 ? closes.length : 60;
     
-    closes.forEach((c, idx) => {
-        const d = new Date(baseDate);
-        d.setDate(d.getDate() + idx);
-        const dateStr = d.toISOString().split('T')[0];
-        const open = idx > 0 ? closes[idx - 1] : c * 0.99;
-        const high = Math.max(open, c) * (1 + Math.random() * 0.015);
-        const low = Math.min(open, c) * (1 - Math.random() * 0.015);
-        
-        candles.push({
-            time: dateStr,
-            open: Math.round(open * 100) / 100,
-            high: Math.round(high * 100) / 100,
-            low: Math.round(low * 100) / 100,
-            close: Math.round(c * 100) / 100,
-            volume: Math.round(item.volume * (0.7 + Math.random() * 0.6))
+    const baseDate = new Date();
+    baseDate.setDate(baseDate.getDate() - totalDays);
+
+    if (closes.length > 0) {
+        closes.forEach((c, idx) => {
+            const d = new Date(baseDate);
+            d.setDate(d.getDate() + idx);
+            const dateStr = d.toISOString().split('T')[0];
+            const prev = idx > 0 ? closes[idx - 1] : c * 0.99;
+            const open = prev;
+            const high = Math.max(open, c) * 1.008;
+            const low = Math.min(open, c) * 0.992;
+            
+            candles.push({
+                time: dateStr,
+                open: Math.round(open * 100) / 100,
+                high: Math.round(high * 100) / 100,
+                low: Math.round(low * 100) / 100,
+                close: Math.round(c * 100) / 100,
+                volume: Math.round((item.volume || 1000) * (0.8 + (idx % 5) * 0.08))
+            });
         });
-    });
+    } else {
+        const closeP = (item && typeof item.close === 'number') ? item.close : 100;
+        const maP = (item && typeof item.ma60 === 'number') ? item.ma60 : closeP * 0.97;
+        let currP = maP;
+        const step = (closeP - maP) / totalDays;
+        
+        for (let idx = 0; idx < totalDays; idx++) {
+            const d = new Date(baseDate);
+            d.setDate(d.getDate() + idx);
+            const dateStr = d.toISOString().split('T')[0];
+            
+            const noise = (Math.sin(idx * 0.4) + Math.cos(idx * 0.7)) * (closeP * 0.012);
+            const open = Math.round((currP + noise) * 100) / 100;
+            currP += step;
+            const close = idx === totalDays - 1 ? closeP : Math.round((currP + noise * 0.8) * 100) / 100;
+            const high = Math.round((Math.max(open, close) + Math.abs(noise) * 0.6) * 100) / 100;
+            const low = Math.round((Math.min(open, close) - Math.abs(noise) * 0.6) * 100) / 100;
+            
+            candles.push({
+                time: dateStr,
+                open: open,
+                high: high,
+                low: low,
+                close: close,
+                volume: Math.round((item.volume || 5000) * (0.75 + (idx % 6) * 0.08))
+            });
+        }
+    }
     
     return candles;
 }
