@@ -391,75 +391,62 @@ function selectStock(symbol) {
 // SVG K線歷史快取 (candlesCache)
 const candlesCache = {};
 
-// 獲取與繪製 SVG 向量 K 線圖 (支援本機 API 及前端直接連線抓取 API)
+// 獲取與繪製 SVG 向量 K 線圖 (支援本機 API 及前端直連富果 Fugle API)
+const FUGLE_API_KEY = 'NGI0MTczOTYtYTlmOC00YmQ2LTgwZmUtNjcwOTQ1ODZjMGY5IDc0OWQwNzA2LWYzYmQtNGFhMS1iOGIxLTc1MGJjZjQ4OWM2ZA==';
+const FUGLE_BASE = 'https://api.fugle.tw/marketdata/v1.0/stock';
+
 function fetchAndDrawSVG(containerId, item) {
     const cleanSymbol = item.symbol.split('.')[0];
-    const fullSymbol = item.market === '上櫃' ? `${cleanSymbol}.TWO` : `${cleanSymbol}.TW`;
 
     if (candlesCache[cleanSymbol]) {
         drawKlineSVG(containerId, candlesCache[cleanSymbol], item);
         return;
     }
 
-    // 1. 先嘗試本機 Python 後端 API
-    fetch(`/api/kline?symbol=${cleanSymbol}`)
+    // 計算查詢日期區間：近 6 個月
+    const today = new Date();
+    const fromDate = new Date(today);
+    fromDate.setMonth(today.getMonth() - 6);
+    const toStr = today.toISOString().split('T')[0];
+    const fromStr = fromDate.toISOString().split('T')[0];
+
+    // 前端直連 富果 Fugle Historical Candles API
+    const fugleUrl = `${FUGLE_BASE}/historical/candles/${cleanSymbol}?timeframe=D&from=${fromStr}&to=${toStr}&sort=asc&fields=open,high,low,close,volume`;
+
+    fetch(fugleUrl, {
+        headers: {
+            'X-API-KEY': FUGLE_API_KEY
+        }
+    })
         .then(res => {
-            if (!res.ok) throw new Error('Local API unavailable');
+            if (!res.ok) throw new Error(`Fugle API error: ${res.status}`);
             return res.json();
         })
         .then(data => {
-            if (data && data.candles && data.candles.length > 0) {
-                candlesCache[cleanSymbol] = data.candles;
-                drawKlineSVG(containerId, data.candles, item);
-            } else {
-                throw new Error('Empty local candles');
-            }
+            // Fugle API 回傳格式: { data: [{ date, open, high, low, close, volume }, ...] }
+            const rows = data?.data || [];
+            if (rows.length === 0) throw new Error('Fugle returned empty candles');
+
+            const candles = rows.map(r => ({
+                time: r.date.slice(0, 10),
+                open: r.open,
+                high: r.high,
+                low: r.low,
+                close: r.close,
+                volume: Math.round((r.volume ?? 0) / 1000)  // 股 → 張
+            }));
+
+            candlesCache[cleanSymbol] = candles;
+            drawKlineSVG(containerId, candles, item);
         })
-        .catch(() => {
-            // 2. 本機 API 無連線時 (如在 GitHub Pages 靜態環境)，前端 JavaScript 直接抓取 API
-            const yahooUrl = `https://corsproxy.io/?https://query1.finance.yahoo.com/v8/finance/chart/${fullSymbol}?range=6mo&interval=1d`;
-            fetch(yahooUrl)
-                .then(res => res.json())
-                .then(yData => {
-                    const result = yData?.chart?.result?.[0];
-                    const timestamps = result?.timestamp || [];
-                    const quote = result?.indicators?.quote?.[0] || {};
-                    const opens = quote.open || [];
-                    const highs = quote.high || [];
-                    const lows = quote.low || [];
-                    const closes = quote.close || [];
-                    const vols = quote.volume || [];
-
-                    const candles = [];
-                    for (let i = 0; i < timestamps.length; i++) {
-                        if (closes[i] !== null && closes[i] !== undefined) {
-                            const date = new Date(timestamps[i] * 1000).toISOString().split('T')[0];
-                            candles.push({
-                                time: date,
-                                open: Math.round((opens[i] ?? closes[i]) * 100) / 100,
-                                high: Math.round((highs[i] ?? closes[i]) * 100) / 100,
-                                low: Math.round((lows[i] ?? closes[i]) * 100) / 100,
-                                close: Math.round(closes[i] * 100) / 100,
-                                volume: Math.round((vols[i] ?? 0) / 1000)
-                            });
-                        }
-                    }
-
-                    if (candles.length > 0) {
-                        candlesCache[cleanSymbol] = candles;
-                        drawKlineSVG(containerId, candles, item);
-                    } else {
-                        throw new Error('Empty Yahoo candles');
-                    }
-                })
-                .catch(err => {
-                    console.warn("前端直連 API 抓取失敗，使用備援幾何繪圖", err);
-                    let candles = generateFallbackCandles(item);
-                    candlesCache[cleanSymbol] = candles;
-                    drawKlineSVG(containerId, candles, item);
-                });
+        .catch(err => {
+            console.warn('富果 API 抓取失敗，使用備援幾何繪圖', err);
+            const candles = generateFallbackCandles(item);
+            candlesCache[cleanSymbol] = candles;
+            drawKlineSVG(containerId, candles, item);
         });
 }
+
 
 // 原生 SVG 動態 K 線向量圖形繪製引擎
 function drawKlineSVG(containerId, candles, item) {
