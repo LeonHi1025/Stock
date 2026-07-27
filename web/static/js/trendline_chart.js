@@ -6,17 +6,20 @@ window.currentTrendMode = 'today';
 
 // 獲取與繪製 SVG 動態趨勢線走勢圖 (支援切換本日/整體)
 window.fetchAndDrawTrendlineSVG = function(containerId, item) {
-    const cleanSymbol = item.symbol.split('.')[0];
+    if (!item) return;
+    const cleanSymbol = item.symbol ? item.symbol.split('.')[0] : '';
     const mode = window.currentTrendMode || 'today';
+    const intradayCache = window.todayIntradayCache || {};
+    const candlesCache = window.candlesCache || {};
 
     if (mode === 'today') {
         if (Array.isArray(item.intraday_1m) && item.intraday_1m.length > 0) {
-            drawTrendlineSVG(containerId, item.intraday_1m, item, 0, 'today');
+            window.drawTrendlineSVG(containerId, item.intraday_1m, item, 0, 'today');
             return;
         }
 
-        if (window.todayIntradayCache[cleanSymbol]) {
-            drawTrendlineSVG(containerId, window.todayIntradayCache[cleanSymbol], item, 0, 'today');
+        if (intradayCache[cleanSymbol]) {
+            window.drawTrendlineSVG(containerId, intradayCache[cleanSymbol], item, 0, 'today');
             return;
         }
 
@@ -39,21 +42,21 @@ window.fetchAndDrawTrendlineSVG = function(containerId, item) {
                     }
                 }
                 if (validTicks.length > 0) {
-                    window.todayIntradayCache[cleanSymbol] = validTicks;
-                    drawTrendlineSVG(containerId, validTicks, item, 0, 'today');
+                    if (window.todayIntradayCache) window.todayIntradayCache[cleanSymbol] = validTicks;
+                    window.drawTrendlineSVG(containerId, validTicks, item, 0, 'today');
                     return;
                 }
             }
-            const fallbackCandles = window.candlesCache[cleanSymbol] || generateFallbackCandles(item);
-            drawTrendlineSVG(containerId, fallbackCandles, item, 0, 'today');
+            const fallbackCandles = candlesCache[cleanSymbol] || window.generateFallbackCandles(item);
+            window.drawTrendlineSVG(containerId, fallbackCandles, item, 0, 'today');
         })
         .catch(() => {
-            const fallbackCandles = window.candlesCache[cleanSymbol] || generateFallbackCandles(item);
-            drawTrendlineSVG(containerId, fallbackCandles, item, 0, 'today');
+            const fallbackCandles = candlesCache[cleanSymbol] || window.generateFallbackCandles(item);
+            window.drawTrendlineSVG(containerId, fallbackCandles, item, 0, 'today');
         });
     } else {
-        const candles = window.candlesCache[cleanSymbol] || generateFallbackCandles(item);
-        drawTrendlineSVG(containerId, candles, item, 0, 'overall');
+        const fallbackCandles = candlesCache[cleanSymbol] || window.generateFallbackCandles(item);
+        window.drawTrendlineSVG(containerId, fallbackCandles, item, 0, 'overall');
     }
 };
 
