@@ -2,8 +2,8 @@ name: 台股每日盤後自動篩選與 GitHub Pages 部署
 
 on:
   schedule:
-    # 台灣時間 22:37 (UTC 14:37) 測試自動執行
-    - cron: '37 14 * * *'
+    # 台灣時間 22:45 (UTC 14:45) 測試自動執行
+    - cron: '45 14 * * *'
   workflow_dispatch: # 支援在 GitHub 網頁手動一鍵點擊觸發
 
 jobs:
