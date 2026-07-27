@@ -1090,7 +1090,8 @@ def start_local_server(port=8000):
         httpd.server_close()
 
 def main():
-    run_as_server = "--server" in sys.argv or len(sys.argv) == 1
+    is_ci = os.environ.get("CI") == "true" or os.environ.get("GITHUB_ACTIONS") == "true"
+    run_as_server = ("--server" in sys.argv or (len(sys.argv) == 1 and not is_ci)) and "--no-server" not in sys.argv
     results_cache_file = "last_results.json"
     
     results = []
