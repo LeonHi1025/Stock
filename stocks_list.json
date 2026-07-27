@@ -1,0 +1,20 @@
+{
+  "description": "篩選器股票清單。台股請加 .TW 後綴，美股直接填寫代號即可。",
+  "stocks": [
+    {"symbol": "2330.TW", "name": "台積電"},
+    {"symbol": "2317.TW", "name": "鴻海"},
+    {"symbol": "2454.TW", "name": "聯發科"},
+    {"symbol": "2308.TW", "name": "台達電"},
+    {"symbol": "2881.TW", "name": "富邦金"},
+    {"symbol": "2882.TW", "name": "國泰金"},
+    {"symbol": "2603.TW", "name": "長榮"},
+    {"symbol": "2382.TW", "name": "廣達"},
+    {"symbol": "3008.TW", "name": "大立光"},
+    {"symbol": "AAPL", "name": "蘋果公司"},
+    {"symbol": "MSFT", "name": "微軟"},
+    {"symbol": "NVDA", "name": "輝達"},
+    {"symbol": "TSLA", "name": "特斯拉"},
+    {"symbol": "GOOGL", "name": "Google"},
+    {"symbol": "AMZN", "name": "亞馬遜"}
+  ]
+}

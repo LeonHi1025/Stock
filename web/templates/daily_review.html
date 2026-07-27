@@ -1,0 +1,75 @@
+<!-- 本日復盤 檢視組件 -->
+<div id="viewDailyReview">
+    <!-- 精簡型多空數據統計卡片列 -->
+    <div class="stats-grid compact-stats">
+        <div class="stat-card">
+            <span class="stat-title">符合量能總家數 (>5000張)</span>
+            <span class="stat-value" id="statTotal">0</span>
+        </div>
+        <div class="stat-card stat-bullish">
+            <span class="stat-title">📈 多頭買進</span>
+            <span class="stat-value" id="statBullish">0</span>
+        </div>
+        <div class="stat-card stat-neutral">
+            <span class="stat-title">⚖️ 中性觀望</span>
+            <span class="stat-value" id="statNeutral">0</span>
+        </div>
+        <div class="stat-card stat-bearish">
+            <span class="stat-title">📉 空頭賣出</span>
+            <span class="stat-value" id="statBearish">0</span>
+        </div>
+    </div>
+
+    <!-- 左右雙欄 split layout -->
+    <div class="daily-split-layout">
+        <!-- 左欄：搜尋篩選與可滾動個股清單 -->
+        <div class="daily-left-panel">
+            <div class="left-panel-header">
+                <!-- 搜尋框 -->
+                <div class="search-box compact-search">
+                    <span class="search-icon">🔍</span>
+                    <input type="text" class="search-input" placeholder="搜尋代號、名稱或產業..." oninput="handleSearchInput(this.value)">
+                </div>
+                <!-- 篩選列 -->
+                <div class="left-filter-row">
+                    <div class="filter-group filter-group-market">
+                        <button class="filter-btn active" onclick="setMarketFilter('all', this)">全部</button>
+                        <button class="filter-btn" onclick="setMarketFilter('twse', this)">上市</button>
+                        <button class="filter-btn" onclick="setMarketFilter('tpex', this)">上櫃</button>
+                    </div>
+                    <div class="filter-group filter-group-signal">
+                        <button class="filter-btn active" onclick="setSignalFilter('all', this)">全部</button>
+                        <button class="filter-btn" onclick="setSignalFilter('bullish', this)">買進</button>
+                        <button class="filter-btn" onclick="setSignalFilter('neutral', this)">觀望</button>
+                        <button class="filter-btn" onclick="setSignalFilter('bearish', this)">賣出</button>
+                    </div>
+                </div>
+                <!-- 排序選單列 -->
+                <div class="left-filter-row" style="margin-top:0.4rem; align-items:center;">
+                    <span style="font-size:0.78rem; color:var(--text-secondary); white-space:nowrap; font-weight:600;">🔃 個股排序：</span>
+                    <select id="sortSelect" onchange="handleSortChange(this.value)" style="flex:1; background:var(--bg-primary); color:var(--text-primary); border:1px solid var(--border-color); padding:0.28rem 0.5rem; border-radius:0.35rem; font-size:0.78rem; outline:none; cursor:pointer;">
+                        <option value="score_desc">🏆 戰略總分 (高 → 低)</option>
+                        <option value="vol_desc">📈 成交量 (大 → 小)</option>
+                        <option value="price_desc">💰 收盤價 (高 → 低)</option>
+                        <option value="price_asc">🔻 收盤價 (低 → 高)</option>
+                        <option value="symbol_asc">🔤 股票代號 (小 → 大)</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- 可滾動個股清單 -->
+            <div class="stock-list-scrollable" id="stockListScrollable">
+                <!-- 由 JavaScript 動態生成列項目 -->
+            </div>
+        </div>
+
+        <!-- 右欄：選定股票之 K 線圖與詳細數據分析 -->
+        <div class="daily-right-panel" id="stockDetailPanel">
+            <!-- 由 JavaScript 動態繪製詳情與 K線圖 -->
+            <div class="detail-placeholder">
+                <div class="placeholder-icon">📊</div>
+                <h3>請點擊左側股票清單查看詳細 K 線圖與技術面分析</h3>
+            </div>
+        </div>
+    </div>
+</div>
