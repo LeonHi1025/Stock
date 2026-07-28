@@ -28,7 +28,7 @@ from screener.indicators import (
 )
 from screener.wave_analyzer import analyze_wave_patterns, determine_signal
 from screener.data_fetcher import (
-    fetch_taiwan_stock_list, fetch_twse_official_datasets, session
+    fetch_taiwan_stock_list, fetch_twse_official_datasets, fetch_single_finmind_inst, session
 )
 from screener.report_builder import generate_html_report, fetch_market_data
 
@@ -282,18 +282,19 @@ def fetch_spark_chunk(chunk):
                 in_vol = round(latest_vol_lots * (in_pct / 100.0))
                 out_vol = round(latest_vol_lots - in_vol)
 
-            # 讀取 TWSE 證交所官方真實三大法人買賣超 (張數)
-            off_inst = twse_inst.get(clean_code)
+            # 優先採用 FinMind 即時 API 獲取當日最新三大法人買賣超，次之採用 TWSE 靜態檔
+            off_inst = fetch_single_finmind_inst(clean_code) or twse_inst.get(clean_code)
+
             if off_inst:
                 foreign_buy = off_inst.get("foreign", 0)
                 trust_buy = off_inst.get("trust", 0)
                 dealer_buy = off_inst.get("dealer", 0)
                 total_inst = off_inst.get("total", 0)
             else:
-                foreign_buy = round(latest_vol_lots * 0.12 * (1.5 if score > 0 else -1.2))
-                trust_buy = round(latest_vol_lots * 0.06 * (1.8 if latest_close > ma20 else -1.0))
-                dealer_buy = round(latest_vol_lots * 0.02 * (1.2 if change_val > 0 else -1.1))
-                total_inst = foreign_buy + trust_buy + dealer_buy
+                foreign_buy = 0
+                trust_buy = 0
+                dealer_buy = 0
+                total_inst = 0
             
             # 讀取 TWSE 證交所官方真實信用交易 (融資融券)
             off_margin = twse_margin.get(clean_code)
