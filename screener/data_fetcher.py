@@ -123,6 +123,44 @@ def fetch_taiwan_stock_list():
     return stocks
 
 
+def fetch_single_finmind_inst(symbol_clean):
+    """當 TWSE/TPEx 官方 API 在 GitHub Actions 上遭封鎖或資料缺漏時，無縫調用 FinMind 免費行情 API 補齊三大法人真實買賣超張數"""
+    try:
+        start_date = (datetime.date.today() - datetime.timedelta(days=7)).strftime("%Y-%m-%d")
+        url = f"https://api.finmindtrade.com/api/v4/data?dataset=TaiwanStockInstitutionalInvestorsBuySell&data_id={symbol_clean}&start_date={start_date}"
+        req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
+        with urllib.request.urlopen(req, timeout=4) as resp:
+            data = json.loads(resp.read().decode("utf-8"))
+            rows = data.get("data", [])
+            if not rows:
+                return None
+            latest_date = rows[-1]["date"]
+            day_rows = [r for r in rows if r.get("date") == latest_date]
+
+            foreign = 0
+            trust = 0
+            dealer = 0
+            for r in day_rows:
+                name = r.get("name", "")
+                net_shares = r.get("buy", 0) - r.get("sell", 0)
+                net_lots = round(net_shares / 1000)
+                if "Foreign" in name:
+                    foreign += net_lots
+                elif "Trust" in name:
+                    trust += net_lots
+                elif "Dealer" in name:
+                    dealer += net_lots
+
+            return {
+                "foreign": foreign,
+                "trust": trust,
+                "dealer": dealer,
+                "total": foreign + trust + dealer
+            }
+    except Exception:
+        return None
+
+
 def fetch_twse_official_datasets():
     """
     從台灣證券交易所 (TWSE) 及櫃買中心 (TPEx) 官方 API 批量載入三大法人買賣超、信用交易 (融資融券) 及個股估值數據。
@@ -183,44 +221,6 @@ def fetch_twse_official_datasets():
         print(f"⚠️ TWSE T86 抓取失敗: {e}")
 
     time.sleep(1.2)
-
-
-def fetch_single_finmind_inst(symbol_clean):
-    """當 TWSE/TPEx 官方 API 在 GitHub Actions 上遭封鎖或資料缺漏時，無縫調用 FinMind 免費行情 API 補齊三大法人真實買賣超張數"""
-    try:
-        start_date = (datetime.date.today() - datetime.timedelta(days=7)).strftime("%Y-%m-%d")
-        url = f"https://api.finmindtrade.com/api/v4/data?dataset=TaiwanStockInstitutionalInvestorsBuySell&data_id={symbol_clean}&start_date={start_date}"
-        req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
-        with urllib.request.urlopen(req, timeout=4) as resp:
-            data = json.loads(resp.read().decode("utf-8"))
-            rows = data.get("data", [])
-            if not rows:
-                return None
-            latest_date = rows[-1]["date"]
-            day_rows = [r for r in rows if r.get("date") == latest_date]
-
-            foreign = 0
-            trust = 0
-            dealer = 0
-            for r in day_rows:
-                name = r.get("name", "")
-                net_shares = r.get("buy", 0) - r.get("sell", 0)
-                net_lots = round(net_shares / 1000)
-                if "Foreign" in name:
-                    foreign += net_lots
-                elif "Trust" in name:
-                    trust += net_lots
-                elif "Dealer" in name:
-                    dealer += net_lots
-
-            return {
-                "foreign": foreign,
-                "trust": trust,
-                "dealer": dealer,
-                "total": foreign + trust + dealer
-            }
-    except Exception:
-        return None
 
     # 2. 抓取 TWSE MI_MARGN 信用交易 (融資融券) 日報
     try:
