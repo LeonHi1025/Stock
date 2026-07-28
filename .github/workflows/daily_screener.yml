@@ -31,15 +31,17 @@ jobs:
           pip install -r requirements.txt
 
       - name: 執行台股選股與報告產出
+        env:
+          TZ: Asia/Taipei
         run: |
-          python stock_screener.py --no-server
+          python stock_screener.py --no-server --fresh
           cp stock_report.html index.html
 
       - name: 自動提交最新篩選結果至 GitHub 儲存庫
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add index.html stock_report.html last_results.json taiwan_stocks_cache.json
+          git add index.html stock_report.html last_results.json taiwan_stocks_cache.json twse_daily_cache.json
           git diff --quiet && git diff --staged --quiet || (git commit -m "🤖 [Auto Update] 自動更新每日盤後選股數據與 K 線分析報告" && git push)
 
       - name: 部署至 GitHub Pages 網站
