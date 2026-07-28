@@ -842,3 +842,102 @@ tr:hover td {
     font-weight: 700;
     font-family: monospace;
 }
+
+/* 雙視窗切換按鈕 Bar */
+.view-switch-bar {
+    display: flex;
+    gap: 0.5rem;
+    background: var(--bg-primary);
+    padding: 0.35rem;
+    border-radius: 0.6rem;
+    border: 1px solid var(--border-color);
+    margin-bottom: 0.75rem;
+}
+
+.view-switch-btn {
+    flex: 1;
+    padding: 0.5rem 0.85rem;
+    border: none;
+    border-radius: 0.4rem;
+    background: transparent;
+    color: var(--text-secondary);
+    font-weight: 700;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: var(--transition);
+    text-align: center;
+}
+
+.view-switch-btn:hover {
+    color: var(--text-primary);
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.view-switch-btn.active {
+    background: var(--accent-blue);
+    color: #ffffff;
+    box-shadow: 0 2px 8px rgba(59, 130, 246, 0.35);
+}
+
+/* 內外盤對比 Bar */
+.order-flow-container {
+    background: var(--bg-primary);
+    padding: 0.85rem;
+    border-radius: 0.6rem;
+    border: 1px solid var(--border-color);
+}
+
+.order-flow-bar-bg {
+    height: 14px;
+    background: var(--color-bearish);
+    border-radius: 7px;
+    overflow: hidden;
+    display: flex;
+    margin: 0.5rem 0;
+}
+
+.order-flow-in-fill {
+    height: 100%;
+    background: var(--color-bullish);
+    transition: width 0.4s ease;
+}
+
+/* 個股詳細網格排版 */
+.detail-matrix-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 0.75rem;
+}
+
+.detail-card-box {
+    background: var(--bg-primary);
+    padding: 0.85rem;
+    border-radius: 0.6rem;
+    border: 1px solid var(--border-color);
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.detail-card-title {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--accent-blue);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    padding-bottom: 0.35rem;
+    margin-bottom: 0.2rem;
+}
+
+.detail-card-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.82rem;
+    color: var(--text-secondary);
+}
+
+.detail-card-row .val {
+    font-weight: 700;
+    color: var(--text-primary);
+    font-family: monospace;
+}
+

@@ -5628,6 +5628,12 @@
     "industry": "綠能環保"
   },
   {
+    "symbol": "7689.TW",
+    "name": "大鵬科CLMX",
+    "market": "上市",
+    "industry": "通信網路業"
+  },
+  {
     "symbol": "7705.TW",
     "name": "三商餐飲",
     "market": "上市",
@@ -6466,6 +6472,12 @@
     "name": "漢康-KY創",
     "market": "上市",
     "industry": "生技醫療業"
+  },
+  {
+    "symbol": "7835.TW",
+    "name": "永悅健康-創",
+    "market": "上市",
+    "industry": "數位雲端"
   },
   {
     "symbol": "8162.TW",
@@ -7982,12 +7994,6 @@
   {
     "symbol": "4129.TWO",
     "name": "聯合",
-    "market": "上櫃",
-    "industry": "生技醫療業"
-  },
-  {
-    "symbol": "4130.TWO",
-    "name": "健亞",
     "market": "上櫃",
     "industry": "生技醫療業"
   },
