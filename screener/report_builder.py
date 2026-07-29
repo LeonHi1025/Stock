@@ -82,7 +82,8 @@ def fetch_market_data():
 
 def generate_html_report(results):
     """使用模組化模板 (web/templates) 產生互動式 HTML 網頁儀表板"""
-    now_str = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+    tz_tw = datetime.timezone(datetime.timedelta(hours=8))
+    now_str = datetime.datetime.now(tz_tw).strftime('%Y-%m-%d %H:%M:%S')
     
     if results:
         try:
