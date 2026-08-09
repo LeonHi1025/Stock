@@ -287,19 +287,19 @@ def determine_signal(prices, k_vals, d_vals, rsi5_vals, macd_dif, macd_dea, macd
             
     # 綜合評級
     if score >= 2.0:
-        recommendation = "強勢買入"
+        recommendation = "強勢多頭"
         badge_class = "badge-bullish"
     elif 0.5 <= score < 2.0:
-        recommendation = "偏多買入"
+        recommendation = "偏多走高"
         badge_class = "badge-bullish-mild"
     elif -0.5 < score < 0.5:
-        recommendation = "中性觀望"
+        recommendation = "震盪盤整"
         badge_class = "badge-sideways"
     elif -2.0 < score <= -0.5:
-        recommendation = "偏空賣出"
+        recommendation = "偏空回測"
         badge_class = "badge-bearish-mild"
     else:
-        recommendation = "強勢賣出"
+        recommendation = "強勢空頭"
         badge_class = "badge-bearish"
         
     return recommendation, score, signals, badge_class
