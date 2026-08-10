@@ -6318,6 +6318,12 @@
     "industry": "鋼鐵工業"
   },
   {
+    "symbol": "2237.TW",
+    "name": "華德動能-創",
+    "market": "上市",
+    "industry": "汽車工業"
+  },
+  {
     "symbol": "2254.TW",
     "name": "巨鎧精密-創",
     "market": "上市",
@@ -9331,7 +9337,7 @@
   },
   {
     "symbol": "5904.TWO",
-    "name": "寶雅",
+    "name": "寶雅*",
     "market": "上櫃",
     "industry": "居家生活"
   },

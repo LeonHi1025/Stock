@@ -3,19 +3,19 @@
     <!-- 精簡型多空數據統計卡片列 -->
     <div class="stats-grid compact-stats">
         <div class="stat-card">
-            <span class="stat-title">符合量能總家數 (>5000張)</span>
+            <span class="stat-title">符合量能總家數 (>20000張)</span>
             <span class="stat-value" id="statTotal">0</span>
         </div>
         <div class="stat-card stat-bullish">
-            <span class="stat-title">📈 多頭買進</span>
+            <span class="stat-title">📈 多頭趨勢</span>
             <span class="stat-value" id="statBullish">0</span>
         </div>
         <div class="stat-card stat-neutral">
-            <span class="stat-title">⚖️ 中性觀望</span>
+            <span class="stat-title">⚖️ 震盪盤整</span>
             <span class="stat-value" id="statNeutral">0</span>
         </div>
         <div class="stat-card stat-bearish">
-            <span class="stat-title">📉 空頭賣出</span>
+            <span class="stat-title">📉 空頭修正</span>
             <span class="stat-value" id="statBearish">0</span>
         </div>
     </div>
@@ -39,9 +39,9 @@
                     </div>
                     <div class="filter-group filter-group-signal">
                         <button class="filter-btn active" onclick="setSignalFilter('all', this)">全部</button>
-                        <button class="filter-btn" onclick="setSignalFilter('bullish', this)">買進</button>
-                        <button class="filter-btn" onclick="setSignalFilter('neutral', this)">觀望</button>
-                        <button class="filter-btn" onclick="setSignalFilter('bearish', this)">賣出</button>
+                        <button class="filter-btn" onclick="setSignalFilter('bullish', this)">多頭</button>
+                        <button class="filter-btn" onclick="setSignalFilter('neutral', this)">盤整</button>
+                        <button class="filter-btn" onclick="setSignalFilter('bearish', this)">空頭</button>
                     </div>
                 </div>
                 <!-- 排序選單列 -->

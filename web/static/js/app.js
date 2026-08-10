@@ -9,6 +9,7 @@ let activeMarketFilter = 'all'; // 'all', 'twse', 'tpex'
 let activeSignalFilter = 'all'; // 'all', 'bullish', 'neutral', 'bearish'
 let searchQuery = '';
 let selectedStockSymbol = null;
+const HIDE_AI_PREDICTION = true; // 依需求暫時隱藏 AI 預測區塊
 
 /**
  * 初始化應用程式：繫結事件、載入資料、渲染首頁
@@ -146,6 +147,15 @@ function handleSearchInput(val) {
     renderDailyReview();
 }
 
+// 個股分類判斷輔助函式 (多頭/盤整/空頭)
+function getStockCategory(s) {
+    const status = s.status || '';
+    const badge = s.badge_class || '';
+    if (status.includes('多') || status.includes('買') || badge.includes('bullish')) return 'bullish';
+    if (status.includes('空') || status.includes('賣') || badge.includes('bearish')) return 'bearish';
+    return 'neutral';
+}
+
 // 渲染 本日復盤 模式內容
 function renderDailyReview() {
     const listContainer = document.getElementById('stockListScrollable');
@@ -158,8 +168,9 @@ function renderDailyReview() {
     let countBearish = 0;
 
     rawStockData.forEach(s => {
-        if (s.status.includes('買')) countBullish++;
-        else if (s.status.includes('賣')) countBearish++;
+        const cat = getStockCategory(s);
+        if (cat === 'bullish') countBullish++;
+        else if (cat === 'bearish') countBearish++;
         else countNeutral++;
     });
 
@@ -180,9 +191,10 @@ function renderDailyReview() {
         if (activeMarketFilter === 'tpex' && stock.market !== '上櫃') return false;
 
         // 訊號篩選
-        if (activeSignalFilter === 'bullish' && !stock.status.includes('買')) return false;
-        if (activeSignalFilter === 'bearish' && !stock.status.includes('賣')) return false;
-        if (activeSignalFilter === 'neutral' && (stock.status.includes('買') || stock.status.includes('賣'))) return false;
+        if (activeSignalFilter !== 'all') {
+            const cat = getStockCategory(stock);
+            if (activeSignalFilter !== cat) return false;
+        }
 
         // 關鍵字搜尋
         if (searchQuery) {
@@ -247,10 +259,10 @@ function renderDailyReview() {
 
     listContainer.innerHTML = listHtml;
 
-    // 預設選取第一檔或保留目前選中項目
+    // 預設自動選取全部分類第一檔或保留目前選中項目
     if (filtered.length > 0) {
         const hasCurrent = filtered.some(s => s.symbol === selectedStockSymbol);
-        if (!hasCurrent) {
+        if (!hasCurrent || !selectedStockSymbol) {
             selectedStockSymbol = filtered[0].symbol;
         }
         selectStock(selectedStockSymbol);
@@ -343,6 +355,121 @@ function selectStock(symbol) {
     const ma60Str = safePrice(item.ma60);
     const scoreStr = item.score !== undefined ? `${item.score}分` : 'N/A';
 
+    // 新聞情緒數據處理
+    const newsData = item.news_sentiment || {
+        sentiment_score: 55,
+        status: "⚖️ 震盪盤整",
+        summary: "市場訊息多空交錯，法人與散戶籌碼處於消化整理階段。",
+        news: []
+    };
+    const newsList = newsData.news || [];
+    const newsItemsHtml = newsList.map(n => `
+        <div style="display:flex; justify-content:space-between; align-items:center; padding:0.35rem 0; border-bottom:1px dashed rgba(255,255,255,0.08); font-size:0.8rem;">
+            <div style="display:flex; align-items:center; gap:0.4rem; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; flex:1;">
+                <span class="badge ${n.sentiment_class === 'bullish' ? 'badge-bullish' : (n.sentiment_class === 'bearish' ? 'badge-bearish' : 'badge-neutral')}" style="font-size:0.7rem; padding:0.1rem 0.4rem;">${n.sentiment_tag || '新聞'}</span>
+                <a href="${n.link}" target="_blank" style="color:var(--text-primary); text-decoration:none; overflow:hidden; text-overflow:ellipsis;" title="${n.title}">${n.title}</a>
+            </div>
+            <div style="font-size:0.72rem; color:var(--text-secondary); margin-left:0.5rem; white-space:nowrap;">${n.source || ''} • ${n.date || ''}</div>
+        </div>
+    `).join('') || '<div style="font-size:0.8rem; color:var(--text-secondary);">尚無特定個股新聞數據</div>';
+
+    const newsHtml = `
+        <div class="detail-card-box" style="margin-bottom:0.75rem;">
+            <div class="detail-card-title" style="display:flex; justify-content:space-between; align-items:center;">
+                <span>📰 個股新聞與市場情緒判斷</span>
+                <span style="font-size:0.78rem; font-weight:normal; color:var(--text-secondary);">情緒指數: <strong style="color:${newsData.sentiment_score >= 60 ? 'var(--color-bullish)' : (newsData.sentiment_score <= 40 ? 'var(--color-bearish)' : 'var(--accent-blue)')}; font-size:0.9rem;">${newsData.sentiment_score}%</strong> (${newsData.status || ''})</span>
+            </div>
+            <div style="font-size:0.8rem; color:var(--text-secondary); margin-bottom:0.5rem; line-height:1.35;">
+                💡 <strong>情緒分析結論</strong>：${newsData.summary || ''}
+            </div>
+            <div style="max-height:150px; overflow-y:auto;">
+                ${newsItemsHtml}
+            </div>
+        </div>
+    `;
+
+    // AI K線與趨勢預測處理
+    const predData = item.prediction || {
+        trend_status: "📈 震盪走高",
+        status_class: "bullish",
+        bullish_probability: 70,
+        target_high_3d: (item.close || 100) * 1.03,
+        support_low_3d: (item.close || 100) * 0.97,
+        summary: "動能量能尚佳，預期未來數日維持震盪趨勢。",
+        predicted_candles: []
+    };
+    const predCandles = predData.predicted_candles || [];
+    const predCandlesHtml = predCandles.map(c => `
+        <div class="metric-pill" style="border:1px dashed ${c.is_bullish ? 'rgba(239,68,68,0.5)' : 'rgba(16,185,129,0.5)'};">
+            <div class="label">${c.step} 預測 (${c.confidence}% 信心)</div>
+            <div class="val" style="font-size:0.82rem; color:${c.is_bullish ? 'var(--color-bullish)' : 'var(--color-bearish)'};">
+                ${c.is_bullish ? '🔴 陽線' : '🟢 陰線'} $${safeFix(c.close, 2)}
+            </div>
+            <div style="font-size:0.7rem; color:var(--text-secondary);">高 $${safeFix(c.high, 2)} / 低 $${safeFix(c.low, 2)}</div>
+        </div>
+    `).join('');
+
+    const predictionHtml = `
+        <div class="detail-card-box" style="margin-bottom:0.75rem; background:linear-gradient(135deg, rgba(15,23,42,0.9), rgba(30,41,59,0.95)); border:1px solid rgba(59,130,246,0.3);">
+            <div class="detail-card-title" style="display:flex; justify-content:space-between; align-items:center;">
+                <span>🔮 AI K 線與未來趨勢預測</span>
+                <span class="badge ${predData.status_class === 'bullish' ? 'badge-bullish' : (predData.status_class === 'bearish' ? 'badge-bearish' : 'badge-neutral')}" style="font-size:0.8rem; padding:0.2rem 0.55rem;">
+                    ${predData.trend_status || ''} (多頭勝率 ${predData.bullish_probability}%)
+                </span>
+            </div>
+            <div style="font-size:0.82rem; color:var(--text-secondary); margin-bottom:0.6rem; line-height:1.4;">
+                🎯 <strong>3日預測目標高點</strong>: <span style="color:var(--color-bullish); font-weight:bold;">$${safePrice(predData.target_high_3d)}</span> | 
+                🛡️ <strong>3日預測防守低點</strong>: <span style="color:var(--color-bearish); font-weight:bold;">$${safePrice(predData.support_low_3d)}</span>
+                <br>
+                💡 <strong>技術面趨勢預測</strong>：${predData.summary || ''}
+            </div>
+            <div class="metrics-row" style="gap:0.4rem; margin-bottom:0.5rem;">
+                ${predCandlesHtml}
+            </div>
+
+            <!-- 本股專屬 15,000 次買賣訓練過程與特徵權重展開區 -->
+            <div style="border-top:1px dashed rgba(255,255,255,0.1); padding-top:0.5rem;">
+                <button id="btnToggleTrainingLog" class="filter-btn" style="width:100%; font-size:0.78rem; padding:0.35rem 0.6rem; background:rgba(59,130,246,0.15); color:var(--accent-blue); border-color:var(--accent-blue); border-radius:0.4rem;" onclick="toggleTrainingLogBox()">
+                    🧠 點擊查看【${cleanSymbol} ${item.name || ''}】專屬 15,000 次買賣訓練日誌與特徵權重
+                </button>
+                <div id="trainingLogBox" style="display:none; margin-top:0.5rem; background:rgba(15,23,42,0.95); padding:0.65rem; border-radius:0.4rem; border:1px solid rgba(59,130,246,0.25);">
+                    <div style="font-size:0.78rem; font-weight:bold; color:var(--text-primary); margin-bottom:0.3rem;">📊 近 6 個月特徵加權學習矩陣 (Ridge Weights):</div>
+                    <div style="display:flex; flex-wrap:wrap; gap:0.3rem; margin-bottom:0.6rem;">
+                        ${(predData.feature_importance || []).map(f => `
+                            <span style="font-size:0.73rem; background:rgba(255,255,255,0.06); padding:0.15rem 0.4rem; border-radius:0.25rem; border:1px solid rgba(255,255,255,0.08);">
+                                ${f.feature}: <strong style="color:var(--accent-blue);">${f.weight > 0 ? '+' : ''}${f.weight}</strong>
+                            </span>
+                        `).join('') || '暫無特徵權重'}
+                    </div>
+                    
+                    <div style="font-size:0.78rem; font-weight:bold; color:var(--text-primary); margin-bottom:0.3rem;">🔄 15,000 次買賣策略模擬紀錄抽樣 (含進場原因與出場原因):</div>
+                    <table style="width:100%; border-collapse:collapse; color:var(--text-secondary); text-align:left;">
+                        <thead>
+                            <tr style="font-size:0.72rem; color:var(--accent-blue); border-bottom:1px solid rgba(255,255,255,0.15);">
+                                <th style="padding:0.25rem;">迴圈</th>
+                                <th style="padding:0.25rem;">進價 ➜ 出價</th>
+                                <th style="padding:0.25rem;">損益率</th>
+                                <th style="padding:0.25rem;">💡 進場觸發原因</th>
+                                <th style="padding:0.25rem;">🎯 出場離場原因</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            ${(predData.training_logs || []).map(l => `
+                                <tr style="border-bottom:1px dashed rgba(255,255,255,0.08); font-size:0.74rem;">
+                                    <td style="padding:0.25rem; font-weight:bold; color:var(--accent-blue);">#${l.iter}</td>
+                                    <td style="padding:0.25rem; white-space:nowrap;">$${l.entry_price} ➜ $${l.exit_price} (${l.holding_days}天)</td>
+                                    <td style="padding:0.25rem; color:${l.pnl_pct >= 0 ? 'var(--color-bullish)' : 'var(--color-bearish)'}; font-weight:bold; white-space:nowrap;">${l.pnl_pct >= 0 ? '+' : ''}${l.pnl_pct}%</td>
+                                    <td style="padding:0.25rem; color:var(--text-primary);">${l.entry_reason || '均線架構向上偏多試點進場'}</td>
+                                    <td style="padding:0.25rem; color:${l.pnl_pct >= 0 ? 'var(--color-bullish)' : 'var(--color-bearish)'};">${l.exit_reason || l.outcome}</td>
+                                </tr>
+                            `).join('') || '<tr><td colspan="5">尚無訓練日誌</td></tr>'}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    `;
+
     const currTab = window.activeDetailTab || 'kline';
 
     panel.innerHTML = `
@@ -358,6 +485,9 @@ function selectStock(symbol) {
                 <div style="font-size:0.8rem; color:var(--text-secondary);">60MA: ${ma60Str}</div>
             </div>
         </div>
+
+        <!-- AI K線趨勢預測卡片區 (暫時隱藏) -->
+        ${HIDE_AI_PREDICTION ? '' : predictionHtml}
 
         <!-- 視窗切換按鈕 Tab Bar -->
         <div class="view-switch-bar">
@@ -377,9 +507,14 @@ function selectStock(symbol) {
                     <div style="font-size:0.9rem; font-weight:700; color:var(--text-primary);">
                         📈 原生高解析 SVG 向量 K 線圖與三大指標 (${cleanSymbol} ${item.name || ''})
                     </div>
-                    <a href="https://tw.stock.yahoo.com/quote/${cleanSymbol}" target="_blank" class="filter-btn" style="text-decoration:none; padding:0.2rem 0.6rem; font-size:0.75rem; background:rgba(16,185,129,0.15); color:var(--color-bearish); border-color:var(--color-bearish);">
-                        🔗 Yahoo 股市頁面
-                    </a>
+                    <div style="display:flex; gap:0.4rem; align-items:center;">
+                        <button id="btnToggleChartTradeMarkers" class="filter-btn ${window.showTradeMarkers === true ? 'active' : ''}" style="padding:0.2rem 0.6rem; font-size:0.75rem; background:rgba(59,130,246,0.15); color:var(--accent-blue); border-color:var(--accent-blue);" onclick="toggleChartTradeMarkers()">
+                            🎯 ${window.showTradeMarkers === true ? '隱藏' : '顯示'} 15,000次買賣訓練點位
+                        </button>
+                        <a href="https://tw.stock.yahoo.com/quote/${cleanSymbol}" target="_blank" class="filter-btn" style="text-decoration:none; padding:0.2rem 0.6rem; font-size:0.75rem; background:rgba(16,185,129,0.15); color:var(--color-bearish); border-color:var(--color-bearish);">
+                            🔗 Yahoo 股市頁面
+                        </a>
+                    </div>
                 </div>
                 
                 <div style="display:flex; flex-wrap:wrap; gap:0.5rem 1.1rem; font-size:0.78rem; background:rgba(15,23,42,0.65); padding:0.45rem 0.75rem; border-radius:0.4rem; border:1px solid rgba(255,255,255,0.06);">
@@ -496,6 +631,9 @@ function selectStock(symbol) {
             </div>
         </div>
 
+        <!-- 📰 個股新聞與市場情緒判斷卡片 (位在波段艾略特型態正下方) -->
+        ${newsHtml}
+
         <!-- 指標快照與成交量 -->
         <div class="metrics-row" style="margin-bottom:0.75rem;">
             <div class="metric-pill"><div class="label">成交量(張)</div><div class="val">${volStr}</div></div>
@@ -515,7 +653,7 @@ function selectStock(symbol) {
         </div>
 
         <!-- 買賣評估依據 -->
-        <div>
+        <div style="margin-bottom:0.75rem;">
             <div style="font-size:0.83rem; font-weight:700; color:var(--text-secondary); margin-bottom:0.4rem;">💡 買賣評估依據:</div>
             <div style="display:flex; flex-wrap:wrap; gap:0.4rem;">
                 ${reasonsHtml}
@@ -557,6 +695,32 @@ function selectStock(symbol) {
         fetchAndDrawSVG('svgKlineContainer', item);
         fetchAndDrawTrendlineSVG('svgTrendlineContainer', item);
     }, 150);
+}
+
+// 切換 15,000 次訓練過程日誌顯示
+function toggleTrainingLogBox() {
+    const box = document.getElementById('trainingLogBox');
+    const btn = document.getElementById('btnToggleTrainingLog');
+    if (!box) return;
+    if (box.style.display === 'none') {
+        box.style.display = 'block';
+        if (btn) btn.innerText = '🧠 點擊收合 15,000 次買賣訓練日誌與特徵權重';
+    } else {
+        box.style.display = 'none';
+        if (btn) btn.innerText = '🧠 點擊查看本股專屬 15,000 次買賣訓練日誌與特徵權重';
+    }
+}
+
+// 切換 K 線圖上的 15,000 次買賣訓練點位標記 (預設隱藏)
+window.showTradeMarkers = false;
+function toggleChartTradeMarkers() {
+    window.showTradeMarkers = !window.showTradeMarkers;
+    if (selectedStockSymbol) {
+        const item = rawStockData.find(s => s.symbol === selectedStockSymbol);
+        if (item) {
+            selectStock(selectedStockSymbol);
+        }
+    }
 }
 
 // SVG K線歷史快取 (candlesCache)
@@ -712,8 +876,12 @@ function drawKlineSVG(containerId, candles, item, retryCount = 0) {
     const kdSeries = calculateKDSeries(candles);
     const rsiSeries = calculateRSISeries(candles, 5);
     
+    const predCandles = (item && item.prediction && item.prediction.predicted_candles) ? item.prediction.predicted_candles : [];
+    const predHighs = predCandles.map(p => p.high);
+    const predLows = predCandles.map(p => p.low);
+
     const fib = item.fib || {};
-    const extraPrices = [fib.high_price, fib.low_price, fib.sup_382, fib.sup_500, fib.sup_618, fib.res_382, fib.res_500, fib.res_618, item.ma60].filter(v => typeof v === 'number' && !isNaN(v));
+    const extraPrices = [fib.high_price, fib.low_price, fib.sup_382, fib.sup_500, fib.sup_618, fib.res_382, fib.res_500, fib.res_618, item.ma60, ...predHighs, ...predLows].filter(v => typeof v === 'number' && !isNaN(v));
     
     let maxP = Math.max(...highs, ...extraPrices) * 1.015;
     let minP = Math.min(...lows, ...extraPrices) * 0.985;
@@ -728,7 +896,8 @@ function drawKlineSVG(containerId, candles, item, retryCount = 0) {
     const getKDy = (val) => kdAreaBottom - (Math.max(0, Math.min(100, val)) / 100) * subH;
     const getRSIy = (val) => rsiAreaBottom - (Math.max(0, Math.min(100, val)) / 100) * subH;
     
-    const slotW = chartW / candles.length;
+    const totalSlots = candles.length + (predCandles.length > 0 ? predCandles.length + 1 : 0);
+    const slotW = chartW / totalSlots;
     const candleW = Math.max(1.8, slotW * 0.7);
     
     let svgContent = '';
@@ -872,6 +1041,66 @@ function drawKlineSVG(containerId, candles, item, retryCount = 0) {
     // 繪製 RSI 曲線 (紫色)
     if (rsiPoints.length > 1) {
         svgContent += `<polyline points="${rsiPoints.join(' ')}" fill="none" stroke="#a855f7" stroke-width="1.6" stroke-linejoin="round" opacity="0.95" />`;
+    }
+
+    // 繪製未來 5 日 🔮 AI K線與趨勢預測燭體 (依需求暫時隱藏)
+    if (!HIDE_AI_PREDICTION && predCandles.length > 0) {
+        const predStartX = paddingLeft + slotW * (candles.length + 0.3);
+        svgContent += `<line x1="${predStartX}" y1="${priceAreaTop}" x2="${predStartX}" y2="${rsiAreaBottom}" stroke="rgba(59,130,246,0.5)" stroke-dasharray="4,4" stroke-width="1.5" />`;
+        svgContent += `<text x="${predStartX + 6}" y="${priceAreaTop + 14}" font-size="11" font-weight="bold" fill="#60a5fa">🔮 AI 5日K線預測</text>`;
+
+        predCandles.forEach((pc, pIdx) => {
+            const pcx = paddingLeft + slotW * (candles.length + 1 + pIdx) + slotW / 2;
+            const isUp = pc.is_bullish;
+            const pColor = isUp ? '#ef4444' : '#10b981';
+
+            const yOpen = getPy(pc.open);
+            const yClose = getPy(pc.close);
+            const yHigh = getPy(pc.high);
+            const yLow = getPy(pc.low);
+
+            const yBodyTop = Math.min(yOpen, yClose);
+            const yBodyBottom = Math.max(yOpen, yClose);
+            const bodyH = Math.max(1.5, Math.abs(yOpen - yClose));
+
+            // 半透明與虛線畫出預測 K 線
+            svgContent += `<line x1="${pcx}" y1="${yHigh}" x2="${pcx}" y2="${yLow}" stroke="${pColor}" stroke-dasharray="2,2" stroke-width="1.2" opacity="0.9" />`;
+            svgContent += `<rect x="${pcx - candleW/2}" y="${yBodyTop}" width="${candleW}" height="${bodyH}" fill="${pColor}" fill-opacity="0.35" stroke="${pColor}" stroke-dasharray="2,2" stroke-width="1.2" rx="0.5" />`;
+
+            // 底部 T+1 ~ T+5 標籤
+            svgContent += `<text x="${pcx}" y="${height - 4}" font-size="10" font-weight="bold" fill="#60a5fa" text-anchor="middle">${pc.step}</text>`;
+        });
+    }
+
+    // 繪製 15,000 次買賣訓練點位與進出場視覺化連線 (預設隱藏)
+    if (window.showTradeMarkers === true && item && item.prediction && item.prediction.training_logs) {
+        const logs = item.prediction.training_logs || [];
+        logs.forEach(l => {
+            const entryIdx = Math.min(candles.length - 1, l.entry_idx);
+            const exitIdx = Math.min(candles.length - 1, entryIdx + (l.holding_days || 1));
+            
+            const x1 = paddingLeft + slotW * entryIdx + slotW / 2;
+            const y1 = getPy(l.entry_price);
+            
+            const x2 = paddingLeft + slotW * exitIdx + slotW / 2;
+            const y2 = getPy(l.exit_price);
+            
+            const isProfit = l.pnl_pct >= 0;
+            const lineColor = isProfit ? '#ef4444' : '#10b981';
+            
+            // 交易連線
+            svgContent += `<line x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}" stroke="${lineColor}" stroke-width="2" stroke-dasharray="3,2" opacity="0.85"><title>迴圈 #${l.iter} 交易過程:\n【買進原因】: ${l.entry_reason || '進場點位'}\n【出場原因】: ${l.exit_reason || l.outcome}\n【交易結果】: $${l.entry_price} ➜ $${l.exit_price} (${l.pnl_pct >= 0 ? '+' : ''}${l.pnl_pct}%)</title></line>`;
+            
+            // 買進進場點標記 (🟢 買)
+            svgContent += `<circle cx="${x1}" cy="${y1}" r="4.5" fill="#10b981" stroke="#ffffff" stroke-width="1.2"><title>買進進場點: $${l.entry_price}\n原因: ${l.entry_reason || '技術面點位進場'}</title></circle>`;
+            svgContent += `<rect x="${x1 - 18}" y="${y1 + 6}" width="36" height="14" fill="rgba(16,185,129,0.85)" rx="2" />`;
+            svgContent += `<text x="${x1}" y="${y1 + 16}" font-size="9" fill="#ffffff" font-weight="bold" text-anchor="middle">🟢買 $${l.entry_price}</text>`;
+            
+            // 出場點標記 (🔴 賣)
+            svgContent += `<circle cx="${x2}" cy="${y2}" r="4.5" fill="${lineColor}" stroke="#ffffff" stroke-width="1.2"><title>出場平倉點: $${l.exit_price} (${l.pnl_pct}%)\n原因: ${l.exit_reason || l.outcome}</title></circle>`;
+            svgContent += `<rect x="${x2 - 24}" y="${y2 - 18}" width="48" height="14" fill="${isProfit ? 'rgba(239,68,68,0.9)' : 'rgba(16,185,129,0.9)'}" rx="2" />`;
+            svgContent += `<text x="${x2}" y="${y2 - 8}" font-size="9" fill="#ffffff" font-weight="bold" text-anchor="middle">🎯${l.pnl_pct >= 0 ? '+' : ''}${l.pnl_pct}%</text>`;
+        });
     }
 
     container.innerHTML = `
