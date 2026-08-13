@@ -2,8 +2,9 @@ name: 台股每日盤後自動篩選與 GitHub Pages 部署
 
 on:
   schedule:
-    # 台灣時間每個交易日 (週一至週五) 下午 14:30 (UTC 06:30) 盤後自動執行
-    - cron: '30 6 * * 1-5'
+    # 台灣時間每個交易日 (週一至週五) 下午 18:00 (UTC 10:00) 與 21:30 (UTC 13:30) 自動執行
+    - cron: '0 10 * * 1-5'
+    - cron: '30 13 * * 1-5'
   workflow_dispatch: # 支援在 GitHub 網頁手動一鍵點擊觸發
 
 jobs:
@@ -41,7 +42,7 @@ jobs:
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add index.html stock_report.html last_results.json taiwan_stocks_cache.json twse_daily_cache.json
+          git add index.html stock_report.html last_results.json taiwan_stocks_cache.json twse_daily_cache.json screener/model_cache.json
           git diff --quiet && git diff --staged --quiet || (git commit -m "🤖 [Auto Update] 自動更新每日盤後選股數據與 K 線分析報告" && git push)
 
       - name: 部署至 GitHub Pages 網站

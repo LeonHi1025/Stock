@@ -53,6 +53,31 @@ session.headers.update({
 
 
 
+def fetch_3y_historical_prices(symbol):
+    """擷取單一股票近 3 年 (約 735 筆交易日) 的全量日 K 線歷史數據"""
+    try:
+        url = f"https://query1.finance.yahoo.com/v8/finance/chart/{symbol}?range=3y&interval=1d"
+        resp = session.get(url, timeout=8)
+        if resp.status_code == 200:
+            res = resp.json().get("chart", {}).get("result", [])[0]
+            ts_list = res.get("timestamp", [])
+            quote = res.get("indicators", {}).get("quote", [{}])[0]
+            closes = quote.get("close", [])
+            vols = quote.get("volume", [])
+            
+            valid_c, valid_ts, valid_v = [], [], []
+            for t, c, v in zip(ts_list, closes, vols):
+                if c is not None and t is not None:
+                    valid_c.append(round(c, 2))
+                    valid_ts.append(t)
+                    valid_v.append(v if (v is not None and v > 0) else 0)
+            if len(valid_c) >= 60:
+                return valid_c, valid_ts, valid_v
+    except Exception:
+        pass
+    return None, None, None
+
+
 def fetch_spark_chunk(chunk):
     """下載單一批次（最多20檔）的股票資訊並進行多重指標與波段型態分析"""
     twse_official = fetch_twse_official_datasets()
@@ -61,7 +86,7 @@ def fetch_spark_chunk(chunk):
     twse_val = twse_official.get("val", {})
 
     symbols_str = ",".join([s["symbol"] for s in chunk])
-    url = f"https://query1.finance.yahoo.com/v7/finance/spark?symbols={symbols_str}&range=6mo&interval=1d"
+    url = f"https://query1.finance.yahoo.com/v7/finance/spark?symbols={symbols_str}&range=max&interval=1d"
     
     chunk_results = []
     try:
@@ -117,6 +142,13 @@ def fetch_spark_chunk(chunk):
             # 1. 5000張量能過濾
             if latest_vol_lots < MIN_VOLUME_LOTS:
                 continue
+
+            # 下載該股近 3 年全量歷史日 K 線 (約 735 筆交易日) 用於 ML 模型訓練
+            h3_c, h3_ts, h3_v = fetch_3y_historical_prices(symbol)
+            if h3_c and len(h3_c) >= 60:
+                valid_closes = h3_c
+                valid_timestamps = h3_ts
+                valid_vols = h3_v
                 
             # 2. 計算 60MA
             ma60 = sum(valid_closes[-60:]) / 60.0
@@ -405,9 +437,9 @@ def fetch_spark_chunk(chunk):
                 }
             }
 
-            # 4. 個股新聞與情緒分析 (獨立捕捉例外以確保不卡主流程)
+            # 4. 個股新聞與情緒分析 (獨立捕捉例外以確保不卡主流程，全網最新 10 則新聞)
             try:
-                news_sentiment = fetch_stock_news(symbol, name)
+                news_sentiment = fetch_stock_news(symbol, name, max_count=10)
             except Exception:
                 news_sentiment = {
                     "sentiment_score": 55,
@@ -439,6 +471,8 @@ def fetch_spark_chunk(chunk):
                     )
                 ]
                 stock_item["valid_closes"] = valid_closes
+                stock_item["valid_timestamps"] = valid_timestamps
+                stock_item["valid_vols"] = valid_vols
                 stock_item["candles"] = candles
                 prediction = predict_kline_and_trend(stock_item)
             except Exception as e:
@@ -690,7 +724,7 @@ class StockServerHandler(BaseHTTPRequestHandler):
             self.send_header("Content-type", "application/json; charset=utf-8")
             self.end_headers()
             
-            news_res = fetch_stock_news(symbol, name)
+            news_res = fetch_stock_news(symbol, name, max_count=10)
             self.wfile.write(json.dumps(news_res, ensure_ascii=False).encode('utf-8'))
         elif clean_path == "/api/refresh":
             self.send_response(200)
@@ -753,8 +787,8 @@ def main():
         except Exception:
             pass
             
-    if not results or "--fresh" in sys.argv:
-        if os.path.exists(CACHE_FILE):
+    if not results or "--fresh" in sys.argv or "--no-server" in sys.argv:
+        if os.path.exists(CACHE_FILE) and "--fresh" in sys.argv:
             try:
                 os.remove(CACHE_FILE)
             except Exception:

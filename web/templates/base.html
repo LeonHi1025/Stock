@@ -13,7 +13,12 @@
         <header>
             <div class="header-brand">
                 <h1>📈 台股多指標戰略儀表板</h1>
-                <div class="time-tag">最後更新時間: <span id="updateTime">__NOW_STR__</span> (資料篩選門檻: 成交量 &gt; 20,000張)</div>
+                <div class="time-tag">
+                    最後更新時間: <span id="updateTime">__NOW_STR__</span> (資料篩選門檻: 成交量 &gt; 20,000張)
+                    <span class="auto-refresh-badge" style="display:inline-flex; align-items:center; gap:0.25rem; margin-left:0.6rem; background:rgba(59,130,246,0.15); border:1px solid rgba(59,130,246,0.3); padding:0.1rem 0.5rem; border-radius:1rem; font-size:0.72rem; color:#60a5fa;">
+                        ⚡ 30分鐘自主更新倒數: <span id="autoRefreshCountdown" style="font-weight:bold; font-family:monospace; color:#93c5fd;">30:00</span>
+                    </span>
+                </div>
             </div>
 
             <!-- 本日復盤 vs 即時分析 模式切換鈕 -->
@@ -58,8 +63,14 @@
         window.INITIAL_STOCK_DATA = __RESULTS_JSON__;
         window.INITIAL_MARKET_DATA = __MARKET_JSON__;
     </script>
-    <script src="web/static/js/data_store.js"></script>
-    <script src="web/static/js/trendline_chart.js"></script>
-    <script src="web/static/js/app.js"></script>
+    <script>
+        __DATA_STORE_JS__
+    </script>
+    <script>
+        __TRENDLINE_CHART_JS__
+    </script>
+    <script>
+        __APP_JS__
+    </script>
 </body>
 </html>

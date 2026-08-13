@@ -2,16 +2,18 @@
  * web/static/js/data_store.js - 儀表板全域資料與篩選過濾狀態管理
  */
 
-window.rawStockData = [];
-window.marketData = [];
-window.activeMode = 'daily'; // 'daily' 或 'realtime'
-window.activeMarketFilter = 'all'; // 'all', 'twse', 'tpex'
-window.activeSignalFilter = 'all'; // 'all', 'bullish', 'neutral', 'bearish'
-window.searchQuery = '';
-window.selectedStockSymbol = null;
-window.activeSortOption = 'score_desc';
-window.todayIntradayCache = {};
-window.candlesCache = {};
+// ── 關鍵修正：保留 base.html 已注入的 INITIAL_STOCK_DATA，不可無條件覆蓋 ──
+window.rawStockData = window.INITIAL_STOCK_DATA || window.rawStockData || [];
+window.marketData = window.INITIAL_MARKET_DATA || window.marketData || [];
+window.activeMode = window.activeMode || 'daily';
+window.activeMarketFilter = window.activeMarketFilter || 'all';
+window.activeSignalFilter = window.activeSignalFilter || 'all';
+window.searchQuery = window.searchQuery || '';
+window.selectedStockSymbol = window.selectedStockSymbol || null;
+window.activeSortOption = window.activeSortOption || 'score_desc';
+window.todayIntradayCache = window.todayIntradayCache || {};
+window.candlesCache = window.candlesCache || {};
+
 
 // 輔助函式：安全數字格式化
 window.safeFix = (num, dec = 2) => (typeof num === 'number' && !isNaN(num)) ? num.toFixed(dec) : 'N/A';
