@@ -499,7 +499,7 @@
       "dealer": 354,
       "total": 3023
     },
-    "074404": {
+    "077322": {
       "foreign": 0,
       "trust": 0,
       "dealer": 3001,
@@ -1288,8 +1288,8 @@
     "067687": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 1201,
-      "total": 1201
+      "dealer": 1212,
+      "total": 1212
     },
     "071283": {
       "foreign": 0,
@@ -1636,8 +1636,8 @@
     "068039": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 994,
-      "total": 994
+      "dealer": 997,
+      "total": 997
     },
     "067997": {
       "foreign": 0,
@@ -1660,8 +1660,8 @@
     "066719": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 990,
-      "total": 990
+      "dealer": 995,
+      "total": 995
     },
     "079212": {
       "foreign": 0,
@@ -1684,8 +1684,8 @@
     "065621": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 975,
-      "total": 975
+      "dealer": 961,
+      "total": 961
     },
     "060591": {
       "foreign": 0,
@@ -1774,8 +1774,8 @@
     "065240": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 936,
-      "total": 936
+      "dealer": 937,
+      "total": 937
     },
     "059293": {
       "foreign": 0,
@@ -1822,8 +1822,8 @@
     "069069": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 897,
-      "total": 897
+      "dealer": 898,
+      "total": 898
     },
     "078649": {
       "foreign": 0,
@@ -1840,14 +1840,14 @@
     "071489": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 880,
-      "total": 880
+      "dealer": 882,
+      "total": 882
     },
     "070563": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 879,
-      "total": 879
+      "dealer": 866,
+      "total": 866
     },
     "070965": {
       "foreign": 0,
@@ -2158,14 +2158,14 @@
     "061921": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 788,
-      "total": 788
+      "dealer": 784,
+      "total": 784
     },
     "067790": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 782,
-      "total": 782
+      "dealer": 6,
+      "total": 780
     },
     "068447": {
       "foreign": 0,
@@ -2194,8 +2194,8 @@
     "068188": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 775,
-      "total": 775
+      "dealer": 777,
+      "total": 777
     },
     "068874": {
       "foreign": 0,
@@ -2284,7 +2284,13 @@
     "075838": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 731,
+      "dealer": 733,
+      "total": 733
+    },
+    "8110": {
+      "foreign": 720,
+      "trust": 0,
+      "dealer": 11,
       "total": 731
     },
     "070782": {
@@ -2368,8 +2374,8 @@
     "075533": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 717,
-      "total": 717
+      "dealer": 723,
+      "total": 723
     },
     "075918": {
       "foreign": 0,
@@ -2398,8 +2404,8 @@
     "074097": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 711,
-      "total": 711
+      "dealer": 710,
+      "total": 710
     },
     "071916": {
       "foreign": 0,
@@ -2434,8 +2440,8 @@
     "04018C": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 696,
-      "total": 696
+      "dealer": 695,
+      "total": 695
     },
     "072097": {
       "foreign": 0,
@@ -2560,8 +2566,8 @@
     "070545": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 672,
-      "total": 672
+      "dealer": 673,
+      "total": 673
     },
     "077028": {
       "foreign": 0,
@@ -2698,8 +2704,8 @@
     "068002": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 639,
-      "total": 639
+      "dealer": 633,
+      "total": 633
     },
     "071770": {
       "foreign": 0,
@@ -2752,8 +2758,8 @@
     "071552": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 625,
-      "total": 625
+      "dealer": 128,
+      "total": 627
     },
     "069748": {
       "foreign": 0,
@@ -2776,14 +2782,20 @@
     "058614": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 620,
+      "dealer": 622,
+      "total": 622
+    },
+    "068252": {
+      "foreign": 3,
+      "trust": 0,
+      "dealer": 617,
       "total": 620
     },
     "077476": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 618,
-      "total": 618
+      "dealer": 616,
+      "total": 616
     },
     "060732": {
       "foreign": 0,
@@ -2830,8 +2842,8 @@
     "060525": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 612,
-      "total": 612
+      "dealer": 613,
+      "total": 613
     },
     "077804": {
       "foreign": 0,
@@ -2848,7 +2860,13 @@
     "068338": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 610,
+      "dealer": 611,
+      "total": 611
+    },
+    "2355": {
+      "foreign": 624,
+      "trust": 0,
+      "dealer": -14,
       "total": 610
     },
     "060765": {
@@ -2974,8 +2992,8 @@
     "060936": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 596,
-      "total": 596
+      "dealer": 594,
+      "total": 594
     },
     "070097": {
       "foreign": 0,
@@ -3076,8 +3094,8 @@
     "071246": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 585,
-      "total": 585
+      "dealer": 586,
+      "total": 586
     },
     "063076": {
       "foreign": 0,
@@ -3100,8 +3118,8 @@
     "077056": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 582,
-      "total": 582
+      "dealer": 586,
+      "total": 586
     },
     "3052": {
       "foreign": 580,
@@ -3166,7 +3184,25 @@
     "079047": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 571,
+      "dealer": 574,
+      "total": 574
+    },
+    "067073": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 573,
+      "total": 573
+    },
+    "054479": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 572,
+      "total": 572
+    },
+    "4938": {
+      "foreign": -2798,
+      "trust": 3573,
+      "dealer": -205,
       "total": 571
     },
     "076295": {
@@ -3244,8 +3280,8 @@
     "059836": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 558,
-      "total": 558
+      "dealer": 557,
+      "total": 557
     },
     "8110": {
       "foreign": 562,
@@ -3262,8 +3298,8 @@
     "074805": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 556,
-      "total": 556
+      "dealer": 557,
+      "total": 557
     },
     "00885": {
       "foreign": 147,
@@ -3322,8 +3358,8 @@
     "072913": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 546,
-      "total": 546
+      "dealer": 545,
+      "total": 545
     },
     "062631": {
       "foreign": 0,
@@ -3400,8 +3436,8 @@
     "069523": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 538,
-      "total": 538
+      "dealer": 539,
+      "total": 539
     },
     "062954": {
       "foreign": 0,
@@ -3430,8 +3466,8 @@
     "069335": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 531,
-      "total": 531
+      "dealer": 529,
+      "total": 529
     },
     "075540": {
       "foreign": 0,
@@ -3538,14 +3574,14 @@
     "061639": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 517,
-      "total": 517
+      "dealer": 514,
+      "total": 514
     },
     "074857": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 516,
-      "total": 516
+      "dealer": 514,
+      "total": 514
     },
     "065452": {
       "foreign": 0,
@@ -3646,7 +3682,13 @@
     "075936": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 503,
+      "dealer": 504,
+      "total": 504
+    },
+    "8081": {
+      "foreign": 498,
+      "trust": -1,
+      "dealer": 6,
       "total": 503
     },
     "069893": {
@@ -4060,8 +4102,8 @@
     "073522": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 473,
-      "total": 473
+      "dealer": 477,
+      "total": 477
     },
     "2455": {
       "foreign": 417,
@@ -4138,7 +4180,7 @@
     "072197": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 467,
+      "dealer": 485,
       "total": 467
     },
     "067226": {
@@ -4168,8 +4210,8 @@
     "079031": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 463,
-      "total": 463
+      "dealer": 462,
+      "total": 462
     },
     "073534": {
       "foreign": 0,
@@ -4180,8 +4222,8 @@
     "068001": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 461,
-      "total": 461
+      "dealer": 462,
+      "total": 462
     },
     "1409": {
       "foreign": -81,
@@ -4258,8 +4300,8 @@
     "076056": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 454,
-      "total": 454
+      "dealer": 455,
+      "total": 455
     },
     "074708": {
       "foreign": 0,
@@ -4270,8 +4312,8 @@
     "064611": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 453,
-      "total": 453
+      "dealer": 455,
+      "total": 455
     },
     "063668": {
       "foreign": 0,
@@ -4462,8 +4504,8 @@
     "055485": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 433,
-      "total": 433
+      "dealer": 1034,
+      "total": 434
     },
     "069257": {
       "foreign": 0,
@@ -4762,20 +4804,20 @@
     "068265": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 401,
-      "total": 401
+      "dealer": 403,
+      "total": 403
     },
     "077361": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 401,
-      "total": 401
+      "dealer": 403,
+      "total": 403
     },
     "070449": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 401,
-      "total": 401
+      "dealer": 402,
+      "total": 402
     },
     "052811": {
       "foreign": 0,
@@ -5014,8 +5056,8 @@
     "076185": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 388,
-      "total": 388
+      "dealer": 387,
+      "total": 387
     },
     "070466": {
       "foreign": 0,
@@ -5458,14 +5500,14 @@
     "078463": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 357,
-      "total": 357
+      "dealer": 358,
+      "total": 358
     },
     "063934": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 357,
-      "total": 357
+      "dealer": 3,
+      "total": 356
     },
     "077290": {
       "foreign": 0,
@@ -5590,8 +5632,8 @@
     "061791": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 351,
-      "total": 351
+      "dealer": 1,
+      "total": 350
     },
     "070731": {
       "foreign": 0,
@@ -5614,14 +5656,14 @@
     "068272": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 350,
+      "dealer": 42,
       "total": 350
     },
     "073659": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 350,
-      "total": 350
+      "dealer": 561,
+      "total": 349
     },
     "036451": {
       "foreign": 0,
@@ -5830,14 +5872,14 @@
     "076052": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 338,
-      "total": 338
+      "dealer": 337,
+      "total": 337
     },
     "077671": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 338,
-      "total": 338
+      "dealer": 337,
+      "total": 337
     },
     "076055": {
       "foreign": 0,
@@ -6070,8 +6112,8 @@
     "068910": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 323,
-      "total": 323
+      "dealer": 322,
+      "total": 322
     },
     "064535": {
       "foreign": 0,
@@ -6196,7 +6238,7 @@
     "069188": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 319,
+      "dealer": -150,
       "total": 319
     },
     "054478": {
@@ -7096,7 +7138,7 @@
     "068147": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 279,
+      "dealer": -4,
       "total": 279
     },
     "072371": {
@@ -7954,8 +7996,8 @@
     "070310": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 246,
-      "total": 246
+      "dealer": 66,
+      "total": 245
     },
     "076303": {
       "foreign": 0,
@@ -8116,8 +8158,8 @@
     "079186": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 241,
-      "total": 241
+      "dealer": 240,
+      "total": 240
     },
     "2420": {
       "foreign": 240,
@@ -8803,7 +8845,7 @@
       "dealer": 220,
       "total": 220
     },
-    "071776": {
+    "067571": {
       "foreign": 0,
       "trust": 0,
       "dealer": 220,
@@ -10321,7 +10363,7 @@
       "dealer": 188,
       "total": 188
     },
-    "08869U": {
+    "078485": {
       "foreign": 0,
       "trust": 0,
       "dealer": 188,
@@ -14026,38 +14068,38 @@
     "077849": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 122,
-      "total": 122
+      "dealer": 128,
+      "total": 128
     },
     "077737": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 122,
-      "total": 122
+      "dealer": 128,
+      "total": 128
     },
     "055658": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 122,
-      "total": 122
+      "dealer": 128,
+      "total": 128
     },
     "068263": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 122,
-      "total": 122
+      "dealer": 128,
+      "total": 128
     },
     "061599": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 122,
-      "total": 122
+      "dealer": 128,
+      "total": 128
     },
     "077007": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 122,
-      "total": 122
+      "dealer": 128,
+      "total": 128
     },
     "043668": {
       "foreign": 0,
@@ -16189,7 +16231,7 @@
       "dealer": 100,
       "total": 100
     },
-    "064328": {
+    "062874": {
       "foreign": 0,
       "trust": 0,
       "dealer": 100,
@@ -17737,7 +17779,7 @@
       "dealer": 87,
       "total": 87
     },
-    "069524": {
+    "077018": {
       "foreign": 0,
       "trust": 0,
       "dealer": 87,
@@ -20443,7 +20485,25 @@
       "dealer": 67,
       "total": 67
     },
-    "062960": {
+    "078250": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 67,
+      "total": 67
+    },
+    "051363": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 67,
+      "total": 67
+    },
+    "00730": {
+      "foreign": 8,
+      "trust": 0,
+      "dealer": 59,
+      "total": 67
+    },
+    "071611": {
       "foreign": 0,
       "trust": 0,
       "dealer": 67,
@@ -20704,44 +20764,44 @@
     "064161": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 65,
-      "total": 65
+      "dealer": 66,
+      "total": 66
     },
     "078212": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 65,
-      "total": 65
+      "dealer": 66,
+      "total": 66
     },
     "074528": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 65,
-      "total": 65
+      "dealer": 66,
+      "total": 66
     },
     "064266": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 65,
-      "total": 65
+      "dealer": 66,
+      "total": 66
     },
     "069157": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 65,
-      "total": 65
+      "dealer": 66,
+      "total": 66
     },
     "062137": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 65,
-      "total": 65
+      "dealer": 66,
+      "total": 66
     },
     "062186": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 65,
-      "total": 65
+      "dealer": 66,
+      "total": 66
     },
     "066480": {
       "foreign": 0,
@@ -21655,7 +21715,7 @@
       "dealer": 60,
       "total": 60
     },
-    "074477": {
+    "077880": {
       "foreign": 0,
       "trust": 0,
       "dealer": 60,
@@ -24427,7 +24487,7 @@
       "dealer": 48,
       "total": 48
     },
-    "065897": {
+    "058597": {
       "foreign": 0,
       "trust": 0,
       "dealer": 48,
@@ -24838,7 +24898,7 @@
     "070660": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 46,
+      "dealer": 3,
       "total": 46
     },
     "079432": {
@@ -25672,8 +25732,8 @@
     "077625": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 42,
-      "total": 42
+      "dealer": 43,
+      "total": 43
     },
     "074065": {
       "foreign": 0,
@@ -25975,7 +26035,7 @@
       "dealer": 41,
       "total": 41
     },
-    "071170": {
+    "064115": {
       "foreign": 0,
       "trust": 0,
       "dealer": 41,
@@ -26116,8 +26176,8 @@
     "5907": {
       "foreign": 40,
       "trust": 0,
-      "dealer": 0,
-      "total": 40
+      "dealer": 1,
+      "total": 41
     },
     "077762": {
       "foreign": 0,
@@ -26833,7 +26893,7 @@
       "dealer": 25,
       "total": 39
     },
-    "073591": {
+    "059275": {
       "foreign": 0,
       "trust": 0,
       "dealer": 39,
@@ -30095,7 +30155,7 @@
       "foreign": 29,
       "trust": 0,
       "dealer": -1,
-      "total": 28
+      "total": 38
     },
     "6271": {
       "foreign": 70,
@@ -30106,8 +30166,8 @@
     "3040": {
       "foreign": 28,
       "trust": 0,
-      "dealer": 0,
-      "total": 28
+      "dealer": 10,
+      "total": 38
     },
     "059015": {
       "foreign": 0,
@@ -30649,7 +30709,7 @@
       "dealer": 26,
       "total": 26
     },
-    "058056": {
+    "065997": {
       "foreign": 0,
       "trust": 0,
       "dealer": 26,
@@ -31384,44 +31444,44 @@
     "050103": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 24,
-      "total": 24
+      "dealer": 25,
+      "total": 25
     },
     "062612": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 24,
-      "total": 24
+      "dealer": 25,
+      "total": 25
     },
     "069029": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 24,
-      "total": 24
+      "dealer": 25,
+      "total": 25
     },
     "064458": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 24,
-      "total": 24
+      "dealer": 25,
+      "total": 25
     },
     "069178": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 24,
-      "total": 24
+      "dealer": 25,
+      "total": 25
     },
     "065855": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 24,
-      "total": 24
+      "dealer": 25,
+      "total": 25
     },
     "066375": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 24,
-      "total": 24
+      "dealer": 25,
+      "total": 25
     },
     "066514": {
       "foreign": 0,
@@ -31714,44 +31774,44 @@
     "073322": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 23,
-      "total": 23
+      "dealer": 25,
+      "total": 25
     },
     "077947": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 23,
-      "total": 23
+      "dealer": 25,
+      "total": 25
     },
     "077999": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 23,
-      "total": 23
+      "dealer": 25,
+      "total": 25
     },
     "077847": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 23,
-      "total": 23
+      "dealer": 25,
+      "total": 25
     },
     "077855": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 23,
-      "total": 23
+      "dealer": 25,
+      "total": 25
     },
     "077795": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 23,
-      "total": 23
+      "dealer": 25,
+      "total": 25
     },
     "073945": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 23,
-      "total": 23
+      "dealer": 25,
+      "total": 25
     },
     "074211": {
       "foreign": 0,
@@ -32704,146 +32764,146 @@
     "041605": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 21,
-      "total": 21
+      "dealer": 24,
+      "total": 24
     },
     "03397T": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 21,
-      "total": 21
+      "dealer": 24,
+      "total": 24
     },
     "057020": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 21,
-      "total": 21
+      "dealer": 24,
+      "total": 24
     },
     "060877": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 21,
-      "total": 21
+      "dealer": 24,
+      "total": 24
     },
     "066529": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 21,
-      "total": 21
+      "dealer": 24,
+      "total": 24
     },
     "078749": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 21,
-      "total": 21
+      "dealer": 24,
+      "total": 24
     },
     "066044": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 21,
-      "total": 21
+      "dealer": 24,
+      "total": 24
     },
     "062199": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 21,
-      "total": 21
+      "dealer": 24,
+      "total": 24
     },
     "065738": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 21,
-      "total": 21
+      "dealer": 24,
+      "total": 24
     },
     "063649": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 21,
-      "total": 21
+      "dealer": 24,
+      "total": 24
     },
     "063664": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 21,
-      "total": 21
+      "dealer": 24,
+      "total": 24
     },
     "063654": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 21,
-      "total": 21
+      "dealer": 24,
+      "total": 24
     },
     "060512": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 21,
-      "total": 21
+      "dealer": 24,
+      "total": 24
     },
     "069219": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 21,
-      "total": 21
+      "dealer": 24,
+      "total": 24
     },
     "061678": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 21,
-      "total": 21
+      "dealer": 24,
+      "total": 24
     },
     "061776": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 21,
-      "total": 21
+      "dealer": 24,
+      "total": 24
     },
     "065036": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 21,
-      "total": 21
+      "dealer": 24,
+      "total": 24
     },
     "065297": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 21,
-      "total": 21
+      "dealer": 24,
+      "total": 24
     },
     "074630": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 21,
-      "total": 21
+      "dealer": 24,
+      "total": 24
     },
     "074578": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 21,
-      "total": 21
+      "dealer": 24,
+      "total": 24
     },
     "074913": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 21,
-      "total": 21
+      "dealer": 24,
+      "total": 24
     },
     "074816": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 21,
-      "total": 21
+      "dealer": 24,
+      "total": 24
     },
     "064973": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 21,
-      "total": 21
+      "dealer": 24,
+      "total": 24
     },
     "078582": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 21,
-      "total": 21
+      "dealer": 24,
+      "total": 24
     },
     "9927": {
       "foreign": 13,
@@ -32854,8 +32914,8 @@
     "064163": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 21,
-      "total": 21
+      "dealer": 24,
+      "total": 24
     },
     "9136": {
       "foreign": 21,
@@ -32866,37 +32926,919 @@
     "064042": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 20,
-      "total": 20
+      "dealer": 23,
+      "total": 23
     },
     "064144": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 20,
-      "total": 20
+      "dealer": 23,
+      "total": 23
     },
     "074398": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 20,
-      "total": 20
+      "dealer": 23,
+      "total": 23
     },
     "074369": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 20,
-      "total": 20
+      "dealer": 23,
+      "total": 23
     },
     "078569": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 20,
-      "total": 20
+      "dealer": 23,
+      "total": 23
+    },
+    "067726": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 23,
+      "total": 23
+    },
+    "066978": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 23,
+      "total": 23
+    },
+    "068576": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 23,
+      "total": 23
+    },
+    "076557": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 23,
+      "total": 23
+    },
+    "076610": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 23,
+      "total": 23
+    },
+    "078669": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 23,
+      "total": 23
+    },
+    "052966": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 23,
+      "total": 23
+    },
+    "071143": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 23,
+      "total": 23
+    },
+    "071263": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 23,
+      "total": 23
+    },
+    "078952": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 23,
+      "total": 23
+    },
+    "078299": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 23,
+      "total": 23
+    },
+    "059369": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 23,
+      "total": 23
+    },
+    "076884": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 23,
+      "total": 23
+    },
+    "069371": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 23,
+      "total": 23
+    },
+    "077862": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 23,
+      "total": 23
+    },
+    "077927": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 23,
+      "total": 23
+    },
+    "060416": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 23,
+      "total": 23
+    },
+    "060739": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 23,
+      "total": 23
+    },
+    "060769": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 23,
+      "total": 23
+    },
+    "077536": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 23,
+      "total": 23
+    },
+    "077662": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 23,
+      "total": 23
+    },
+    "03740T": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 23,
+      "total": 23
+    },
+    "039224": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 23,
+      "total": 23
+    },
+    "038683": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 23,
+      "total": 23
+    },
+    "063789": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 23,
+      "total": 23
+    },
+    "063909": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 23,
+      "total": 23
+    },
+    "064121": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 23,
+      "total": 23
+    },
+    "073804": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 23,
+      "total": 23
+    },
+    "084021": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 23,
+      "total": 23
+    },
+    "057158": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 23,
+      "total": 23
+    },
+    "056848": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 23,
+      "total": 23
+    },
+    "045120": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 23,
+      "total": 23
+    },
+    "072216": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 23,
+      "total": 23
+    },
+    "03322T": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 23,
+      "total": 23
+    },
+    "060224": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 23,
+      "total": 23
+    },
+    "00876": {
+      "foreign": 17,
+      "trust": 0,
+      "dealer": 5,
+      "total": 22
+    },
+    "061141": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 22,
+      "total": 22
+    },
+    "4552": {
+      "foreign": 18,
+      "trust": 0,
+      "dealer": 4,
+      "total": 22
+    },
+    "047577": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 22,
+      "total": 22
+    },
+    "035600": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 22,
+      "total": 22
+    },
+    "071659": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 22,
+      "total": 22
+    },
+    "071579": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 22,
+      "total": 22
+    },
+    "057255": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 22,
+      "total": 22
+    },
+    "072735": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 22,
+      "total": 22
+    },
+    "073764": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 22,
+      "total": 22
+    },
+    "063469": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 22,
+      "total": 22
+    },
+    "049649": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 22,
+      "total": 22
+    },
+    "073977": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 22,
+      "total": 22
+    },
+    "073993": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 22,
+      "total": 22
+    },
+    "063727": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 22,
+      "total": 22
+    },
+    "073680": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 22,
+      "total": 22
+    },
+    "073483": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 22,
+      "total": 22
+    },
+    "073512": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 22,
+      "total": 22
+    },
+    "058007": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 22,
+      "total": 22
+    },
+    "037046": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 22,
+      "total": 22
+    },
+    "060192": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 22,
+      "total": 22
+    },
+    "060311": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 22,
+      "total": 22
+    },
+    "074271": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 22,
+      "total": 22
+    },
+    "060763": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 22,
+      "total": 22
+    },
+    "077290": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 22,
+      "total": 22
+    },
+    "052101": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 22,
+      "total": 22
+    },
+    "078501": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 22,
+      "total": 22
+    },
+    "078465": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 22,
+      "total": 22
+    },
+    "078047": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 22,
+      "total": 22
+    },
+    "078934": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 22,
+      "total": 22
+    },
+    "078783": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 22,
+      "total": 22
+    },
+    "068919": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 22,
+      "total": 22
+    },
+    "076468": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 22,
+      "total": 22
+    },
+    "076473": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 22,
+      "total": 22
+    },
+    "068610": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 22,
+      "total": 22
+    },
+    "068717": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 22,
+      "total": 22
+    },
+    "068462": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 22,
+      "total": 22
+    },
+    "066982": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 22,
+      "total": 22
+    },
+    "075584": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 22,
+      "total": 22
+    },
+    "075554": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 22,
+      "total": 22
+    },
+    "067540": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 22,
+      "total": 22
     },
     "078563": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 20,
+      "dealer": 22,
+      "total": 22
+    },
+    "067340": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 22,
+      "total": 22
+    },
+    "067858": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 22,
+      "total": 22
+    },
+    "067931": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 22,
+      "total": 22
+    },
+    "075919": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 22,
+      "total": 22
+    },
+    "075785": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 22,
+      "total": 22
+    },
+    "066213": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 22,
+      "total": 22
+    },
+    "075207": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 22,
+      "total": 22
+    },
+    "910322": {
+      "foreign": 22,
+      "trust": 0,
+      "dealer": 0,
+      "total": 22
+    },
+    "020029": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 21,
+      "total": 21
+    },
+    "060990": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 21,
+      "total": 21
+    },
+    "055810": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 21,
+      "total": 21
+    },
+    "065788": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 21,
+      "total": 21
+    },
+    "065781": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 21,
+      "total": 21
+    },
+    "065707": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 21,
+      "total": 21
+    },
+    "065900": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 21,
+      "total": 21
+    },
+    "6668": {
+      "foreign": 21,
+      "trust": 0,
+      "dealer": 0,
+      "total": 21
+    },
+    "065358": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 21,
+      "total": 21
+    },
+    "075041": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 21,
+      "total": 21
+    },
+    "066502": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 21,
+      "total": 21
+    },
+    "054066": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 21,
+      "total": 21
+    },
+    "066249": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 21,
+      "total": 21
+    },
+    "043903": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 21,
+      "total": 21
+    },
+    "043180": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 21,
+      "total": 21
+    },
+    "074651": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 21,
+      "total": 21
+    },
+    "067914": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 21,
+      "total": 21
+    },
+    "067552": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 21,
+      "total": 21
+    },
+    "067013": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 21,
+      "total": 21
+    },
+    "076041": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 21,
+      "total": 21
+    },
+    "068524": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 21,
+      "total": 21
+    },
+    "076246": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 21,
+      "total": 21
+    },
+    "058603": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 21,
+      "total": 21
+    },
+    "068820": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 21,
+      "total": 21
+    },
+    "054789": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 21,
+      "total": 21
+    },
+    "071305": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 21,
+      "total": 21
+    },
+    "053359": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 21,
+      "total": 21
+    },
+    "049694": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 21,
+      "total": 21
+    },
+    "070957": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 21,
+      "total": 21
+    },
+    "060040": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 21,
+      "total": 21
+    },
+    "078232": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 21,
+      "total": 21
+    },
+    "077252": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 21,
+      "total": 21
+    },
+    "077254": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 21,
+      "total": 21
+    },
+    "069567": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 21,
+      "total": 21
+    },
+    "069612": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 21,
+      "total": 21
+    },
+    "077017": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 21,
+      "total": 21
+    },
+    "077123": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 21,
+      "total": 21
+    },
+    "077121": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 21,
+      "total": 21
+    },
+    "077131": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 21,
+      "total": 21
+    },
+    "061955": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 21,
+      "total": 21
+    },
+    "061968": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 21,
+      "total": 21
+    },
+    "059194": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 21,
+      "total": 21
+    },
+    "077998": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 21,
+      "total": 21
+    },
+    "077685": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 21,
+      "total": 21
+    },
+    "077560": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 21,
+      "total": 21
+    },
+    "069772": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 21,
+      "total": 21
+    },
+    "064407": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 21,
+      "total": 21
+    },
+    "063276": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 21,
+      "total": 21
+    },
+    "072977": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 21,
+      "total": 21
+    },
+    "063204": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 21,
+      "total": 21
+    },
+    "073349": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 21,
+      "total": 21
+    },
+    "038771": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 21,
+      "total": 21
+    },
+    "063588": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 21,
+      "total": 21
+    },
+    "063547": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 21,
+      "total": 21
+    },
+    "062205": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 21,
+      "total": 21
+    },
+    "062382": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 21,
+      "total": 21
+    },
+    "055647": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 21,
+      "total": 21
+    },
+    "079327": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 21,
+      "total": 21
+    },
+    "072478": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 21,
+      "total": 21
+    },
+    "079251": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 21,
+      "total": 21
+    },
+    "031292": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 21,
+      "total": 21
+    },
+    "072182": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 21,
+      "total": 21
+    },
+    "2109": {
+      "foreign": 15,
+      "trust": 0,
+      "dealer": 5,
       "total": 20
     },
     "078090": {
@@ -33064,68 +34006,68 @@
     "064671": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 20,
+      "dealer": 19,
       "total": 20
     },
     "064346": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 20,
+      "dealer": 151,
       "total": 20
     },
     "064397": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 20,
-      "total": 20
+      "dealer": 19,
+      "total": 19
     },
     "065234": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 20,
-      "total": 20
+      "dealer": 19,
+      "total": 19
     },
     "065432": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 20,
-      "total": 20
+      "dealer": 19,
+      "total": 19
     },
     "069366": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 20,
-      "total": 20
+      "dealer": 19,
+      "total": 19
     },
     "069328": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 20,
-      "total": 20
+      "dealer": 19,
+      "total": 19
     },
     "061803": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 20,
-      "total": 20
+      "dealer": 19,
+      "total": 19
     },
     "061676": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 20,
-      "total": 20
+      "dealer": 19,
+      "total": 19
     },
     "069182": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 20,
-      "total": 20
+      "dealer": 19,
+      "total": 19
     },
     "069166": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 20,
-      "total": 20
+      "dealer": 19,
+      "total": 19
     },
     "061815": {
       "foreign": 0,
@@ -33154,128 +34096,128 @@
     "060531": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 20,
-      "total": 20
+      "dealer": 19,
+      "total": 19
     },
     "060565": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 20,
-      "total": 20
+      "dealer": 19,
+      "total": 19
     },
     "058141": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 20,
-      "total": 20
+      "dealer": 19,
+      "total": 19
     },
     "058129": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 20,
-      "total": 20
+      "dealer": 19,
+      "total": 19
     },
     "063545": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 20,
-      "total": 20
+      "dealer": 19,
+      "total": 19
     },
     "063611": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 20,
-      "total": 20
+      "dealer": 19,
+      "total": 19
     },
     "065871": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 20,
-      "total": 20
+      "dealer": 19,
+      "total": 19
     },
     "065900": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 20,
-      "total": 20
+      "dealer": 19,
+      "total": 19
     },
     "065713": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 20,
-      "total": 20
+      "dealer": 19,
+      "total": 19
     },
     "065687": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 20,
-      "total": 20
+      "dealer": 19,
+      "total": 19
     },
     "065798": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 20,
-      "total": 20
+      "dealer": 19,
+      "total": 19
     },
     "062296": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 20,
-      "total": 20
+      "dealer": 19,
+      "total": 19
     },
     "066049": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 20,
-      "total": 20
+      "dealer": 19,
+      "total": 19
     },
     "078728": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 20,
-      "total": 20
+      "dealer": 19,
+      "total": 19
     },
     "078720": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 20,
-      "total": 20
+      "dealer": 19,
+      "total": 19
     },
     "065927": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 20,
-      "total": 20
+      "dealer": 19,
+      "total": 19
     },
     "066089": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 20,
-      "total": 20
+      "dealer": 19,
+      "total": 19
     },
     "066294": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 20,
-      "total": 20
+      "dealer": 19,
+      "total": 19
     },
     "066396": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 20,
-      "total": 20
+      "dealer": 19,
+      "total": 19
     },
     "079155": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 20,
-      "total": 20
+      "dealer": 19,
+      "total": 19
     },
     "044795": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 20,
-      "total": 20
+      "dealer": 19,
+      "total": 19
     },
     "045746": {
       "foreign": 0,
@@ -35017,7 +35959,7 @@
       "dealer": 18,
       "total": 18
     },
-    "078399": {
+    "075093": {
       "foreign": 0,
       "trust": 0,
       "dealer": 18,
@@ -37447,7 +38389,7 @@
       "dealer": 13,
       "total": 13
     },
-    "062368": {
+    "070290": {
       "foreign": 0,
       "trust": 0,
       "dealer": 13,
@@ -40114,32 +41056,32 @@
     "074600": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 10,
-      "total": 10
+      "dealer": 11,
+      "total": 11
     },
     "064442": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 10,
-      "total": 10
+      "dealer": 11,
+      "total": 11
     },
     "064411": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 10,
-      "total": 10
+      "dealer": 11,
+      "total": 11
     },
     "064568": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 10,
-      "total": 10
+      "dealer": 11,
+      "total": 11
     },
     "064527": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 10,
-      "total": 10
+      "dealer": 11,
+      "total": 11
     },
     "074518": {
       "foreign": 0,
@@ -40162,50 +41104,50 @@
     "064204": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 10,
-      "total": 10
+      "dealer": 11,
+      "total": 11
     },
     "064223": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 10,
-      "total": 10
+      "dealer": 11,
+      "total": 11
     },
     "064898": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 10,
-      "total": 10
+      "dealer": 11,
+      "total": 11
     },
     "074865": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 10,
-      "total": 10
+      "dealer": 11,
+      "total": 11
     },
     "074920": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 10,
-      "total": 10
+      "dealer": 11,
+      "total": 11
     },
     "064736": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 10,
-      "total": 10
+      "dealer": 11,
+      "total": 11
     },
     "064581": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 10,
-      "total": 10
+      "dealer": 11,
+      "total": 11
     },
     "064675": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 10,
-      "total": 10
+      "dealer": 19,
+      "total": 11
     },
     "064680": {
       "foreign": 20,
@@ -40720,19 +41662,19 @@
     "076892": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 10,
+      "dealer": -11,
       "total": 10
     },
     "068005": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 10,
+      "dealer": 0,
       "total": 10
     },
     "067937": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 10,
+      "dealer": 8,
       "total": 10
     },
     "061088": {
@@ -41489,115 +42431,1309 @@
       "foreign": 9,
       "trust": 0,
       "dealer": 0,
-      "total": 9
+      "total": 10
     },
     "00851": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 9,
-      "total": 9
+      "dealer": 10,
+      "total": 10
     },
     "071052": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 9,
-      "total": 9
+      "dealer": 10,
+      "total": 10
     },
     "071025": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 9,
-      "total": 9
+      "dealer": 10,
+      "total": 10
     },
     "079825": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 9,
-      "total": 9
+      "dealer": 10,
+      "total": 10
     },
     "071254": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 9,
-      "total": 9
+      "dealer": 10,
+      "total": 10
     },
     "059857": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 9,
-      "total": 9
+      "dealer": 10,
+      "total": 10
     },
     "059456": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 9,
-      "total": 9
+      "dealer": 10,
+      "total": 10
     },
     "079686": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 9,
-      "total": 9
+      "dealer": 10,
+      "total": 10
     },
     "079465": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 9,
-      "total": 9
+      "dealer": 10,
+      "total": 10
     },
     "070511": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 9,
-      "total": 9
+      "dealer": 10,
+      "total": 10
     },
     "075856": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 9,
-      "total": 9
+      "dealer": 10,
+      "total": 10
     },
     "079350": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 9,
-      "total": 9
+      "dealer": 10,
+      "total": 10
     },
     "070363": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 9,
-      "total": 9
+      "dealer": 10,
+      "total": 10
     },
     "070266": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 9,
-      "total": 9
+      "dealer": 10,
+      "total": 10
+    },
+    "064499": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "064582": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "064745": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "066222": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "066251": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "074937": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "058859": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "075002": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "058792": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "054191": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "054411": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "066113": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "066217": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "074841": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "066012": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "066092": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "074637": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "065991": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "03463T": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "075262": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "066874": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "066819": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "066853": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "066845": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "075323": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "075317": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "066888": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "066925": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "075405": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "066416": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "066441": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "066452": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "075080": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "066565": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "066537": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "066594": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "066658": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "066670": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "058602": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "068761": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "076191": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "068483": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "076122": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "068546": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "068505": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "068532": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "075985": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "054553": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "054554": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "054496": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "054902": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "054790": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "054705": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "076379": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "076387": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "061151": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "061196": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "061228": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "061249": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "061253": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "061262": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "068877": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "061437": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "076508": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "075572": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "067163": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "067024": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "066972": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "075457": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "067407": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "067379": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "067391": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "067555": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "067581": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "067595": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "067585": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "067546": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "067198": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "075690": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "067270": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "067718": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "067631": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "067968": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "068017": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "075734": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "068113": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "068277": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "068261": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "068205": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "068235": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "068183": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "069853": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "069876": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "069996": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "077563": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "077608": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "077618": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "077776": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "077788": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "059078": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "070427": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "059145": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "059133": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "050895": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "060741": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "059006": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "058932": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "070341": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "060403": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "070215": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "070222": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "076722": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "061824": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "069210": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "069142": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "076692": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "069396": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "062085": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "062061": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "076811": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "069304": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "076749": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "069543": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "077093": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "077103": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "077186": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "077190": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "077145": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "077002": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "076985": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "076917": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "076973": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "052558": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "052690": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "052697": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "060034": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "052746": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "070829": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "070825": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "078068": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "078065": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "078056": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "078038": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "078541": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "078506": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "052781": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "078549": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "078544": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "078443": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "078391": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "078349": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "078315": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "078333": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "059862": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "059921": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "052158": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "059827": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "059794": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "052205": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "070627": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "051607": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "051543": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "070710": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "059763": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "059537": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "059500": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "070584": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "070597": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "051247": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "059282": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "051225": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "051220": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "050996": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "051090": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "078711": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "071067": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "078660": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "078605": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "070941": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "070923": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "070902": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "050496": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "053171": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "053030": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "052988": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "053269": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "053422": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "053521": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "060675": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "055114": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "055162": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "03624T": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "050073": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "071271": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "078729": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "078735": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "078825": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "071428": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
+    },
+    "071335": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 10,
+      "total": 10
     },
     "079302": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 9,
-      "total": 9
+      "dealer": 10,
+      "total": 10
     },
     "059074": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 9,
-      "total": 9
+      "dealer": -15,
+      "total": 10
     },
     "075677": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 9,
-      "total": 9
+      "dealer": 143,
+      "total": 10
     },
     "075664": {
       "foreign": 0,
       "trust": 0,
-      "dealer": 9,
-      "total": 9
+      "dealer": 0,
+      "total": 10
     },
     "053267": {
       "foreign": 0,
@@ -42940,7 +45076,391 @@
     "00638R": {
       "foreign": 10,
       "trust": 0,
-      "dealer": -2,
+      "dealer": 8,
+      "total": 8
+    },
+    "049484": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 8,
+      "total": 8
+    },
+    "049460": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 8,
+      "total": 8
+    },
+    "038660": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 8,
+      "total": 8
+    },
+    "038824": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 8,
+      "total": 8
+    },
+    "073618": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 8,
+      "total": 8
+    },
+    "073534": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 8,
+      "total": 8
+    },
+    "073048": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 8,
+      "total": 8
+    },
+    "072975": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 8,
+      "total": 8
+    },
+    "063094": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 8,
+      "total": 8
+    },
+    "063221": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 8,
+      "total": 8
+    },
+    "063133": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 8,
+      "total": 8
+    },
+    "062991": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 8,
+      "total": 8
+    },
+    "057710": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 8,
+      "total": 8
+    },
+    "057846": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 8,
+      "total": 8
+    },
+    "072142": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 8,
+      "total": 8
+    },
+    "03360T": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 8,
+      "total": 8
+    },
+    "03611T": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 8,
+      "total": 8
+    },
+    "03602T": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 8,
+      "total": 8
+    },
+    "056375": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 8,
+      "total": 8
+    },
+    "056478": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 8,
+      "total": 8
+    },
+    "035349": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 8,
+      "total": 8
+    },
+    "071721": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 8,
+      "total": 8
+    },
+    "00656R": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 8,
+      "total": 8
+    },
+    "08803U": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 8,
+      "total": 8
+    },
+    "057233": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 8,
+      "total": 8
+    },
+    "062220": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 8,
+      "total": 8
+    },
+    "057539": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 8,
+      "total": 8
+    },
+    "057549": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 8,
+      "total": 8
+    },
+    "072785": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 8,
+      "total": 8
+    },
+    "072301": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 8,
+      "total": 8
+    },
+    "079249": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 8,
+      "total": 8
+    },
+    "064388": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 8,
+      "total": 8
+    },
+    "064156": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 8,
+      "total": 8
+    },
+    "058359": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 8,
+      "total": 8
+    },
+    "065852": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 8,
+      "total": 8
+    },
+    "065862": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 8,
+      "total": 8
+    },
+    "065808": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 8,
+      "total": 8
+    },
+    "060640": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 8,
+      "total": 8
+    },
+    "074499": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 8,
+      "total": 8
+    },
+    "064902": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 8,
+      "total": 8
+    },
+    "064903": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 8,
+      "total": 8
+    },
+    "064928": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 8,
+      "total": 8
+    },
+    "6957": {
+      "foreign": 8,
+      "trust": 0,
+      "dealer": 0,
+      "total": 8
+    },
+    "065127": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 8,
+      "total": 8
+    },
+    "066347": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 8,
+      "total": 8
+    },
+    "074692": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 8,
+      "total": 8
+    },
+    "065993": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 8,
+      "total": 8
+    },
+    "075333": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 8,
+      "total": 8
+    },
+    "075326": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 8,
+      "total": 8
+    },
+    "066723": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 8,
+      "total": 8
+    },
+    "058873": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 8,
+      "total": 8
+    },
+    "058865": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 8,
+      "total": 8
+    },
+    "066432": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 8,
+      "total": 8
+    },
+    "066425": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 8,
+      "total": 8
+    },
+    "075031": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 8,
+      "total": 8
+    },
+    "066585": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 8,
+      "total": 8
+    },
+    "068752": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 8,
+      "total": 8
+    },
+    "068773": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 8,
+      "total": 8
+    },
+    "068726": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 8,
+      "total": 8
+    },
+    "068867": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 8,
+      "total": 8
+    },
+    "054863": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 8,
+      "total": 8
+    },
+    "069049": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 8,
+      "total": 8
+    },
+    "068967": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 8,
+      "total": 8
+    },
+    "061566": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": 8,
       "total": 8
     },
     "2832": {
@@ -43075,7 +45595,7 @@
       "dealer": 7,
       "total": 7
     },
-    "058897": {
+    "075217": {
       "foreign": 0,
       "trust": 0,
       "dealer": 7,
@@ -44429,7 +46949,7 @@
       "foreign": 0,
       "trust": 0,
       "dealer": 5,
-      "total": 5
+      "total": 6
     },
     "3308": {
       "foreign": 5,
@@ -47395,7 +49915,7 @@
       "dealer": 3,
       "total": 3
     },
-    "073038": {
+    "063665": {
       "foreign": 0,
       "trust": 0,
       "dealer": 3,
@@ -48151,7 +50671,7 @@
       "dealer": 3,
       "total": 3
     },
-    "069153": {
+    "078278": {
       "foreign": 0,
       "trust": 0,
       "dealer": 3,
@@ -49147,7 +51667,7 @@
       "dealer": 2,
       "total": 2
     },
-    "073234": {
+    "040607": {
       "foreign": 0,
       "trust": 0,
       "dealer": 2,
@@ -49765,7 +52285,7 @@
       "dealer": 2,
       "total": 2
     },
-    "074626": {
+    "066004": {
       "foreign": 0,
       "trust": 0,
       "dealer": 2,
@@ -50947,7 +53467,7 @@
       "dealer": 1,
       "total": 1
     },
-    "076116": {
+    "072140": {
       "foreign": 0,
       "trust": 0,
       "dealer": 1,
@@ -52735,7 +55255,7 @@
       "dealer": 1,
       "total": 1
     },
-    "058178": {
+    "046939": {
       "foreign": 0,
       "trust": 0,
       "dealer": 1,
@@ -54487,7 +57007,7 @@
       "dealer": 0,
       "total": 0
     },
-    "058872": {
+    "068760": {
       "foreign": 0,
       "trust": 0,
       "dealer": 0,
@@ -54757,7 +57277,7 @@
       "dealer": 0,
       "total": 0
     },
-    "059763": {
+    "051993": {
       "foreign": 0,
       "trust": 0,
       "dealer": 0,
@@ -55954,8 +58474,8 @@
     "4545": {
       "foreign": 0,
       "trust": 0,
-      "dealer": -1,
-      "total": -1
+      "dealer": 0,
+      "total": 0
     },
     "6890": {
       "foreign": -3,
@@ -55966,7 +58486,13 @@
     "078559": {
       "foreign": 0,
       "trust": 0,
-      "dealer": -1,
+      "dealer": 0,
+      "total": 0
+    },
+    "6515": {
+      "foreign": 3,
+      "trust": -5,
+      "dealer": 2,
       "total": -1
     },
     "052965": {
@@ -56452,13 +58978,13 @@
     "065511": {
       "foreign": 0,
       "trust": 0,
-      "dealer": -1,
+      "dealer": -2,
       "total": -1
     },
     "065550": {
       "foreign": 0,
       "trust": 0,
-      "dealer": -1,
+      "dealer": 1,
       "total": -1
     },
     "065656": {
@@ -56560,7 +59086,7 @@
     "079873": {
       "foreign": 0,
       "trust": 0,
-      "dealer": -1,
+      "dealer": 0,
       "total": -1
     },
     "079874": {
@@ -58960,7 +61486,919 @@
     "2901": {
       "foreign": -2,
       "trust": 0,
+      "dealer": 0,
+      "total": -2
+    },
+    "6951": {
+      "foreign": -2,
+      "trust": 0,
+      "dealer": 0,
+      "total": -2
+    },
+    "6645": {
+      "foreign": -2,
+      "trust": 0,
+      "dealer": 0,
+      "total": -2
+    },
+    "6581": {
+      "foreign": -1,
+      "trust": 0,
       "dealer": -1,
+      "total": -2
+    },
+    "074875": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -2,
+      "total": -2
+    },
+    "066241": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -2,
+      "total": -2
+    },
+    "066295": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -2,
+      "total": -2
+    },
+    "074978": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -2,
+      "total": -2
+    },
+    "074805": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -2,
+      "total": -2
+    },
+    "074801": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -2,
+      "total": -2
+    },
+    "075406": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -2,
+      "total": -2
+    },
+    "075371": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -2,
+      "total": -2
+    },
+    "075375": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -2,
+      "total": -2
+    },
+    "075383": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -2,
+      "total": -2
+    },
+    "066758": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -2,
+      "total": -2
+    },
+    "066746": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -2,
+      "total": -2
+    },
+    "066589": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -2,
+      "total": -2
+    },
+    "058929": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -2,
+      "total": -2
+    },
+    "066391": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -2,
+      "total": -2
+    },
+    "075077": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -2,
+      "total": -2
+    },
+    "068480": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -2,
+      "total": -2
+    },
+    "068534": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -2,
+      "total": -2
+    },
+    "075994": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -2,
+      "total": -2
+    },
+    "076336": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -2,
+      "total": -2
+    },
+    "058617": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -2,
+      "total": -2
+    },
+    "068679": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -2,
+      "total": -2
+    },
+    "068646": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -2,
+      "total": -2
+    },
+    "076225": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -2,
+      "total": -2
+    },
+    "068824": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -2,
+      "total": -2
+    },
+    "068870": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -2,
+      "total": -2
+    },
+    "068861": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -2,
+      "total": -2
+    },
+    "054492": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -2,
+      "total": -2
+    },
+    "054711": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -2,
+      "total": -2
+    },
+    "061450": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -2,
+      "total": -2
+    },
+    "061416": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -2,
+      "total": -2
+    },
+    "068950": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -2,
+      "total": -2
+    },
+    "068922": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -2,
+      "total": -2
+    },
+    "075694": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -2,
+      "total": -2
+    },
+    "066945": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -2,
+      "total": -2
+    },
+    "066970": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -2,
+      "total": -2
+    },
+    "067005": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -2,
+      "total": -2
+    },
+    "066999": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -2,
+      "total": -2
+    },
+    "067143": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -2,
+      "total": -2
+    },
+    "067988": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -2,
+      "total": -2
+    },
+    "067906": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -2,
+      "total": -2
+    },
+    "067765": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -2,
+      "total": -2
+    },
+    "075837": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -2,
+      "total": -2
+    },
+    "068262": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -2,
+      "total": -2
+    },
+    "059029": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -2,
+      "total": -2
+    },
+    "058945": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -2,
+      "total": -2
+    },
+    "058964": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -2,
+      "total": -2
+    },
+    "060704": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -2,
+      "total": -2
+    },
+    "077911": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -2,
+      "total": -2
+    },
+    "077623": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -2,
+      "total": -2
+    },
+    "077786": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -2,
+      "total": -2
+    },
+    "077756": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -2,
+      "total": -2
+    },
+    "069755": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -2,
+      "total": -2
+    },
+    "069815": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -2,
+      "total": -2
+    },
+    "069810": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -2,
+      "total": -2
+    },
+    "077083": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -2,
+      "total": -2
+    },
+    "077163": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -2,
+      "total": -2
+    },
+    "076904": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -2,
+      "total": -2
+    },
+    "076982": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -2,
+      "total": -2
+    },
+    "077030": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -2,
+      "total": -2
+    },
+    "069296": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -2,
+      "total": -2
+    },
+    "069338": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -2,
+      "total": -2
+    },
+    "076759": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -2,
+      "total": -2
+    },
+    "061982": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -2,
+      "total": -2
+    },
+    "069352": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -2,
+      "total": -2
+    },
+    "076732": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -2,
+      "total": -2
+    },
+    "069163": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -2,
+      "total": -2
+    },
+    "069214": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -2,
+      "total": -2
+    },
+    "061725": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -2,
+      "total": -2
+    },
+    "069095": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -2,
+      "total": -2
+    },
+    "078115": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -2,
+      "total": -2
+    },
+    "052425": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -2,
+      "total": -2
+    },
+    "059991": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -2,
+      "total": -2
+    },
+    "070818": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -2,
+      "total": -2
+    },
+    "078382": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -2,
+      "total": -2
+    },
+    "078280": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -2,
+      "total": -2
+    },
+    "078515": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -2,
+      "total": -2
+    },
+    "051619": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -2,
+      "total": -2
+    },
+    "059468": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -2,
+      "total": -2
+    },
+    "070450": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -2,
+      "total": -2
+    },
+    "059587": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -2,
+      "total": -2
+    },
+    "059615": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -2,
+      "total": -2
+    },
+    "051442": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -2,
+      "total": -2
+    },
+    "078588": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -2,
+      "total": -2
+    },
+    "052840": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -2,
+      "total": -2
+    },
+    "052947": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -2,
+      "total": -2
+    },
+    "053276": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -2,
+      "total": -2
+    },
+    "055289": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -2,
+      "total": -2
+    },
+    "055075": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -2,
+      "total": -2
+    },
+    "071205": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -2,
+      "total": -2
+    },
+    "079019": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -2,
+      "total": -2
+    },
+    "079098": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -2,
+      "total": -2
+    },
+    "071496": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -2,
+      "total": -2
+    },
+    "071990": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -2,
+      "total": -2
+    },
+    "03333T": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -2,
+      "total": -2
+    },
+    "058676": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -2,
+      "total": -2
+    },
+    "058736": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -2,
+      "total": -2
+    },
+    "071737": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -2,
+      "total": -2
+    },
+    "035329": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -2,
+      "total": -2
+    },
+    "056844": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -2,
+      "total": -2
+    },
+    "057072": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -2,
+      "total": -2
+    },
+    "030592": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -2,
+      "total": -2
+    },
+    "072928": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -2,
+      "total": -2
+    },
+    "08654U": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -2,
+      "total": -2
+    },
+    "086470": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -2,
+      "total": -2
+    },
+    "08516U": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -2,
+      "total": -2
+    },
+    "057478": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -2,
+      "total": -2
+    },
+    "062253": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -2,
+      "total": -2
+    },
+    "057173": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -2,
+      "total": -2
+    },
+    "088416": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -2,
+      "total": -2
+    },
+    "072469": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -2,
+      "total": -2
+    },
+    "072379": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -2,
+      "total": -2
+    },
+    "072423": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -2,
+      "total": -2
+    },
+    "055590": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -2,
+      "total": -2
+    },
+    "072309": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -2,
+      "total": -2
+    },
+    "079621": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -2,
+      "total": -2
+    },
+    "079751": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -2,
+      "total": -2
+    },
+    "079551": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -2,
+      "total": -2
+    },
+    "079392": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -2,
+      "total": -2
+    },
+    "072492": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -2,
+      "total": -2
+    },
+    "074080": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -2,
+      "total": -2
+    },
+    "063861": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -2,
+      "total": -2
+    },
+    "1472": {
+      "foreign": -3,
+      "trust": 0,
+      "dealer": 1,
+      "total": -2
+    },
+    "1233": {
+      "foreign": -2,
+      "trust": 0,
+      "dealer": 0,
+      "total": -2
+    },
+    "1410": {
+      "foreign": -2,
+      "trust": 0,
+      "dealer": 0,
+      "total": -2
+    },
+    "063656": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -2,
+      "total": -2
+    },
+    "1109": {
+      "foreign": -2,
+      "trust": 0,
+      "dealer": 0,
+      "total": -2
+    },
+    "1101B": {
+      "foreign": -2,
+      "trust": 0,
+      "dealer": 0,
+      "total": -2
+    },
+    "08983U": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -2,
+      "total": -2
+    },
+    "063576": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -2,
+      "total": -2
+    },
+    "03980T": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -2,
+      "total": -2
+    },
+    "038847": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -2,
+      "total": -2
+    },
+    "039021": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -2,
+      "total": -2
+    },
+    "03897T": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -2,
+      "total": -2
+    },
+    "073635": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -2,
+      "total": -2
+    },
+    "073588": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -2,
+      "total": -2
+    },
+    "073561": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -2,
+      "total": -2
+    },
+    "036865": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -2,
+      "total": -2
+    },
+    "056114": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -2,
+      "total": -2
+    },
+    "063366": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -2,
+      "total": -2
+    },
+    "03717T": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -2,
+      "total": -2
+    },
+    "061075": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -2,
+      "total": -2
+    },
+    "058004": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -2,
+      "total": -2
+    },
+    "062943": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -2,
+      "total": -2
+    },
+    "057851": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -2,
+      "total": -2
+    },
+    "060199": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -2,
+      "total": -2
+    },
+    "074255": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -2,
+      "total": -2
+    },
+    "6230": {
+      "foreign": -2,
+      "trust": 0,
+      "dealer": 0,
+      "total": -2
+    },
+    "8487": {
+      "foreign": -7,
+      "trust": 0,
+      "dealer": 4,
       "total": -3
     },
     "077593": {
@@ -62437,7 +65875,7 @@
       "dealer": -6,
       "total": -6
     },
-    "03706T": {
+    "078548": {
       "foreign": 0,
       "trust": 0,
       "dealer": -6,
@@ -62458,7 +65896,7 @@
     "2702": {
       "foreign": -6,
       "trust": 0,
-      "dealer": 0,
+      "dealer": -6,
       "total": -6
     },
     "054346": {
@@ -63040,193 +66478,211 @@
     "070816": {
       "foreign": 0,
       "trust": 0,
-      "dealer": -8,
-      "total": -8
+      "dealer": -7,
+      "total": -7
     },
     "071134": {
       "foreign": 0,
       "trust": 0,
-      "dealer": -8,
-      "total": -8
+      "dealer": -7,
+      "total": -7
     },
     "071238": {
       "foreign": 0,
       "trust": 0,
-      "dealer": -8,
-      "total": -8
+      "dealer": -7,
+      "total": -7
     },
     "076183": {
       "foreign": 0,
       "trust": 0,
-      "dealer": -8,
-      "total": -8
+      "dealer": -7,
+      "total": -7
     },
     "060003": {
       "foreign": 0,
       "trust": 0,
-      "dealer": -8,
-      "total": -8
+      "dealer": -7,
+      "total": -7
     },
     "060010": {
       "foreign": 0,
       "trust": 0,
-      "dealer": -8,
-      "total": -8
+      "dealer": -7,
+      "total": -7
     },
     "059213": {
       "foreign": 0,
       "trust": 0,
-      "dealer": -8,
-      "total": -8
+      "dealer": -7,
+      "total": -7
     },
     "059237": {
       "foreign": 0,
       "trust": 0,
-      "dealer": -8,
-      "total": -8
+      "dealer": -7,
+      "total": -7
     },
     "075817": {
       "foreign": 0,
       "trust": 0,
-      "dealer": -8,
-      "total": -8
+      "dealer": -7,
+      "total": -7
     },
     "07932U": {
       "foreign": 0,
       "trust": 0,
-      "dealer": -8,
-      "total": -8
+      "dealer": -7,
+      "total": -7
     },
     "079267": {
       "foreign": 0,
       "trust": 0,
-      "dealer": -8,
-      "total": -8
+      "dealer": -7,
+      "total": -7
     },
     "070237": {
       "foreign": 0,
       "trust": 0,
-      "dealer": -8,
-      "total": -8
+      "dealer": -7,
+      "total": -7
     },
     "070241": {
       "foreign": 0,
       "trust": 0,
-      "dealer": -8,
-      "total": -8
+      "dealer": -7,
+      "total": -7
     },
     "04141T": {
       "foreign": 0,
       "trust": 0,
-      "dealer": -8,
-      "total": -8
+      "dealer": -7,
+      "total": -7
     },
     "058042": {
       "foreign": 0,
       "trust": 0,
-      "dealer": -8,
-      "total": -8
+      "dealer": -7,
+      "total": -7
     },
     "057675": {
       "foreign": 0,
       "trust": 0,
-      "dealer": -8,
-      "total": -8
+      "dealer": -7,
+      "total": -7
     },
     "057788": {
       "foreign": 0,
       "trust": 0,
-      "dealer": -8,
-      "total": -8
+      "dealer": -7,
+      "total": -7
     },
     "069687": {
       "foreign": 0,
       "trust": 0,
-      "dealer": -8,
-      "total": -8
+      "dealer": -7,
+      "total": -7
     },
     "069584": {
       "foreign": 0,
       "trust": 0,
-      "dealer": -8,
-      "total": -8
+      "dealer": -7,
+      "total": -7
     },
     "056720": {
       "foreign": 0,
       "trust": 0,
-      "dealer": -8,
-      "total": -8
+      "dealer": -7,
+      "total": -7
     },
     "063345": {
       "foreign": 0,
       "trust": 0,
-      "dealer": -8,
-      "total": -8
+      "dealer": -7,
+      "total": -7
     },
     "067041": {
       "foreign": 0,
       "trust": 0,
-      "dealer": -8,
-      "total": -8
+      "dealer": -7,
+      "total": -7
     },
     "03392T": {
       "foreign": 0,
       "trust": 0,
-      "dealer": -8,
-      "total": -8
+      "dealer": -7,
+      "total": -7
     },
     "053505": {
       "foreign": 0,
       "trust": 0,
-      "dealer": -8,
-      "total": -8
+      "dealer": -7,
+      "total": -7
     },
     "053520": {
       "foreign": 0,
       "trust": 0,
-      "dealer": -8,
-      "total": -8
+      "dealer": -7,
+      "total": -7
     },
     "075590": {
       "foreign": 0,
       "trust": 0,
-      "dealer": -8,
-      "total": -8
+      "dealer": -7,
+      "total": -7
     },
     "075553": {
       "foreign": 0,
       "trust": 0,
-      "dealer": -8,
-      "total": -8
+      "dealer": -7,
+      "total": -7
     },
     "065836": {
       "foreign": 0,
       "trust": 0,
-      "dealer": -8,
-      "total": -8
+      "dealer": -7,
+      "total": -7
     },
     "062146": {
       "foreign": 0,
       "trust": 0,
-      "dealer": -8,
-      "total": -8
+      "dealer": -7,
+      "total": -7
     },
     "069313": {
       "foreign": 0,
       "trust": 0,
-      "dealer": -8,
-      "total": -8
+      "dealer": -7,
+      "total": -7
     },
     "065428": {
       "foreign": 0,
       "trust": 0,
-      "dealer": -8,
-      "total": -8
+      "dealer": -7,
+      "total": -7
     },
     "079173": {
       "foreign": 0,
       "trust": 0,
-      "dealer": -8,
+      "dealer": -7,
+      "total": -7
+    },
+    "070069": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -7,
+      "total": -7
+    },
+    "00986A": {
+      "foreign": -1,
+      "trust": 0,
+      "dealer": -6,
+      "total": -7
+    },
+    "8404": {
+      "foreign": -11,
+      "trust": 0,
+      "dealer": 3,
       "total": -8
     },
     "055407": {
@@ -65509,7 +68965,7 @@
       "dealer": -10,
       "total": -10
     },
-    "075363": {
+    "078606": {
       "foreign": 0,
       "trust": 0,
       "dealer": -10,
@@ -65697,6 +69153,306 @@
     },
     "6431": {
       "foreign": -10,
+      "trust": 0,
+      "dealer": 3,
+      "total": -15
+    },
+    "6952": {
+      "foreign": -13,
+      "trust": 0,
+      "dealer": -2,
+      "total": -15
+    },
+    "066846": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -15,
+      "total": -15
+    },
+    "075102": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -15,
+      "total": -15
+    },
+    "075137": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -15,
+      "total": -15
+    },
+    "075132": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -15,
+      "total": -15
+    },
+    "066567": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -15,
+      "total": -15
+    },
+    "075167": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -15,
+      "total": -15
+    },
+    "066648": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -15,
+      "total": -15
+    },
+    "066312": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -15,
+      "total": -15
+    },
+    "074738": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -15,
+      "total": -15
+    },
+    "065917": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -15,
+      "total": -15
+    },
+    "065940": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -15,
+      "total": -15
+    },
+    "075813": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -15,
+      "total": -15
+    },
+    "075782": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -15,
+      "total": -15
+    },
+    "068184": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -15,
+      "total": -15
+    },
+    "075878": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -15,
+      "total": -15
+    },
+    "066960": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -15,
+      "total": -15
+    },
+    "067292": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -15,
+      "total": -15
+    },
+    "076009": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -15,
+      "total": -15
+    },
+    "076026": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -15,
+      "total": -15
+    },
+    "076140": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -15,
+      "total": -15
+    },
+    "076072": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -15,
+      "total": -15
+    },
+    "068746": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -15,
+      "total": -15
+    },
+    "061538": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -15,
+      "total": -15
+    },
+    "061565": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -15,
+      "total": -15
+    },
+    "054672": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -15,
+      "total": -15
+    },
+    "078782": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -15,
+      "total": -15
+    },
+    "079138": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -15,
+      "total": -15
+    },
+    "079160": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -15,
+      "total": -15
+    },
+    "078960": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -15,
+      "total": -15
+    },
+    "078273": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -15,
+      "total": -15
+    },
+    "078305": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -15,
+      "total": -15
+    },
+    "078107": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -15,
+      "total": -15
+    },
+    "078184": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -15,
+      "total": -15
+    },
+    "052446": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -15,
+      "total": -15
+    },
+    "059831": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -15,
+      "total": -15
+    },
+    "070514": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -15,
+      "total": -15
+    },
+    "069462": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -15,
+      "total": -15
+    },
+    "069475": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -15,
+      "total": -15
+    },
+    "069499": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -15,
+      "total": -15
+    },
+    "069501": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -15,
+      "total": -15
+    },
+    "069331": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -15,
+      "total": -15
+    },
+    "069325": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -15,
+      "total": -15
+    },
+    "069671": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -15,
+      "total": -15
+    },
+    "069963": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -15,
+      "total": -15
+    },
+    "070000": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -15,
+      "total": -15
+    },
+    "077741": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -15,
+      "total": -15
+    },
+    "077619": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -15,
+      "total": -15
+    },
+    "070110": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -15,
+      "total": -15
+    },
+    "3025": {
+      "foreign": -15,
       "trust": 0,
       "dealer": 0,
       "total": -10
@@ -66721,7 +70477,7 @@
       "dealer": -10,
       "total": -10
     },
-    "03939T": {
+    "056058": {
       "foreign": 0,
       "trust": 0,
       "dealer": -10,
@@ -71083,7 +74839,7 @@
       "dealer": -20,
       "total": -20
     },
-    "051445": {
+    "074863": {
       "foreign": 0,
       "trust": 0,
       "dealer": -20,
@@ -71095,7 +74851,7 @@
       "dealer": -20,
       "total": -20
     },
-    "061766": {
+    "077693": {
       "foreign": 0,
       "trust": 0,
       "dealer": -20,
@@ -72322,7 +76078,7 @@
     "9917": {
       "foreign": -27,
       "trust": 0,
-      "dealer": 3,
+      "dealer": -24,
       "total": -24
     },
     "052859": {
@@ -74689,7 +78445,7 @@
       "dealer": -32,
       "total": -32
     },
-    "077874": {
+    "03788T": {
       "foreign": 0,
       "trust": 0,
       "dealer": -32,
@@ -74734,13 +78490,13 @@
     "070715": {
       "foreign": 0,
       "trust": 0,
-      "dealer": -32,
+      "dealer": 0,
       "total": -32
     },
     "075892": {
       "foreign": 0,
       "trust": 0,
-      "dealer": -32,
+      "dealer": 1,
       "total": -32
     },
     "066729": {
@@ -76303,7 +80059,7 @@
       "dealer": -40,
       "total": -40
     },
-    "067614": {
+    "079603": {
       "foreign": 0,
       "trust": 0,
       "dealer": -40,
@@ -78745,7 +82501,133 @@
       "dealer": -51,
       "total": -51
     },
-    "079027": {
+    "066519": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -92,
+      "total": -92
+    },
+    "063966": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -92,
+      "total": -92
+    },
+    "088412": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -92,
+      "total": -92
+    },
+    "062330": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -92,
+      "total": -92
+    },
+    "072354": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -92,
+      "total": -92
+    },
+    "00738U": {
+      "foreign": 226,
+      "trust": 0,
+      "dealer": -318,
+      "total": -92
+    },
+    "073662": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -93,
+      "total": -93
+    },
+    "060331": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -93,
+      "total": -93
+    },
+    "058812": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -93,
+      "total": -93
+    },
+    "7821": {
+      "foreign": -95,
+      "trust": 0,
+      "dealer": 2,
+      "total": -93
+    },
+    "075712": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -93,
+      "total": -93
+    },
+    "067606": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -93,
+      "total": -93
+    },
+    "075851": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -93,
+      "total": -93
+    },
+    "076239": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -93,
+      "total": -93
+    },
+    "078897": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -93,
+      "total": -93
+    },
+    "078780": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -93,
+      "total": -93
+    },
+    "077652": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -93,
+      "total": -93
+    },
+    "070155": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -93,
+      "total": -93
+    },
+    "077584": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -93,
+      "total": -93
+    },
+    "060724": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -93,
+      "total": -93
+    },
+    "2851": {
+      "foreign": -48,
+      "trust": -20,
+      "dealer": -25,
+      "total": -93
+    },
+    "061734": {
       "foreign": 0,
       "trust": 0,
       "dealer": -51,
@@ -89374,7 +93256,25 @@
     "075796": {
       "foreign": 0,
       "trust": 0,
-      "dealer": -226,
+      "dealer": -225,
+      "total": -225
+    },
+    "062401": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -225,
+      "total": -225
+    },
+    "035325": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -225,
+      "total": -225
+    },
+    "2020": {
+      "foreign": -226,
+      "trust": 0,
+      "dealer": 0,
       "total": -226
     },
     "070306": {
@@ -89476,8 +93376,8 @@
     "079761": {
       "foreign": 0,
       "trust": 0,
-      "dealer": -229,
-      "total": -229
+      "dealer": -230,
+      "total": -230
     },
     "1723": {
       "foreign": -226,
@@ -90154,8 +94054,8 @@
     "070842": {
       "foreign": 0,
       "trust": 0,
-      "dealer": -258,
-      "total": -258
+      "dealer": -254,
+      "total": -254
     },
     "8996": {
       "foreign": -688,
@@ -90280,7 +94180,7 @@
     "072312": {
       "foreign": 0,
       "trust": 0,
-      "dealer": -264,
+      "dealer": 2,
       "total": -264
     },
     "077930": {
@@ -90322,8 +94222,8 @@
     "062670": {
       "foreign": 0,
       "trust": 0,
-      "dealer": -267,
-      "total": -267
+      "dealer": 0,
+      "total": -268
     },
     "075013": {
       "foreign": 0,
@@ -90424,8 +94324,8 @@
     "077891": {
       "foreign": 0,
       "trust": 0,
-      "dealer": -273,
-      "total": -273
+      "dealer": -272,
+      "total": -272
     },
     "067695": {
       "foreign": 0,
@@ -90442,7 +94342,7 @@
     "071982": {
       "foreign": 0,
       "trust": 0,
-      "dealer": -274,
+      "dealer": -7,
       "total": -274
     },
     "071419": {
@@ -90865,7 +94765,7 @@
       "dealer": -301,
       "total": -301
     },
-    "069798": {
+    "064415": {
       "foreign": 0,
       "trust": 0,
       "dealer": -301,
@@ -91180,8 +95080,8 @@
     "077035": {
       "foreign": 0,
       "trust": 0,
-      "dealer": -329,
-      "total": -329
+      "dealer": -328,
+      "total": -328
     },
     "067870": {
       "foreign": 0,
@@ -91282,20 +95182,20 @@
     "072503": {
       "foreign": 0,
       "trust": 0,
-      "dealer": -336,
-      "total": -336
+      "dealer": -335,
+      "total": -335
     },
     "072825": {
       "foreign": 0,
       "trust": 0,
-      "dealer": -336,
-      "total": -336
+      "dealer": -335,
+      "total": -335
     },
     "079032": {
       "foreign": 0,
       "trust": 0,
-      "dealer": -336,
-      "total": -336
+      "dealer": -335,
+      "total": -335
     },
     "075520": {
       "foreign": 0,
@@ -91696,7 +95596,7 @@
     "064430": {
       "foreign": 0,
       "trust": 0,
-      "dealer": -373,
+      "dealer": -353,
       "total": -373
     },
     "078021": {
@@ -91708,7 +95608,7 @@
     "068109": {
       "foreign": 0,
       "trust": 0,
-      "dealer": -374,
+      "dealer": -391,
       "total": -374
     },
     "072491": {
@@ -91726,13 +95626,25 @@
     "077716": {
       "foreign": 0,
       "trust": 0,
-      "dealer": -376,
-      "total": -376
+      "dealer": -375,
+      "total": -375
     },
     "03312T": {
       "foreign": 0,
       "trust": 0,
-      "dealer": -377,
+      "dealer": -375,
+      "total": -375
+    },
+    "03631T": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -375,
+      "total": -375
+    },
+    "3229": {
+      "foreign": -377,
+      "trust": 0,
+      "dealer": 0,
       "total": -377
     },
     "068012": {
@@ -91762,8 +95674,8 @@
     "076227": {
       "foreign": 0,
       "trust": 0,
-      "dealer": -380,
-      "total": -380
+      "dealer": -379,
+      "total": -379
     },
     "078188": {
       "foreign": 0,
@@ -91816,7 +95728,7 @@
     "077563": {
       "foreign": 0,
       "trust": 0,
-      "dealer": -386,
+      "dealer": 76,
       "total": -386
     },
     "067845": {
@@ -92002,8 +95914,8 @@
     "069430": {
       "foreign": 0,
       "trust": 0,
-      "dealer": -402,
-      "total": -402
+      "dealer": 30,
+      "total": -403
     },
     "062036": {
       "foreign": 0,
@@ -92230,8 +96142,8 @@
     "066286": {
       "foreign": 0,
       "trust": 0,
-      "dealer": -426,
-      "total": -426
+      "dealer": -425,
+      "total": -425
     },
     "068987": {
       "foreign": 0,
@@ -92260,7 +96172,7 @@
     "066717": {
       "foreign": 0,
       "trust": 0,
-      "dealer": -432,
+      "dealer": -291,
       "total": -432
     },
     "079905": {
@@ -92314,8 +96226,8 @@
     "070966": {
       "foreign": 0,
       "trust": 0,
-      "dealer": -441,
-      "total": -441
+      "dealer": -442,
+      "total": -442
     },
     "070901": {
       "foreign": 0,
@@ -92452,8 +96364,8 @@
     "078180": {
       "foreign": 0,
       "trust": 0,
-      "dealer": -464,
-      "total": -464
+      "dealer": -465,
+      "total": -465
     },
     "079625": {
       "foreign": 0,
@@ -92506,8 +96418,8 @@
     "074569": {
       "foreign": 0,
       "trust": 0,
-      "dealer": -480,
-      "total": -480
+      "dealer": -481,
+      "total": -481
     },
     "2204": {
       "foreign": -476,
@@ -92524,7 +96436,13 @@
     "069568": {
       "foreign": 0,
       "trust": 0,
-      "dealer": -482,
+      "dealer": -481,
+      "total": -481
+    },
+    "2331": {
+      "foreign": -372,
+      "trust": 0,
+      "dealer": -110,
       "total": -482
     },
     "03537T": {
@@ -92602,14 +96520,14 @@
     "077075": {
       "foreign": 0,
       "trust": 0,
-      "dealer": -496,
-      "total": -496
+      "dealer": -495,
+      "total": -495
     },
     "03265T": {
       "foreign": 0,
       "trust": 0,
-      "dealer": -496,
-      "total": -496
+      "dealer": 5,
+      "total": -495
     },
     "077908": {
       "foreign": 0,
@@ -92842,8 +96760,8 @@
     "070761": {
       "foreign": 0,
       "trust": 0,
-      "dealer": -516,
-      "total": -516
+      "dealer": -514,
+      "total": -514
     },
     "1560": {
       "foreign": -474,
@@ -93094,8 +97012,8 @@
     "079544": {
       "foreign": 0,
       "trust": 0,
-      "dealer": -558,
-      "total": -558
+      "dealer": -556,
+      "total": -556
     },
     "072198": {
       "foreign": 0,
@@ -93124,8 +97042,8 @@
     "063110": {
       "foreign": 0,
       "trust": 0,
-      "dealer": -563,
-      "total": -563
+      "dealer": -561,
+      "total": -561
     },
     "063583": {
       "foreign": 0,
@@ -93160,8 +97078,8 @@
     "069639": {
       "foreign": 0,
       "trust": 0,
-      "dealer": -575,
-      "total": -575
+      "dealer": -574,
+      "total": -574
     },
     "070346": {
       "foreign": 0,
@@ -93220,7 +97138,7 @@
     "075839": {
       "foreign": 0,
       "trust": 0,
-      "dealer": -591,
+      "dealer": 6,
       "total": -591
     },
     "00634R": {
@@ -93352,7 +97270,19 @@
     "066316": {
       "foreign": 0,
       "trust": 0,
-      "dealer": -617,
+      "dealer": -614,
+      "total": -614
+    },
+    "071770": {
+      "foreign": 0,
+      "trust": 0,
+      "dealer": -615,
+      "total": -615
+    },
+    "6579": {
+      "foreign": -628,
+      "trust": 0,
+      "dealer": 11,
       "total": -617
     },
     "061777": {
@@ -93388,8 +97318,8 @@
     "059838": {
       "foreign": 0,
       "trust": 0,
-      "dealer": -626,
-      "total": -626
+      "dealer": -628,
+      "total": -628
     },
     "077918": {
       "foreign": 0,
@@ -93520,8 +97450,8 @@
     "071190": {
       "foreign": 0,
       "trust": 0,
-      "dealer": -655,
-      "total": -655
+      "dealer": -657,
+      "total": -657
     },
     "068023": {
       "foreign": 0,
@@ -93598,8 +97528,8 @@
     "031308": {
       "foreign": 0,
       "trust": 0,
-      "dealer": -679,
-      "total": -679
+      "dealer": -680,
+      "total": -680
     },
     "2915": {
       "foreign": -703,
@@ -93664,8 +97594,8 @@
     "061798": {
       "foreign": 0,
       "trust": 0,
-      "dealer": -698,
-      "total": -698
+      "dealer": -704,
+      "total": -704
     },
     "074813": {
       "foreign": 0,
@@ -93754,8 +97684,8 @@
     "077326": {
       "foreign": 0,
       "trust": 0,
-      "dealer": -732,
-      "total": -732
+      "dealer": -736,
+      "total": -736
     },
     "069827": {
       "foreign": 0,
@@ -93796,8 +97726,8 @@
     "068794": {
       "foreign": 0,
       "trust": 0,
-      "dealer": -743,
-      "total": -743
+      "dealer": -746,
+      "total": -746
     },
     "3016": {
       "foreign": -802,
@@ -93904,8 +97834,8 @@
     "078807": {
       "foreign": 0,
       "trust": 0,
-      "dealer": -787,
-      "total": -787
+      "dealer": -785,
+      "total": -785
     },
     "077268": {
       "foreign": 0,
@@ -93958,8 +97888,8 @@
     "067456": {
       "foreign": 0,
       "trust": 0,
-      "dealer": -803,
-      "total": -803
+      "dealer": -800,
+      "total": -800
     },
     "075946": {
       "foreign": 0,
@@ -94000,8 +97930,8 @@
     "071538": {
       "foreign": 0,
       "trust": 0,
-      "dealer": -830,
-      "total": -830
+      "dealer": 21,
+      "total": -831
     },
     "073930": {
       "foreign": 0,
@@ -94084,8 +98014,8 @@
     "08940U": {
       "foreign": 0,
       "trust": 0,
-      "dealer": -870,
-      "total": -870
+      "dealer": -876,
+      "total": -876
     },
     "3090": {
       "foreign": -947,
@@ -94144,8 +98074,8 @@
     "073256": {
       "foreign": 0,
       "trust": 0,
-      "dealer": -892,
-      "total": -892
+      "dealer": -890,
+      "total": -890
     },
     "077250": {
       "foreign": 0,
@@ -94156,8 +98086,8 @@
     "071018": {
       "foreign": 0,
       "trust": 0,
-      "dealer": -898,
-      "total": -898
+      "dealer": 3,
+      "total": -897
     },
     "2504": {
       "foreign": -901,
@@ -94216,8 +98146,8 @@
     "059073": {
       "foreign": 0,
       "trust": 0,
-      "dealer": -949,
-      "total": -949
+      "dealer": -950,
+      "total": -950
     },
     "074426": {
       "foreign": 0,
@@ -94342,8 +98272,8 @@
     "077458": {
       "foreign": 0,
       "trust": 0,
-      "dealer": -1038,
-      "total": -1038
+      "dealer": -1062,
+      "total": -1062
     },
     "5471": {
       "foreign": -1078,
@@ -94408,8 +98338,8 @@
     "070297": {
       "foreign": 0,
       "trust": 0,
-      "dealer": -1111,
-      "total": -1111
+      "dealer": -1089,
+      "total": -1089
     },
     "075482": {
       "foreign": 0,
@@ -94540,8 +98470,8 @@
     "075471": {
       "foreign": 0,
       "trust": 0,
-      "dealer": -1241,
-      "total": -1241
+      "dealer": -1237,
+      "total": -1237
     },
     "075745": {
       "foreign": 0,
@@ -94684,8 +98614,8 @@
     "03734B": {
       "foreign": 0,
       "trust": 0,
-      "dealer": -1406,
-      "total": -1406
+      "dealer": -1414,
+      "total": -1414
     },
     "3703": {
       "foreign": -1417,
@@ -94708,8 +98638,8 @@
     "062231": {
       "foreign": 0,
       "trust": 0,
-      "dealer": -1428,
-      "total": -1428
+      "dealer": -1474,
+      "total": -1474
     },
     "6278": {
       "foreign": -1047,
@@ -94864,8 +98794,8 @@
     "067142": {
       "foreign": 0,
       "trust": 0,
-      "dealer": -1693,
-      "total": -1693
+      "dealer": -1749,
+      "total": -1749
     },
     "077723": {
       "foreign": 0,
@@ -101382,7 +105312,7 @@
       "short_sell": 0
     },
     "00728": {
-      "margin_buy": 1,
+      "margin_buy": 26,
       "short_sell": 0
     },
     "00730": {
@@ -101534,7 +105464,7 @@
       "short_sell": 0
     },
     "00899": {
-      "margin_buy": 63,
+      "margin_buy": 64,
       "short_sell": 0
     },
     "00900": {
@@ -101682,7 +105612,7 @@
       "short_sell": 0
     },
     "00944": {
-      "margin_buy": 6,
+      "margin_buy": 8,
       "short_sell": 0
     },
     "00945B": {
@@ -102378,7 +106308,7 @@
       "short_sell": 10
     },
     "1521": {
-      "margin_buy": 448,
+      "margin_buy": 447,
       "short_sell": 0
     },
     "1522": {
@@ -102578,7 +106508,7 @@
       "short_sell": 179
     },
     "1712": {
-      "margin_buy": 454,
+      "margin_buy": 461,
       "short_sell": 0
     },
     "1713": {
@@ -102916,6 +106846,10 @@
     "2206": {
       "margin_buy": 3845,
       "short_sell": 0
+    },
+    "2206": {
+      "margin_buy": 3842,
+      "short_sell": 1
     },
     "2207": {
       "margin_buy": 71,
@@ -103263,6 +107197,50 @@
     },
     "2414": {
       "margin_buy": 488,
+      "short_sell": 6
+    },
+    "2399": {
+      "margin_buy": 10910,
+      "short_sell": 417
+    },
+    "2401": {
+      "margin_buy": 7526,
+      "short_sell": 132
+    },
+    "2402": {
+      "margin_buy": 11637,
+      "short_sell": 72
+    },
+    "2404": {
+      "margin_buy": 2293,
+      "short_sell": 6
+    },
+    "2405": {
+      "margin_buy": 7581,
+      "short_sell": 36
+    },
+    "2406": {
+      "margin_buy": 13387,
+      "short_sell": 354
+    },
+    "2408": {
+      "margin_buy": 89085,
+      "short_sell": 2746
+    },
+    "2409": {
+      "margin_buy": 223719,
+      "short_sell": 7818
+    },
+    "2412": {
+      "margin_buy": 1948,
+      "short_sell": 33
+    },
+    "2413": {
+      "margin_buy": 4150,
+      "short_sell": 33
+    },
+    "2414": {
+      "margin_buy": 468,
       "short_sell": 6
     },
     "2415": {
@@ -103754,7 +107732,7 @@
       "short_sell": 0
     },
     "2722": {
-      "margin_buy": 414,
+      "margin_buy": 415,
       "short_sell": 0
     },
     "2723": {
@@ -104445,6 +108423,22 @@
       "margin_buy": 808,
       "short_sell": 3
     },
+    "3653": {
+      "margin_buy": 2847,
+      "short_sell": 49
+    },
+    "3661": {
+      "margin_buy": 6364,
+      "short_sell": 84
+    },
+    "3665": {
+      "margin_buy": 2547,
+      "short_sell": 15
+    },
+    "3669": {
+      "margin_buy": 818,
+      "short_sell": 3
+    },
     "3673": {
       "margin_buy": 13663,
       "short_sell": 83
@@ -104499,6 +108493,14 @@
     },
     "3714": {
       "margin_buy": 23832,
+      "short_sell": 149
+    },
+    "3712": {
+      "margin_buy": 2429,
+      "short_sell": 30
+    },
+    "3714": {
+      "margin_buy": 24239,
       "short_sell": 149
     },
     "3715": {
@@ -104597,6 +108599,38 @@
       "margin_buy": 659,
       "short_sell": 0
     },
+    "4426": {
+      "margin_buy": 1051,
+      "short_sell": 0
+    },
+    "4438": {
+      "margin_buy": 744,
+      "short_sell": 0
+    },
+    "4439": {
+      "margin_buy": 236,
+      "short_sell": 18
+    },
+    "4440": {
+      "margin_buy": 157,
+      "short_sell": 0
+    },
+    "4441": {
+      "margin_buy": 215,
+      "short_sell": 0
+    },
+    "4526": {
+      "margin_buy": 5457,
+      "short_sell": 115
+    },
+    "4532": {
+      "margin_buy": 2356,
+      "short_sell": 1
+    },
+    "4536": {
+      "margin_buy": 658,
+      "short_sell": 0
+    },
     "4540": {
       "margin_buy": 3686,
       "short_sell": 286
@@ -104671,6 +108705,10 @@
     },
     "4590": {
       "margin_buy": 184,
+      "short_sell": 0
+    },
+    "4590": {
+      "margin_buy": 164,
       "short_sell": 0
     },
     "4720": {
@@ -105526,7 +109564,7 @@
       "short_sell": 0
     },
     "6792": {
-      "margin_buy": 269,
+      "margin_buy": 267,
       "short_sell": 7
     },
     "6794": {
@@ -105655,6 +109693,10 @@
     },
     "6934": {
       "margin_buy": 1,
+      "short_sell": 0
+    },
+    "6934": {
+      "margin_buy": 0,
       "short_sell": 0
     },
     "6936": {
@@ -105978,7 +110020,7 @@
       "short_sell": 1
     },
     "8481": {
-      "margin_buy": 5,
+      "margin_buy": 10,
       "short_sell": 0
     },
     "8482": {
@@ -106254,7 +110296,7 @@
       "short_sell": 0
     },
     "00741B": {
-      "margin_buy": 3,
+      "margin_buy": 4,
       "short_sell": 0
     },
     "00746B": {
@@ -106302,7 +110344,7 @@
       "short_sell": 0
     },
     "00764B": {
-      "margin_buy": 37,
+      "margin_buy": 38,
       "short_sell": 0
     },
     "00768B": {
@@ -106686,7 +110728,7 @@
       "short_sell": 42
     },
     "1599": {
-      "margin_buy": 272,
+      "margin_buy": 273,
       "short_sell": 0
     },
     "1742": {
@@ -106838,7 +110880,7 @@
       "short_sell": 0
     },
     "2755": {
-      "margin_buy": 35,
+      "margin_buy": 36,
       "short_sell": 1
     },
     "2756": {
@@ -108633,6 +112675,10 @@
       "margin_buy": 226,
       "short_sell": 14
     },
+    "006201": {
+      "margin_buy": 257,
+      "short_sell": 12
+    },
     "6203": {
       "margin_buy": 588,
       "short_sell": 3
@@ -108712,6 +112758,10 @@
     "6237": {
       "margin_buy": 3330,
       "short_sell": 9
+    },
+    "6237": {
+      "margin_buy": 3369,
+      "short_sell": 10
     },
     "6240": {
       "margin_buy": 550,
@@ -108958,7 +113008,7 @@
       "short_sell": 102
     },
     "6560": {
-      "margin_buy": 435,
+      "margin_buy": 436,
       "short_sell": 0
     },
     "6561": {
@@ -109085,6 +113135,18 @@
       "margin_buy": 2005,
       "short_sell": 6
     },
+    "6667": {
+      "margin_buy": 1256,
+      "short_sell": 6
+    },
+    "6679": {
+      "margin_buy": 1090,
+      "short_sell": 0
+    },
+    "6683": {
+      "margin_buy": 1982,
+      "short_sell": 3
+    },
     "6684": {
       "margin_buy": 1619,
       "short_sell": 10
@@ -109094,7 +113156,7 @@
       "short_sell": 0
     },
     "6692": {
-      "margin_buy": 398,
+      "margin_buy": 406,
       "short_sell": 0
     },
     "6693": {
@@ -109202,7 +113264,7 @@
       "short_sell": 11
     },
     "6823": {
-      "margin_buy": 836,
+      "margin_buy": 833,
       "short_sell": 0
     },
     "6829": {
@@ -109730,7 +113792,7 @@
       "short_sell": 0
     },
     "8489": {
-      "margin_buy": 2853,
+      "margin_buy": 2857,
       "short_sell": 1
     },
     "8905": {

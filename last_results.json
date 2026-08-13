@@ -4182,7 +4182,7 @@
     "reason": [
       "均線多頭 (+1.0)"
     ],
-    "badge_class": "badge-bullish-mild",
+    "badge_class": "badge-sideways",
     "closes_60": [
       24.15,
       24.2,
@@ -20728,8 +20728,8 @@
     }
   },
   {
-    "symbol": "1402.TW",
-    "name": "遠東新",
+    "symbol": "2426.TW",
+    "name": "鼎元",
     "market": "上市",
     "industry": "紡織纖維",
     "close": 26.95,
@@ -53943,7 +53943,7 @@
       "均線多頭 (+1.0)",
       "RSI(5)跌破50空頭賣點 (-1.2)"
     ],
-    "badge_class": "badge-bearish-mild",
+    "badge_class": "badge-bullish-mild",
     "closes_60": [
       45.6,
       46.3,
@@ -153460,15 +153460,15 @@
     "wave_detail": "跌破A波低點，進行C波主跌段 📉",
     "fib": {
       "high_price": 22.7,
-      "low_price": 9.85,
+      "low_price": 10.8,
       "high_date": "06/03",
-      "low_date": "05/20",
+      "low_date": "05/21",
       "type": "空頭",
-      "res_382": 14.7587,
-      "res_500": 16.275,
-      "res_618": 17.7913,
-      "tgt_1382": 4.941300000000002,
-      "tgt_1618": 1.9086999999999996
+      "res_382": 15.3458,
+      "res_500": 16.75,
+      "res_618": 18.1542,
+      "tgt_1382": 6.254200000000001,
+      "tgt_1618": 3.445800000000002
     },
     "status": "偏多走高",
     "score": 0.5,
@@ -174214,7 +174214,7 @@
       "均線多頭 (+1.0)",
       "KD超買區 (-0.5)"
     ],
-    "badge_class": "badge-bullish-mild",
+    "badge_class": "badge-sideways",
     "closes_60": [
       77.2,
       79.1,
@@ -182506,9 +182506,11 @@
     "status": "偏多走高",
     "score": 0.5,
     "reason": [
-      "均線多頭 (+1.0)"
+      "均線多頭 (+1.0)",
+      "KD超買區 (-0.5)",
+      "MACD多頭交叉 (+1.0)"
     ],
-    "badge_class": "badge-bullish-mild",
+    "badge_class": "badge-bullish",
     "closes_60": [
       30.9,
       33.95,
@@ -219797,7 +219799,7 @@
       "均線空頭 (-1.0)",
       "KD超買區 (-0.5)"
     ],
-    "badge_class": "badge-bearish-mild",
+    "badge_class": "badge-bearish",
     "closes_60": [
       460.0,
       498.0,
