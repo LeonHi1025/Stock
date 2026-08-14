@@ -219,25 +219,17 @@ def determine_signal(prices, k_vals, d_vals, rsi5_vals, macd_dif, macd_dea, macd
             score += 0.5
             signals.append("KD超賣區 (+0.5)")
             
-    # 3. RSI(5) 區間與 50 穿越判定 (買點/賣點)
+    # 3. RSI(5) 50 多空分界線穿越 (買點/賣點)
     rsi5_curr = rsi5_vals[-1]
     rsi5_prev = rsi5_vals[-2] if len(rsi5_vals) > 1 else None
     
-    if rsi5_curr is not None:
-        if rsi5_curr > 70:
-            score -= 1.0
-            signals.append("RSI(5)過熱 (-1.0)")
-        elif rsi5_curr < 30:
-            score += 1.0
-            signals.append("RSI(5)低估 (+1.0)")
-            
-        if rsi5_prev is not None:
-            if rsi5_prev < 50.0 and rsi5_curr >= 50.0:
-                score += 1.2
-                signals.append("RSI(5)突破50買點 (+1.2)")
-            elif rsi5_prev > 50.0 and rsi5_curr <= 50.0:
-                score -= 1.2
-                signals.append("RSI(5)跌破50賣點 (-1.2)")
+    if rsi5_curr is not None and rsi5_prev is not None:
+        if rsi5_prev < 50.0 and rsi5_curr >= 50.0:
+            score += 1.2
+            signals.append("RSI(5)突破50多頭買點 (+1.2)")
+        elif rsi5_prev > 50.0 and rsi5_curr <= 50.0:
+            score -= 1.2
+            signals.append("RSI(5)跌破50空頭賣點 (-1.2)")
             
     # 4. 指標與價格「背離 (Divergence)」偵測
     if len(prices) >= 9 and rsi5_vals[-9] is not None and k_vals[-9] is not None:

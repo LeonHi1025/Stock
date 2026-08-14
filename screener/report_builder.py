@@ -112,6 +112,25 @@ def generate_html_report(results):
         with open(realtime_path, "r", encoding="utf-8") as f:
             realtime_content = f.read()
             
+    js_dir = os.path.join(BASE_DIR, "web", "static", "js")
+    data_store_js = ""
+    trendline_chart_js = ""
+    app_js = ""
+    
+    data_store_path = os.path.join(js_dir, "data_store.js")
+    trendline_chart_path = os.path.join(js_dir, "trendline_chart.js")
+    app_path = os.path.join(js_dir, "app.js")
+    
+    if os.path.exists(data_store_path):
+        with open(data_store_path, "r", encoding="utf-8") as f:
+            data_store_js = f.read()
+    if os.path.exists(trendline_chart_path):
+        with open(trendline_chart_path, "r", encoding="utf-8") as f:
+            trendline_chart_js = f.read()
+    if os.path.exists(app_path):
+        with open(app_path, "r", encoding="utf-8") as f:
+            app_js = f.read()
+
     if os.path.exists(base_path):
         with open(base_path, "r", encoding="utf-8") as f:
             html_content = f.read()
@@ -120,7 +139,10 @@ def generate_html_report(results):
                                    .replace("__MARKET_JSON__", market_json) \
                                    .replace("__RESULTS_JSON__", results_json) \
                                    .replace("__DAILY_REVIEW_CONTENT__", daily_content) \
-                                   .replace("__REALTIME_ANALYSIS_CONTENT__", realtime_content)
+                                   .replace("__REALTIME_ANALYSIS_CONTENT__", realtime_content) \
+                                   .replace("__DATA_STORE_JS__", data_store_js) \
+                                   .replace("__TRENDLINE_CHART_JS__", trendline_chart_js) \
+                                   .replace("__APP_JS__", app_js)
         
         with open(REPORT_FILE, "w", encoding="utf-8") as f:
             f.write(html_content)

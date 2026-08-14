@@ -7,15 +7,15 @@
             <span class="stat-value" id="statTotal">0</span>
         </div>
         <div class="stat-card stat-bullish">
-            <span class="stat-title">📈 多頭趨勢</span>
+            <span class="stat-title">🚀 預測上漲</span>
             <span class="stat-value" id="statBullish">0</span>
         </div>
         <div class="stat-card stat-neutral">
-            <span class="stat-title">⚖️ 震盪盤整</span>
+            <span class="stat-title">⚖️ 盤整</span>
             <span class="stat-value" id="statNeutral">0</span>
         </div>
         <div class="stat-card stat-bearish">
-            <span class="stat-title">📉 空頭修正</span>
+            <span class="stat-title">🔻 預測下跌</span>
             <span class="stat-value" id="statBearish">0</span>
         </div>
     </div>
@@ -39,16 +39,16 @@
                     </div>
                     <div class="filter-group filter-group-signal">
                         <button class="filter-btn active" onclick="setSignalFilter('all', this)">全部</button>
-                        <button class="filter-btn" onclick="setSignalFilter('bullish', this)">多頭</button>
+                        <button class="filter-btn" onclick="setSignalFilter('bullish', this)">預測上漲</button>
                         <button class="filter-btn" onclick="setSignalFilter('neutral', this)">盤整</button>
-                        <button class="filter-btn" onclick="setSignalFilter('bearish', this)">空頭</button>
+                        <button class="filter-btn" onclick="setSignalFilter('bearish', this)">預測下跌</button>
                     </div>
                 </div>
                 <!-- 排序選單列 -->
                 <div class="left-filter-row" style="margin-top:0.4rem; align-items:center;">
                     <span style="font-size:0.78rem; color:var(--text-secondary); white-space:nowrap; font-weight:600;">🔃 個股排序：</span>
                     <select id="sortSelect" onchange="handleSortChange(this.value)" style="flex:1; background:var(--bg-primary); color:var(--text-primary); border:1px solid var(--border-color); padding:0.28rem 0.5rem; border-radius:0.35rem; font-size:0.78rem; outline:none; cursor:pointer;">
-                        <option value="score_desc">🏆 戰略總分 (高 → 低)</option>
+                        <option value="pred_desc">🤖 預測勝率 (高 → 低)</option>
                         <option value="vol_desc">📈 成交量 (大 → 小)</option>
                         <option value="price_desc">💰 收盤價 (高 → 低)</option>
                         <option value="price_asc">🔻 收盤價 (低 → 高)</option>
@@ -63,13 +63,7 @@
             </div>
         </div>
 
-        <!-- 右欄：選定股票之 K 線圖與詳細數據分析 -->
-        <div class="daily-right-panel" id="stockDetailPanel">
-            <!-- 由 JavaScript 動態繪製詳情與 K線圖 -->
-            <div class="detail-placeholder">
-                <div class="placeholder-icon">📊</div>
-                <h3>請點擊左側股票清單查看詳細 K 線圖與技術面分析</h3>
-            </div>
-        </div>
+        <!-- 右欄：選定股票之 K 線圖與詳細數據分析 (由 JS 動態填入) -->
+        <div class="daily-right-panel" id="stockDetailPanel"></div>
     </div>
 </div>
