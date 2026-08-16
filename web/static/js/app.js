@@ -189,11 +189,11 @@ function initApp() {
     startAutoRefreshTimer();
 }
 
-// ─── 每 30 分鐘自主自動更新計時器 (30-Minute Frontend Auto-Refresh Engine) ───
-let countdownSeconds = 30 * 60; // 30 分鐘 = 1800 秒
+// ─── 每 1 分鐘自主自動更新計時器 (1-Minute Frontend Auto-Refresh Engine) ───
+let countdownSeconds = 1 * 60; // 1 分鐘 = 60 秒
 
 function startAutoRefreshTimer() {
-    countdownSeconds = 30 * 60;
+    countdownSeconds = 1 * 60;
     
     if (window._autoRefreshInterval) clearInterval(window._autoRefreshInterval);
     
@@ -208,12 +208,12 @@ function startAutoRefreshTimer() {
         }
         
         if (countdownSeconds <= 0) {
-            perform30MinAutoRefresh();
+            perform1MinAutoRefresh();
         }
     }, 1000);
 }
 
-function perform30MinAutoRefresh() {
+function perform1MinAutoRefresh() {
     const countdownEl = document.getElementById('autoRefreshCountdown');
     if (countdownEl) {
         countdownEl.innerText = '⏳ 正在自主更新全網最新資料...';
@@ -223,7 +223,7 @@ function perform30MinAutoRefresh() {
         .then(res => res.json())
         .then(data => {
             if (data && data.status === 'success' && Array.isArray(data.data) && data.data.length > 0) {
-                console.log('⚡ 30分鐘自主更新成功 (API):', data);
+                console.log('⚡ 1分鐘自主更新成功 (API):', data);
                 window.rawStockData = data.data;
                 rawStockData = data.data;
                 saveCachedData(data.data, window.marketData);
