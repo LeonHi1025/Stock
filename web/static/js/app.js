@@ -72,28 +72,79 @@ function saveCachedData(stocks, markets) {
 }
 
 /**
+ * 全局狀態同步函式 (State Sync Helper):
+ * 優先從 HTML 內嵌的 INITIAL_STOCK_DATA 恢復，確保絕不回退成空陣列，防止刷成空白。
+ */
+function syncState() {
+    // 1. 優先從 HTML 注入或全域的 INITIAL_STOCK_DATA 恢復
+    if (!window.rawStockData || window.rawStockData.length === 0) {
+        if (window.INITIAL_STOCK_DATA && Array.isArray(window.INITIAL_STOCK_DATA) && window.INITIAL_STOCK_DATA.length > 0) {
+            window.rawStockData = window.INITIAL_STOCK_DATA;
+        }
+    }
+    if (!window.marketData || window.marketData.length === 0) {
+        if (window.INITIAL_MARKET_DATA && Array.isArray(window.INITIAL_MARKET_DATA) && window.INITIAL_MARKET_DATA.length > 0) {
+            window.marketData = window.INITIAL_MARKET_DATA;
+        }
+    }
+
+    // 2. 指向全域狀態 (防止未防護的回退)
+    rawStockData = (window.rawStockData && window.rawStockData.length > 0)
+        ? window.rawStockData
+        : ((rawStockData && rawStockData.length > 0) ? rawStockData : []);
+
+    marketData = (window.marketData && window.marketData.length > 0)
+        ? window.marketData
+        : ((marketData && marketData.length > 0) ? marketData : []);
+
+    activeMarketFilter = window.activeMarketFilter || activeMarketFilter || 'all';
+    activeSignalFilter = window.activeSignalFilter || activeSignalFilter || 'all';
+    searchQuery = window.searchQuery || searchQuery || '';
+    activeSortOption = window.activeSortOption || activeSortOption || 'score_desc';
+    
+    if (window.selectedStockSymbol) {
+        selectedStockSymbol = window.selectedStockSymbol;
+    } else if (rawStockData.length > 0 && !selectedStockSymbol) {
+        selectedStockSymbol = rawStockData[0].symbol;
+        window.selectedStockSymbol = selectedStockSymbol;
+    }
+}
+
+// 監聽 CustomEvent stockDataReady: 資料準備完成時，自動觸發 0ms 繪製
+window.addEventListener('stockDataReady', function() {
+    syncState();
+    renderIndexGrid();
+    renderDailyReview();
+    if (selectedStockSymbol) {
+        selectStock(selectedStockSymbol);
+    }
+});
+
+/**
  * 全局動態資料寫入 API：供非同步載入 fetch 或外部腳本於資料準備就緒時自動觸發渲染與快取
  */
 window.setStockData = function(stocks, markets) {
     if (stocks && Array.isArray(stocks) && stocks.length > 0) {
         window.INITIAL_STOCK_DATA = stocks;
+        window.rawStockData = stocks;
         rawStockData = stocks;
         if (!selectedStockSymbol && stocks.length > 0) {
             selectedStockSymbol = stocks[0].symbol;
+            window.selectedStockSymbol = selectedStockSymbol;
         }
     }
     if (markets && Array.isArray(markets) && markets.length > 0) {
         window.INITIAL_MARKET_DATA = markets;
+        window.marketData = markets;
         marketData = markets;
     }
     
-    // 同步寫入快取保存
+    syncState();
     saveCachedData(rawStockData, marketData);
 
     renderIndexGrid();
     renderDailyReview();
     
-    // 確保資料寫入後自動選取並渲染詳細面板與 K 線圖
     if (selectedStockSymbol) {
         selectStock(selectedStockSymbol);
     }
@@ -104,90 +155,45 @@ window.setStockData = function(stocks, markets) {
 };
 
 /**
- * 初始化應用程式：資料已由 data_store.js 正確初始化於 window.rawStockData
- * 流程：同步本地別名 ➜ 讀取快取 ➜ 立即渲染 ➜ 非同步輪詢防護
+ * 初始化應用程式：先讀取快取與內嵌資料 ➜ 執行同步 ➜ 0ms 立即初次渲染
  */
 function initApp() {
-    // 1. 同步本地別名指向 window.* (data_store.js 已含 INITIAL_STOCK_DATA)
-    rawStockData = window.rawStockData || [];
-    marketData = window.marketData || [];
-    selectedStockSymbol = window.selectedStockSymbol || null;
-
-    // 2. localStorage 快取補全（當 INITIAL_STOCK_DATA 也是空時的最後防線）
+    // 1. 先嘗試讀取本機歷史快取
     loadCachedData();
-    rawStockData = window.rawStockData || rawStockData;
-    marketData = window.marketData || marketData;
-    selectedStockSymbol = window.selectedStockSymbol || selectedStockSymbol;
 
-    // 3. 自動設定預設選取股票 (優先恢復上次檢視之個股)
-    if (rawStockData.length > 0 && !selectedStockSymbol) {
-        selectedStockSymbol = rawStockData[0].symbol;
-        window.selectedStockSymbol = selectedStockSymbol;
-    }
+    // 2. 完整同步全域與內嵌資料 (HTML 內嵌優先)
+    syncState();
 
-    // 4. 繫結主題切換與分頁按鈕
+    // 3. 繫結主題切換與分頁按鈕
     const themeBtn = document.getElementById('themeToggleBtn');
-    if (themeBtn) {
-        themeBtn.addEventListener('click', toggleTheme);
-    }
+    if (themeBtn) themeBtn.addEventListener('click', toggleTheme);
 
     const tabDaily = document.getElementById('tabDailyReview');
     const tabRealtime = document.getElementById('tabRealtimeAnalysis');
     if (tabDaily) tabDaily.addEventListener('click', () => switchMode('daily'));
     if (tabRealtime) tabRealtime.addEventListener('click', () => switchMode('realtime'));
 
-    // 5. 立即渲染大盤與每日復盤 (0ms 瞬時呈現)
+    // 4. 立即執行初次渲染 (0ms 瞬間呈現)
     renderIndexGrid();
     switchMode('daily');
 
-    // 6. 若有資料且有選取個股，立即觸發選取渲染
+    // 5. 選取第一檔股票或既有選定股票並繪製 K 線圖
     if (selectedStockSymbol) {
         selectStock(selectedStockSymbol);
     }
 
-    // 7. 保存當前快取狀態
-    saveCachedData(rawStockData, marketData);
-
-    // 8. 非同步資料輪詢防護（當嵌入式資料確實為空時的備援）
-    if (rawStockData.length === 0) {
-        let pollCount = 0;
-        const dataPollTimer = setInterval(() => {
-            pollCount++;
-            const freshData = window.INITIAL_STOCK_DATA || window.rawStockData;
-            if (freshData && freshData.length > 0) {
-                rawStockData = freshData;
-                window.rawStockData = rawStockData;
-                marketData = window.INITIAL_MARKET_DATA || window.marketData || [];
-                window.marketData = marketData;
-                
-                if (!selectedStockSymbol && rawStockData.length > 0) {
-                    selectedStockSymbol = rawStockData[0].symbol;
-                    window.selectedStockSymbol = selectedStockSymbol;
-                }
-                
-                saveCachedData(rawStockData, marketData);
-                renderIndexGrid();
-                renderDailyReview();
-                if (selectedStockSymbol) {
-                    selectStock(selectedStockSymbol);
-                }
-                
-                clearInterval(dataPollTimer);
-            } else if (pollCount >= 50) {
-                clearInterval(dataPollTimer);
-            }
-        }, 100);
+    // 6. 寫入快取與啟動自動更新計時器
+    if (rawStockData.length > 0) {
+        saveCachedData(rawStockData, marketData);
     }
-
-    // 9. 啟動前端每 30 分鐘自主自動更新計時器
     startAutoRefreshTimer();
 }
 
-// ─── 每 30 分鐘自主自動更新計時器 (30-Minute Frontend Auto-Refresh Engine) ───
-let countdownSeconds = 30 * 60; // 30 分鐘 = 1800 秒
+// ─── 每 1 分鐘自主自動更新計時器 (1-Minute Frontend Auto-Refresh Engine) ───
+let countdownSeconds = 1 * 60; // 1 分鐘 = 60 秒
 
 function startAutoRefreshTimer() {
-    countdownSeconds = 30 * 60;
+    countdownSeconds = 1 * 60;
     
     if (window._autoRefreshInterval) clearInterval(window._autoRefreshInterval);
     
@@ -202,12 +208,12 @@ function startAutoRefreshTimer() {
         }
         
         if (countdownSeconds <= 0) {
-            perform30MinAutoRefresh();
+            perform1MinAutoRefresh();
         }
     }, 1000);
 }
 
-function perform30MinAutoRefresh() {
+function perform1MinAutoRefresh() {
     const countdownEl = document.getElementById('autoRefreshCountdown');
     if (countdownEl) {
         countdownEl.innerText = '⏳ 正在自主更新全網最新資料...';
@@ -217,7 +223,7 @@ function perform30MinAutoRefresh() {
         .then(res => res.json())
         .then(data => {
             if (data && data.status === 'success' && Array.isArray(data.data) && data.data.length > 0) {
-                console.log('⚡ 30分鐘自主更新成功 (API):', data);
+                console.log('⚡ 1分鐘自主更新成功 (API):', data);
                 window.rawStockData = data.data;
                 rawStockData = data.data;
                 saveCachedData(data.data, window.marketData);
@@ -388,14 +394,8 @@ function renderDailyReview() {
     const listContainer = document.getElementById('stockListScrollable');
     if (!listContainer) return;
 
-    // ── 同步最新狀態（data_store.js 的 handler 更新 window.* 但不更新本地別名）──
-    rawStockData = window.rawStockData || rawStockData;
-    marketData = window.marketData || marketData;
-    activeMarketFilter = window.activeMarketFilter || 'all';
-    activeSignalFilter = window.activeSignalFilter || 'all';
-    searchQuery = window.searchQuery || '';
-    activeSortOption = window.activeSortOption || activeSortOption;
-    if (window.selectedStockSymbol) selectedStockSymbol = window.selectedStockSymbol;
+    // ── 強制同步最新狀態，確保資料與過濾條件永遠保持最新與連動 ──
+    syncState();
 
     // 計算頂部數據統計
     let countTotal = rawStockData.length;

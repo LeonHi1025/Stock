@@ -14,6 +14,13 @@ window.activeSortOption = window.activeSortOption || 'score_desc';
 window.todayIntradayCache = window.todayIntradayCache || {};
 window.candlesCache = window.candlesCache || {};
 
+// 廣播資料已初始化完成事件 (Data Ready CustomEvent)
+if (window.rawStockData && window.rawStockData.length > 0) {
+    setTimeout(() => {
+        window.dispatchEvent(new CustomEvent('stockDataReady', { detail: { count: window.rawStockData.length } }));
+    }, 0);
+}
+
 
 // 輔助函式：安全數字格式化
 window.safeFix = (num, dec = 2) => (typeof num === 'number' && !isNaN(num)) ? num.toFixed(dec) : 'N/A';
