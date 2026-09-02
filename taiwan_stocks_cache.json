@@ -7914,6 +7914,12 @@
     "industry": "綠能環保"
   },
   {
+    "symbol": "3718.TWO",
+    "name": "中光電投控",
+    "market": "上櫃",
+    "industry": "光電業"
+  },
+  {
     "symbol": "4102.TWO",
     "name": "永日",
     "market": "上櫃",
@@ -8998,12 +9004,6 @@
     "name": "力麗店",
     "market": "上櫃",
     "industry": "觀光餐旅"
-  },
-  {
-    "symbol": "5371.TWO",
-    "name": "中光電",
-    "market": "上櫃",
-    "industry": "光電業"
   },
   {
     "symbol": "5381.TWO",
