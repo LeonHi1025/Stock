@@ -6468,6 +6468,12 @@
     "industry": "生技醫療業"
   },
   {
+    "symbol": "7812.TW",
+    "name": "稜研科技*-創",
+    "market": "上市",
+    "industry": "通信網路業"
+  },
+  {
     "symbol": "7823.TW",
     "name": "奧義賽博-KY創",
     "market": "上市",
@@ -11152,6 +11158,12 @@
     "name": "天能綠電",
     "market": "上櫃",
     "industry": "綠能環保"
+  },
+  {
+    "symbol": "7856.TWO",
+    "name": "漢測",
+    "market": "上櫃",
+    "industry": "半導體業"
   },
   {
     "symbol": "8024.TWO",
