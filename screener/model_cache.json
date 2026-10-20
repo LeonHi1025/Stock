@@ -2509,5 +2509,3911 @@
       }
     ],
     "ml_train_samples": 706
+  },
+  "1709.TW": {
+    "symbol": "1709.TW",
+    "updated_at": "2026-10-20 22:43:23",
+    "weights": [
+      0.0010667037090246495,
+      -0.08250065699575747,
+      -0.11023850632154206,
+      0.006086493490227395,
+      0.021971987597671046,
+      -0.001936788064440756,
+      0.08427010162447707,
+      0.022746331532816584,
+      0.0020667267088118804,
+      -0.0003577984815058681,
+      -0.001664397731952024,
+      0.0037760102007308146,
+      0.00038524808111567313,
+      0.012911435658775247,
+      0.0003413451869682411,
+      0.00021334074178849474,
+      -0.003973184104214637,
+      -0.0005912491677898803
+    ],
+    "directional_accuracy": 47.5,
+    "mape_pct": 3.24,
+    "verif_samples": [
+      {
+        "test_date": "2024-01-15",
+        "actual_close_t": 20.65,
+        "predicted_t5": 20.75,
+        "actual_t5": 20.3,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔻跌",
+        "is_hit": false,
+        "error_pct": 2.22
+      },
+      {
+        "test_date": "2024-02-23",
+        "actual_close_t": 20.65,
+        "predicted_t5": 20.53,
+        "actual_t5": 20.75,
+        "pred_dir": "🔻看跌",
+        "actual_dir": "🔺漲",
+        "is_hit": false,
+        "error_pct": 1.06
+      },
+      {
+        "test_date": "2024-03-27",
+        "actual_close_t": 19.55,
+        "predicted_t5": 19.69,
+        "actual_t5": 19.55,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔺漲",
+        "is_hit": true,
+        "error_pct": 0.72
+      },
+      {
+        "test_date": "2024-04-30",
+        "actual_close_t": 19.55,
+        "predicted_t5": 19.65,
+        "actual_t5": 19.7,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔺漲",
+        "is_hit": true,
+        "error_pct": 0.25
+      },
+      {
+        "test_date": "2024-05-31",
+        "actual_close_t": 20.65,
+        "predicted_t5": 20.8,
+        "actual_t5": 20.4,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔻跌",
+        "is_hit": false,
+        "error_pct": 1.96
+      },
+      {
+        "test_date": "2024-07-03",
+        "actual_close_t": 23.55,
+        "predicted_t5": 23.75,
+        "actual_t5": 22.8,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔻跌",
+        "is_hit": false,
+        "error_pct": 4.17
+      },
+      {
+        "test_date": "2024-08-06",
+        "actual_close_t": 22.05,
+        "predicted_t5": 22.27,
+        "actual_t5": 22.9,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔺漲",
+        "is_hit": true,
+        "error_pct": 2.75
+      },
+      {
+        "test_date": "2024-09-05",
+        "actual_close_t": 22.85,
+        "predicted_t5": 22.67,
+        "actual_t5": 23.85,
+        "pred_dir": "🔻看跌",
+        "actual_dir": "🔺漲",
+        "is_hit": false,
+        "error_pct": 4.95
+      },
+      {
+        "test_date": "2024-10-11",
+        "actual_close_t": 22.95,
+        "predicted_t5": 22.91,
+        "actual_t5": 23.0,
+        "pred_dir": "🔻看跌",
+        "actual_dir": "🔺漲",
+        "is_hit": false,
+        "error_pct": 0.39
+      },
+      {
+        "test_date": "2024-11-13",
+        "actual_close_t": 21.75,
+        "predicted_t5": 21.78,
+        "actual_t5": 21.9,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔺漲",
+        "is_hit": true,
+        "error_pct": 0.55
+      },
+      {
+        "test_date": "2024-12-13",
+        "actual_close_t": 21.05,
+        "predicted_t5": 21.01,
+        "actual_t5": 20.4,
+        "pred_dir": "🔻看跌",
+        "actual_dir": "🔻跌",
+        "is_hit": true,
+        "error_pct": 2.99
+      },
+      {
+        "test_date": "2025-01-15",
+        "actual_close_t": 20.15,
+        "predicted_t5": 19.99,
+        "actual_t5": 20.5,
+        "pred_dir": "🔻看跌",
+        "actual_dir": "🔺漲",
+        "is_hit": false,
+        "error_pct": 2.49
+      },
+      {
+        "test_date": "2025-02-25",
+        "actual_close_t": 21.75,
+        "predicted_t5": 21.78,
+        "actual_t5": 21.95,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔺漲",
+        "is_hit": true,
+        "error_pct": 0.77
+      },
+      {
+        "test_date": "2025-03-28",
+        "actual_close_t": 19.75,
+        "predicted_t5": 19.89,
+        "actual_t5": 16.85,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔻跌",
+        "is_hit": false,
+        "error_pct": 9.8
+      },
+      {
+        "test_date": "2025-05-02",
+        "actual_close_t": 17.65,
+        "predicted_t5": 17.59,
+        "actual_t5": 17.95,
+        "pred_dir": "🔻看跌",
+        "actual_dir": "🔺漲",
+        "is_hit": false,
+        "error_pct": 2.01
+      },
+      {
+        "test_date": "2025-06-04",
+        "actual_close_t": 18.05,
+        "predicted_t5": 18.15,
+        "actual_t5": 17.9,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔻跌",
+        "is_hit": false,
+        "error_pct": 1.4
+      },
+      {
+        "test_date": "2025-07-04",
+        "actual_close_t": 17.9,
+        "predicted_t5": 18.69,
+        "actual_t5": 17.6,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔻跌",
+        "is_hit": false,
+        "error_pct": 6.19
+      },
+      {
+        "test_date": "2025-08-06",
+        "actual_close_t": 17.75,
+        "predicted_t5": 18.04,
+        "actual_t5": 18.55,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔺漲",
+        "is_hit": true,
+        "error_pct": 2.75
+      },
+      {
+        "test_date": "2025-09-05",
+        "actual_close_t": 16.7,
+        "predicted_t5": 16.7,
+        "actual_t5": 16.25,
+        "pred_dir": "🔻看跌",
+        "actual_dir": "🔻跌",
+        "is_hit": true,
+        "error_pct": 2.77
+      },
+      {
+        "test_date": "2025-10-09",
+        "actual_close_t": 16.5,
+        "predicted_t5": 16.68,
+        "actual_t5": 16.9,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔺漲",
+        "is_hit": true,
+        "error_pct": 1.3
+      },
+      {
+        "test_date": "2025-11-12",
+        "actual_close_t": 16.85,
+        "predicted_t5": 16.9,
+        "actual_t5": 16.6,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔻跌",
+        "is_hit": false,
+        "error_pct": 1.81
+      },
+      {
+        "test_date": "2025-12-12",
+        "actual_close_t": 16.75,
+        "predicted_t5": 16.7,
+        "actual_t5": 16.75,
+        "pred_dir": "🔻看跌",
+        "actual_dir": "🔺漲",
+        "is_hit": false,
+        "error_pct": 0.3
+      },
+      {
+        "test_date": "2026-01-15",
+        "actual_close_t": 17.15,
+        "predicted_t5": 17.17,
+        "actual_t5": 16.9,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔻跌",
+        "is_hit": false,
+        "error_pct": 1.6
+      },
+      {
+        "test_date": "2026-02-25",
+        "actual_close_t": 16.8,
+        "predicted_t5": 16.76,
+        "actual_t5": 16.65,
+        "pred_dir": "🔻看跌",
+        "actual_dir": "🔻跌",
+        "is_hit": true,
+        "error_pct": 0.66
+      },
+      {
+        "test_date": "2026-03-30",
+        "actual_close_t": 18.25,
+        "predicted_t5": 18.28,
+        "actual_t5": 17.95,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔻跌",
+        "is_hit": false,
+        "error_pct": 1.84
+      }
+    ],
+    "ml_train_samples": 706
+  },
+  "2002.TW": {
+    "symbol": "2002.TW",
+    "updated_at": "2026-10-20 22:43:28",
+    "weights": [
+      -0.0010938331010246207,
+      -0.02212841974482374,
+      0.0033978305981612828,
+      0.0011159499234865244,
+      0.007270594399295938,
+      0.0070911379535643585,
+      0.03822245907727139,
+      0.009523799162995596,
+      -0.03947195192595193,
+      -0.03261132107050055,
+      0.03146018706885213,
+      -8.056093808237983e-05,
+      -0.0009660277100959202,
+      0.002713177575221482,
+      8.750664811779332e-05,
+      -0.0006562998604830724,
+      -0.00039654896526777986,
+      -0.010857851698296847
+    ],
+    "directional_accuracy": 49.2,
+    "mape_pct": 2.7,
+    "verif_samples": [
+      {
+        "test_date": "2024-01-15",
+        "actual_close_t": 25.8,
+        "predicted_t5": 26.03,
+        "actual_t5": 24.75,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔻跌",
+        "is_hit": false,
+        "error_pct": 5.17
+      },
+      {
+        "test_date": "2024-02-23",
+        "actual_close_t": 25.0,
+        "predicted_t5": 24.86,
+        "actual_t5": 24.2,
+        "pred_dir": "🔻看跌",
+        "actual_dir": "🔻跌",
+        "is_hit": true,
+        "error_pct": 2.73
+      },
+      {
+        "test_date": "2024-03-27",
+        "actual_close_t": 23.9,
+        "predicted_t5": 23.76,
+        "actual_t5": 24.65,
+        "pred_dir": "🔻看跌",
+        "actual_dir": "🔺漲",
+        "is_hit": false,
+        "error_pct": 3.61
+      },
+      {
+        "test_date": "2024-04-30",
+        "actual_close_t": 24.85,
+        "predicted_t5": 24.92,
+        "actual_t5": 24.75,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔻跌",
+        "is_hit": false,
+        "error_pct": 0.69
+      },
+      {
+        "test_date": "2024-05-31",
+        "actual_close_t": 23.75,
+        "predicted_t5": 23.81,
+        "actual_t5": 23.7,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔻跌",
+        "is_hit": false,
+        "error_pct": 0.46
+      },
+      {
+        "test_date": "2024-07-03",
+        "actual_close_t": 23.1,
+        "predicted_t5": 23.08,
+        "actual_t5": 23.05,
+        "pred_dir": "🔻看跌",
+        "actual_dir": "🔻跌",
+        "is_hit": true,
+        "error_pct": 0.13
+      },
+      {
+        "test_date": "2024-08-06",
+        "actual_close_t": 22.1,
+        "predicted_t5": 22.14,
+        "actual_t5": 22.1,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔺漲",
+        "is_hit": true,
+        "error_pct": 0.18
+      },
+      {
+        "test_date": "2024-09-05",
+        "actual_close_t": 21.1,
+        "predicted_t5": 21.1,
+        "actual_t5": 20.65,
+        "pred_dir": "🔻看跌",
+        "actual_dir": "🔻跌",
+        "is_hit": true,
+        "error_pct": 2.18
+      },
+      {
+        "test_date": "2024-10-11",
+        "actual_close_t": 22.7,
+        "predicted_t5": 22.57,
+        "actual_t5": 22.95,
+        "pred_dir": "🔻看跌",
+        "actual_dir": "🔺漲",
+        "is_hit": false,
+        "error_pct": 1.66
+      },
+      {
+        "test_date": "2024-11-13",
+        "actual_close_t": 22.45,
+        "predicted_t5": 22.59,
+        "actual_t5": 22.3,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔻跌",
+        "is_hit": false,
+        "error_pct": 1.3
+      },
+      {
+        "test_date": "2024-12-13",
+        "actual_close_t": 20.25,
+        "predicted_t5": 20.13,
+        "actual_t5": 19.9,
+        "pred_dir": "🔻看跌",
+        "actual_dir": "🔻跌",
+        "is_hit": true,
+        "error_pct": 1.16
+      },
+      {
+        "test_date": "2025-01-15",
+        "actual_close_t": 18.7,
+        "predicted_t5": 18.6,
+        "actual_t5": 20.15,
+        "pred_dir": "🔻看跌",
+        "actual_dir": "🔺漲",
+        "is_hit": false,
+        "error_pct": 7.69
+      },
+      {
+        "test_date": "2025-02-25",
+        "actual_close_t": 23.9,
+        "predicted_t5": 24.39,
+        "actual_t5": 24.1,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔺漲",
+        "is_hit": true,
+        "error_pct": 1.2
+      },
+      {
+        "test_date": "2025-03-28",
+        "actual_close_t": 23.0,
+        "predicted_t5": 22.59,
+        "actual_t5": 20.45,
+        "pred_dir": "🔻看跌",
+        "actual_dir": "🔻跌",
+        "is_hit": true,
+        "error_pct": 9.8
+      },
+      {
+        "test_date": "2025-05-02",
+        "actual_close_t": 20.7,
+        "predicted_t5": 20.47,
+        "actual_t5": 21.3,
+        "pred_dir": "🔻看跌",
+        "actual_dir": "🔺漲",
+        "is_hit": false,
+        "error_pct": 3.9
+      },
+      {
+        "test_date": "2025-06-04",
+        "actual_close_t": 19.2,
+        "predicted_t5": 18.95,
+        "actual_t5": 19.5,
+        "pred_dir": "🔻看跌",
+        "actual_dir": "🔺漲",
+        "is_hit": false,
+        "error_pct": 2.82
+      },
+      {
+        "test_date": "2025-07-04",
+        "actual_close_t": 19.25,
+        "predicted_t5": 19.82,
+        "actual_t5": 18.8,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔻跌",
+        "is_hit": false,
+        "error_pct": 5.43
+      },
+      {
+        "test_date": "2025-08-06",
+        "actual_close_t": 19.2,
+        "predicted_t5": 19.33,
+        "actual_t5": 19.65,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔺漲",
+        "is_hit": true,
+        "error_pct": 1.63
+      },
+      {
+        "test_date": "2025-09-05",
+        "actual_close_t": 19.55,
+        "predicted_t5": 19.44,
+        "actual_t5": 19.35,
+        "pred_dir": "🔻看跌",
+        "actual_dir": "🔻跌",
+        "is_hit": true,
+        "error_pct": 0.47
+      },
+      {
+        "test_date": "2025-10-09",
+        "actual_close_t": 19.0,
+        "predicted_t5": 18.91,
+        "actual_t5": 19.05,
+        "pred_dir": "🔻看跌",
+        "actual_dir": "🔺漲",
+        "is_hit": false,
+        "error_pct": 0.73
+      },
+      {
+        "test_date": "2025-11-12",
+        "actual_close_t": 18.15,
+        "predicted_t5": 18.14,
+        "actual_t5": 17.7,
+        "pred_dir": "🔻看跌",
+        "actual_dir": "🔻跌",
+        "is_hit": true,
+        "error_pct": 2.49
+      },
+      {
+        "test_date": "2025-12-12",
+        "actual_close_t": 18.75,
+        "predicted_t5": 18.87,
+        "actual_t5": 18.85,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔺漲",
+        "is_hit": true,
+        "error_pct": 0.11
+      },
+      {
+        "test_date": "2026-01-15",
+        "actual_close_t": 19.45,
+        "predicted_t5": 19.49,
+        "actual_t5": 19.0,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔻跌",
+        "is_hit": false,
+        "error_pct": 2.58
+      },
+      {
+        "test_date": "2026-02-25",
+        "actual_close_t": 21.25,
+        "predicted_t5": 20.77,
+        "actual_t5": 19.3,
+        "pred_dir": "🔻看跌",
+        "actual_dir": "🔻跌",
+        "is_hit": true,
+        "error_pct": 7.62
+      },
+      {
+        "test_date": "2026-03-30",
+        "actual_close_t": 19.15,
+        "predicted_t5": 18.98,
+        "actual_t5": 19.95,
+        "pred_dir": "🔻看跌",
+        "actual_dir": "🔺漲",
+        "is_hit": false,
+        "error_pct": 4.86
+      }
+    ],
+    "ml_train_samples": 706
+  },
+  "2489.TW": {
+    "symbol": "2489.TW",
+    "updated_at": "2026-10-20 22:43:31",
+    "weights": [
+      0.007055669639277471,
+      0.028055707482185742,
+      -0.004915382209475796,
+      -0.022993544334130603,
+      -0.03016866524847298,
+      -0.01704599430698565,
+      -0.04406110002799035,
+      -0.04089193027953378,
+      0.04550078535488674,
+      0.0785655178647007,
+      0.009215893701023853,
+      -0.007178365596504875,
+      0.0008613734451237019,
+      0.013957618022341559,
+      0.0009877937494188823,
+      0.0014111339277532182,
+      0.0019064414714947458,
+      -0.003630798880163941
+    ],
+    "directional_accuracy": 57.4,
+    "mape_pct": 4.56,
+    "verif_samples": [
+      {
+        "test_date": "2024-01-15",
+        "actual_close_t": 16.62,
+        "predicted_t5": 15.95,
+        "actual_t5": 15.89,
+        "pred_dir": "🔻看跌",
+        "actual_dir": "🔻跌",
+        "is_hit": true,
+        "error_pct": 0.38
+      },
+      {
+        "test_date": "2024-02-23",
+        "actual_close_t": 19.11,
+        "predicted_t5": 19.33,
+        "actual_t5": 18.08,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔻跌",
+        "is_hit": false,
+        "error_pct": 6.91
+      },
+      {
+        "test_date": "2024-03-27",
+        "actual_close_t": 17.41,
+        "predicted_t5": 17.99,
+        "actual_t5": 17.59,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔺漲",
+        "is_hit": true,
+        "error_pct": 2.27
+      },
+      {
+        "test_date": "2024-04-30",
+        "actual_close_t": 18.5,
+        "predicted_t5": 18.43,
+        "actual_t5": 18.2,
+        "pred_dir": "🔻看跌",
+        "actual_dir": "🔻跌",
+        "is_hit": true,
+        "error_pct": 1.26
+      },
+      {
+        "test_date": "2024-05-31",
+        "actual_close_t": 25.18,
+        "predicted_t5": 27.31,
+        "actual_t5": 23.6,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔻跌",
+        "is_hit": false,
+        "error_pct": 9.8
+      },
+      {
+        "test_date": "2024-07-03",
+        "actual_close_t": 24.63,
+        "predicted_t5": 25.53,
+        "actual_t5": 26.93,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔺漲",
+        "is_hit": true,
+        "error_pct": 5.2
+      },
+      {
+        "test_date": "2024-08-06",
+        "actual_close_t": 22.2,
+        "predicted_t5": 22.28,
+        "actual_t5": 27.0,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔺漲",
+        "is_hit": true,
+        "error_pct": 9.8
+      },
+      {
+        "test_date": "2024-09-05",
+        "actual_close_t": 25.9,
+        "predicted_t5": 26.56,
+        "actual_t5": 24.75,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔻跌",
+        "is_hit": false,
+        "error_pct": 7.31
+      },
+      {
+        "test_date": "2024-10-11",
+        "actual_close_t": 24.08,
+        "predicted_t5": 23.66,
+        "actual_t5": 23.86,
+        "pred_dir": "🔻看跌",
+        "actual_dir": "🔻跌",
+        "is_hit": true,
+        "error_pct": 0.84
+      },
+      {
+        "test_date": "2024-11-13",
+        "actual_close_t": 22.18,
+        "predicted_t5": 21.7,
+        "actual_t5": 21.63,
+        "pred_dir": "🔻看跌",
+        "actual_dir": "🔻跌",
+        "is_hit": true,
+        "error_pct": 0.32
+      },
+      {
+        "test_date": "2024-12-13",
+        "actual_close_t": 20.9,
+        "predicted_t5": 20.6,
+        "actual_t5": 21.35,
+        "pred_dir": "🔻看跌",
+        "actual_dir": "🔺漲",
+        "is_hit": false,
+        "error_pct": 3.51
+      },
+      {
+        "test_date": "2025-01-15",
+        "actual_close_t": 20.01,
+        "predicted_t5": 19.99,
+        "actual_t5": 20.07,
+        "pred_dir": "🔻看跌",
+        "actual_dir": "🔺漲",
+        "is_hit": false,
+        "error_pct": 0.4
+      },
+      {
+        "test_date": "2025-02-25",
+        "actual_close_t": 21.07,
+        "predicted_t5": 21.07,
+        "actual_t5": 21.18,
+        "pred_dir": "🔻看跌",
+        "actual_dir": "🔺漲",
+        "is_hit": false,
+        "error_pct": 0.52
+      },
+      {
+        "test_date": "2025-03-28",
+        "actual_close_t": 18.11,
+        "predicted_t5": 18.39,
+        "actual_t5": 14.44,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔻跌",
+        "is_hit": false,
+        "error_pct": 9.8
+      },
+      {
+        "test_date": "2025-05-02",
+        "actual_close_t": 15.89,
+        "predicted_t5": 15.62,
+        "actual_t5": 15.89,
+        "pred_dir": "🔻看跌",
+        "actual_dir": "🔺漲",
+        "is_hit": false,
+        "error_pct": 1.7
+      },
+      {
+        "test_date": "2025-06-04",
+        "actual_close_t": 15.55,
+        "predicted_t5": 15.59,
+        "actual_t5": 16.11,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔺漲",
+        "is_hit": true,
+        "error_pct": 3.23
+      },
+      {
+        "test_date": "2025-07-04",
+        "actual_close_t": 15.77,
+        "predicted_t5": 15.63,
+        "actual_t5": 15.22,
+        "pred_dir": "🔻看跌",
+        "actual_dir": "🔻跌",
+        "is_hit": true,
+        "error_pct": 2.69
+      },
+      {
+        "test_date": "2025-08-06",
+        "actual_close_t": 15.44,
+        "predicted_t5": 15.74,
+        "actual_t5": 14.55,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔻跌",
+        "is_hit": false,
+        "error_pct": 8.18
+      },
+      {
+        "test_date": "2025-09-05",
+        "actual_close_t": 15.33,
+        "predicted_t5": 15.54,
+        "actual_t5": 14.83,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔻跌",
+        "is_hit": false,
+        "error_pct": 4.79
+      },
+      {
+        "test_date": "2025-10-09",
+        "actual_close_t": 15.8,
+        "predicted_t5": 16.57,
+        "actual_t5": 15.2,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔻跌",
+        "is_hit": false,
+        "error_pct": 9.01
+      },
+      {
+        "test_date": "2025-11-12",
+        "actual_close_t": 14.65,
+        "predicted_t5": 14.85,
+        "actual_t5": 14.75,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔺漲",
+        "is_hit": true,
+        "error_pct": 0.68
+      },
+      {
+        "test_date": "2025-12-12",
+        "actual_close_t": 14.4,
+        "predicted_t5": 14.82,
+        "actual_t5": 14.75,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔺漲",
+        "is_hit": true,
+        "error_pct": 0.47
+      },
+      {
+        "test_date": "2026-01-15",
+        "actual_close_t": 16.3,
+        "predicted_t5": 16.57,
+        "actual_t5": 23.15,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔺漲",
+        "is_hit": true,
+        "error_pct": 9.8
+      },
+      {
+        "test_date": "2026-02-25",
+        "actual_close_t": 36.0,
+        "predicted_t5": 39.6,
+        "actual_t5": 43.45,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔺漲",
+        "is_hit": true,
+        "error_pct": 8.86
+      },
+      {
+        "test_date": "2026-03-30",
+        "actual_close_t": 32.7,
+        "predicted_t5": 34.28,
+        "actual_t5": 38.9,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔺漲",
+        "is_hit": true,
+        "error_pct": 9.8
+      }
+    ],
+    "ml_train_samples": 706
+  },
+  "4927.TW": {
+    "symbol": "4927.TW",
+    "updated_at": "2026-10-20 22:43:38",
+    "weights": [
+      0.00039295869153523153,
+      0.0037015752443777137,
+      -0.015002213647710521,
+      0.0057131968181295106,
+      0.005827315009814125,
+      -0.00855115510944449,
+      0.029739195541961812,
+      0.016645304850497727,
+      -0.055711145221310085,
+      0.025210330309997395,
+      -0.020771377552751352,
+      0.0052195712590668835,
+      0.0004750333358720891,
+      -0.005790524751341656,
+      3.143669533507797e-05,
+      0.00023577521488091674,
+      -0.000597047932764227,
+      0.0033100933649746417
+    ],
+    "directional_accuracy": 59.0,
+    "mape_pct": 5.26,
+    "verif_samples": [
+      {
+        "test_date": "2024-01-15",
+        "actual_close_t": 49.3,
+        "predicted_t5": 48.66,
+        "actual_t5": 48.35,
+        "pred_dir": "🔻看跌",
+        "actual_dir": "🔻跌",
+        "is_hit": true,
+        "error_pct": 0.64
+      },
+      {
+        "test_date": "2024-02-23",
+        "actual_close_t": 48.8,
+        "predicted_t5": 49.65,
+        "actual_t5": 44.65,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔻跌",
+        "is_hit": false,
+        "error_pct": 9.8
+      },
+      {
+        "test_date": "2024-03-27",
+        "actual_close_t": 40.6,
+        "predicted_t5": 39.7,
+        "actual_t5": 39.0,
+        "pred_dir": "🔻看跌",
+        "actual_dir": "🔻跌",
+        "is_hit": true,
+        "error_pct": 1.79
+      },
+      {
+        "test_date": "2024-04-30",
+        "actual_close_t": 41.4,
+        "predicted_t5": 41.64,
+        "actual_t5": 42.1,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔺漲",
+        "is_hit": true,
+        "error_pct": 1.09
+      },
+      {
+        "test_date": "2024-05-31",
+        "actual_close_t": 40.0,
+        "predicted_t5": 40.0,
+        "actual_t5": 39.5,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔻跌",
+        "is_hit": false,
+        "error_pct": 1.27
+      },
+      {
+        "test_date": "2024-07-03",
+        "actual_close_t": 38.05,
+        "predicted_t5": 38.03,
+        "actual_t5": 43.05,
+        "pred_dir": "🔻看跌",
+        "actual_dir": "🔺漲",
+        "is_hit": false,
+        "error_pct": 9.8
+      },
+      {
+        "test_date": "2024-08-06",
+        "actual_close_t": 49.05,
+        "predicted_t5": 48.87,
+        "actual_t5": 53.8,
+        "pred_dir": "🔻看跌",
+        "actual_dir": "🔺漲",
+        "is_hit": false,
+        "error_pct": 9.16
+      },
+      {
+        "test_date": "2024-09-05",
+        "actual_close_t": 55.4,
+        "predicted_t5": 56.06,
+        "actual_t5": 52.9,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔻跌",
+        "is_hit": false,
+        "error_pct": 5.97
+      },
+      {
+        "test_date": "2024-10-11",
+        "actual_close_t": 55.5,
+        "predicted_t5": 54.21,
+        "actual_t5": 51.1,
+        "pred_dir": "🔻看跌",
+        "actual_dir": "🔻跌",
+        "is_hit": true,
+        "error_pct": 6.09
+      },
+      {
+        "test_date": "2024-11-13",
+        "actual_close_t": 39.65,
+        "predicted_t5": 39.03,
+        "actual_t5": 37.05,
+        "pred_dir": "🔻看跌",
+        "actual_dir": "🔻跌",
+        "is_hit": true,
+        "error_pct": 5.34
+      },
+      {
+        "test_date": "2024-12-13",
+        "actual_close_t": 37.55,
+        "predicted_t5": 36.5,
+        "actual_t5": 34.6,
+        "pred_dir": "🔻看跌",
+        "actual_dir": "🔻跌",
+        "is_hit": true,
+        "error_pct": 5.49
+      },
+      {
+        "test_date": "2025-01-15",
+        "actual_close_t": 30.05,
+        "predicted_t5": 30.06,
+        "actual_t5": 34.4,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔺漲",
+        "is_hit": true,
+        "error_pct": 9.8
+      },
+      {
+        "test_date": "2025-02-25",
+        "actual_close_t": 41.1,
+        "predicted_t5": 41.12,
+        "actual_t5": 41.15,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔺漲",
+        "is_hit": true,
+        "error_pct": 0.07
+      },
+      {
+        "test_date": "2025-03-28",
+        "actual_close_t": 35.55,
+        "predicted_t5": 36.45,
+        "actual_t5": 26.75,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔻跌",
+        "is_hit": false,
+        "error_pct": 9.8
+      },
+      {
+        "test_date": "2025-05-02",
+        "actual_close_t": 23.55,
+        "predicted_t5": 24.07,
+        "actual_t5": 22.75,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔻跌",
+        "is_hit": false,
+        "error_pct": 5.8
+      },
+      {
+        "test_date": "2025-06-04",
+        "actual_close_t": 21.55,
+        "predicted_t5": 21.51,
+        "actual_t5": 22.65,
+        "pred_dir": "🔻看跌",
+        "actual_dir": "🔺漲",
+        "is_hit": false,
+        "error_pct": 5.03
+      },
+      {
+        "test_date": "2025-07-04",
+        "actual_close_t": 22.05,
+        "predicted_t5": 22.69,
+        "actual_t5": 22.95,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔺漲",
+        "is_hit": true,
+        "error_pct": 1.13
+      },
+      {
+        "test_date": "2025-08-06",
+        "actual_close_t": 24.95,
+        "predicted_t5": 25.86,
+        "actual_t5": 26.7,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔺漲",
+        "is_hit": true,
+        "error_pct": 3.15
+      },
+      {
+        "test_date": "2025-09-05",
+        "actual_close_t": 25.5,
+        "predicted_t5": 26.06,
+        "actual_t5": 25.35,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔻跌",
+        "is_hit": false,
+        "error_pct": 2.8
+      },
+      {
+        "test_date": "2025-10-09",
+        "actual_close_t": 24.95,
+        "predicted_t5": 25.41,
+        "actual_t5": 22.55,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔻跌",
+        "is_hit": false,
+        "error_pct": 9.8
+      },
+      {
+        "test_date": "2025-11-12",
+        "actual_close_t": 22.1,
+        "predicted_t5": 21.96,
+        "actual_t5": 20.95,
+        "pred_dir": "🔻看跌",
+        "actual_dir": "🔻跌",
+        "is_hit": true,
+        "error_pct": 4.82
+      },
+      {
+        "test_date": "2025-12-12",
+        "actual_close_t": 29.15,
+        "predicted_t5": 30.25,
+        "actual_t5": 34.55,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔺漲",
+        "is_hit": true,
+        "error_pct": 9.8
+      },
+      {
+        "test_date": "2026-01-15",
+        "actual_close_t": 37.8,
+        "predicted_t5": 38.74,
+        "actual_t5": 36.35,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔻跌",
+        "is_hit": false,
+        "error_pct": 6.57
+      },
+      {
+        "test_date": "2026-02-25",
+        "actual_close_t": 44.25,
+        "predicted_t5": 48.68,
+        "actual_t5": 46.0,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔺漲",
+        "is_hit": true,
+        "error_pct": 5.83
+      },
+      {
+        "test_date": "2026-03-30",
+        "actual_close_t": 41.9,
+        "predicted_t5": 41.4,
+        "actual_t5": 41.3,
+        "pred_dir": "🔻看跌",
+        "actual_dir": "🔻跌",
+        "is_hit": true,
+        "error_pct": 0.24
+      }
+    ],
+    "ml_train_samples": 706
+  },
+  "2324.TW": {
+    "symbol": "2324.TW",
+    "updated_at": "2026-10-20 22:43:40",
+    "weights": [
+      3.937968363652466e-05,
+      -0.049209058663562955,
+      -0.010705872091977674,
+      0.023249488448263463,
+      -0.001387207380172788,
+      0.010081648186277206,
+      0.07301510414515833,
+      -0.05777210890100563,
+      0.022289903715726613,
+      -0.044063058144552074,
+      -0.009100043734650174,
+      0.0032974635521490566,
+      -0.0005851222778943274,
+      0.0033780024360056055,
+      5.5131557019646995e-06,
+      2.3627810188265814e-05,
+      -0.0028132750571222597,
+      0.004702476931998417
+    ],
+    "directional_accuracy": 57.4,
+    "mape_pct": 3.34,
+    "verif_samples": [
+      {
+        "test_date": "2024-01-15",
+        "actual_close_t": 35.55,
+        "predicted_t5": 35.36,
+        "actual_t5": 37.6,
+        "pred_dir": "🔻看跌",
+        "actual_dir": "🔺漲",
+        "is_hit": false,
+        "error_pct": 5.96
+      },
+      {
+        "test_date": "2024-02-23",
+        "actual_close_t": 36.2,
+        "predicted_t5": 36.87,
+        "actual_t5": 38.0,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔺漲",
+        "is_hit": true,
+        "error_pct": 2.97
+      },
+      {
+        "test_date": "2024-03-27",
+        "actual_close_t": 38.1,
+        "predicted_t5": 38.44,
+        "actual_t5": 36.55,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔻跌",
+        "is_hit": false,
+        "error_pct": 5.17
+      },
+      {
+        "test_date": "2024-04-30",
+        "actual_close_t": 35.8,
+        "predicted_t5": 35.99,
+        "actual_t5": 36.0,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔺漲",
+        "is_hit": true,
+        "error_pct": 0.03
+      },
+      {
+        "test_date": "2024-05-31",
+        "actual_close_t": 37.05,
+        "predicted_t5": 36.87,
+        "actual_t5": 36.1,
+        "pred_dir": "🔻看跌",
+        "actual_dir": "🔻跌",
+        "is_hit": true,
+        "error_pct": 2.13
+      },
+      {
+        "test_date": "2024-07-03",
+        "actual_close_t": 34.65,
+        "predicted_t5": 34.81,
+        "actual_t5": 34.9,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔺漲",
+        "is_hit": true,
+        "error_pct": 0.26
+      },
+      {
+        "test_date": "2024-08-06",
+        "actual_close_t": 29.55,
+        "predicted_t5": 29.7,
+        "actual_t5": 31.0,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔺漲",
+        "is_hit": true,
+        "error_pct": 4.19
+      },
+      {
+        "test_date": "2024-09-05",
+        "actual_close_t": 32.0,
+        "predicted_t5": 31.83,
+        "actual_t5": 33.6,
+        "pred_dir": "🔻看跌",
+        "actual_dir": "🔺漲",
+        "is_hit": false,
+        "error_pct": 5.27
+      },
+      {
+        "test_date": "2024-10-11",
+        "actual_close_t": 34.9,
+        "predicted_t5": 34.73,
+        "actual_t5": 35.5,
+        "pred_dir": "🔻看跌",
+        "actual_dir": "🔺漲",
+        "is_hit": false,
+        "error_pct": 2.17
+      },
+      {
+        "test_date": "2024-11-13",
+        "actual_close_t": 37.85,
+        "predicted_t5": 36.93,
+        "actual_t5": 36.9,
+        "pred_dir": "🔻看跌",
+        "actual_dir": "🔻跌",
+        "is_hit": true,
+        "error_pct": 0.08
+      },
+      {
+        "test_date": "2024-12-13",
+        "actual_close_t": 37.4,
+        "predicted_t5": 38.08,
+        "actual_t5": 37.4,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔺漲",
+        "is_hit": true,
+        "error_pct": 1.82
+      },
+      {
+        "test_date": "2025-01-15",
+        "actual_close_t": 36.65,
+        "predicted_t5": 36.71,
+        "actual_t5": 36.65,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔺漲",
+        "is_hit": true,
+        "error_pct": 0.16
+      },
+      {
+        "test_date": "2025-02-25",
+        "actual_close_t": 39.5,
+        "predicted_t5": 39.52,
+        "actual_t5": 37.7,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔻跌",
+        "is_hit": false,
+        "error_pct": 4.83
+      },
+      {
+        "test_date": "2025-03-28",
+        "actual_close_t": 33.75,
+        "predicted_t5": 33.89,
+        "actual_t5": 26.3,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔻跌",
+        "is_hit": false,
+        "error_pct": 9.8
+      },
+      {
+        "test_date": "2025-05-02",
+        "actual_close_t": 28.0,
+        "predicted_t5": 28.58,
+        "actual_t5": 28.35,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔺漲",
+        "is_hit": true,
+        "error_pct": 0.81
+      },
+      {
+        "test_date": "2025-06-04",
+        "actual_close_t": 28.35,
+        "predicted_t5": 28.37,
+        "actual_t5": 28.5,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔺漲",
+        "is_hit": true,
+        "error_pct": 0.46
+      },
+      {
+        "test_date": "2025-07-04",
+        "actual_close_t": 28.65,
+        "predicted_t5": 29.58,
+        "actual_t5": 28.7,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔺漲",
+        "is_hit": true,
+        "error_pct": 3.07
+      },
+      {
+        "test_date": "2025-08-06",
+        "actual_close_t": 30.05,
+        "predicted_t5": 30.67,
+        "actual_t5": 28.2,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔻跌",
+        "is_hit": false,
+        "error_pct": 8.76
+      },
+      {
+        "test_date": "2025-09-05",
+        "actual_close_t": 28.1,
+        "predicted_t5": 28.26,
+        "actual_t5": 29.8,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔺漲",
+        "is_hit": true,
+        "error_pct": 5.17
+      },
+      {
+        "test_date": "2025-10-09",
+        "actual_close_t": 32.25,
+        "predicted_t5": 32.9,
+        "actual_t5": 33.3,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔺漲",
+        "is_hit": true,
+        "error_pct": 1.2
+      },
+      {
+        "test_date": "2025-11-12",
+        "actual_close_t": 30.85,
+        "predicted_t5": 30.97,
+        "actual_t5": 29.4,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔻跌",
+        "is_hit": false,
+        "error_pct": 5.34
+      },
+      {
+        "test_date": "2025-12-12",
+        "actual_close_t": 30.05,
+        "predicted_t5": 29.79,
+        "actual_t5": 29.7,
+        "pred_dir": "🔻看跌",
+        "actual_dir": "🔻跌",
+        "is_hit": true,
+        "error_pct": 0.3
+      },
+      {
+        "test_date": "2026-01-15",
+        "actual_close_t": 31.05,
+        "predicted_t5": 30.85,
+        "actual_t5": 33.1,
+        "pred_dir": "🔻看跌",
+        "actual_dir": "🔺漲",
+        "is_hit": false,
+        "error_pct": 6.8
+      },
+      {
+        "test_date": "2026-02-25",
+        "actual_close_t": 30.1,
+        "predicted_t5": 29.5,
+        "actual_t5": 30.4,
+        "pred_dir": "🔻看跌",
+        "actual_dir": "🔺漲",
+        "is_hit": false,
+        "error_pct": 2.96
+      },
+      {
+        "test_date": "2026-03-30",
+        "actual_close_t": 28.25,
+        "predicted_t5": 27.66,
+        "actual_t5": 27.9,
+        "pred_dir": "🔻看跌",
+        "actual_dir": "🔻跌",
+        "is_hit": true,
+        "error_pct": 0.86
+      }
+    ],
+    "ml_train_samples": 706
+  },
+  "2883.TW": {
+    "symbol": "2883.TW",
+    "updated_at": "2026-10-20 22:43:44",
+    "weights": [
+      0.0019015127088950164,
+      -0.0252441857595569,
+      -0.0005706595586977304,
+      -0.028257483342200084,
+      0.023929991614978538,
+      -0.021431407065133058,
+      0.04085577344933493,
+      -0.12910105101253302,
+      0.05622078304436679,
+      0.030079062533754697,
+      -0.0031896296878275447,
+      0.00138906194784982,
+      0.0018701067656204727,
+      0.0008240637427690598,
+      -0.00026621177920943426,
+      0.0011409076249112022,
+      0.0011562916063497855,
+      0.0069289470920339425
+    ],
+    "directional_accuracy": 52.5,
+    "mape_pct": 3.07,
+    "verif_samples": [
+      {
+        "test_date": "2024-01-15",
+        "actual_close_t": 12.03,
+        "predicted_t5": 12.28,
+        "actual_t5": 11.78,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔻跌",
+        "is_hit": false,
+        "error_pct": 4.24
+      },
+      {
+        "test_date": "2024-02-23",
+        "actual_close_t": 12.28,
+        "predicted_t5": 12.38,
+        "actual_t5": 12.33,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔺漲",
+        "is_hit": true,
+        "error_pct": 0.41
+      },
+      {
+        "test_date": "2024-03-27",
+        "actual_close_t": 14.41,
+        "predicted_t5": 14.57,
+        "actual_t5": 13.66,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔻跌",
+        "is_hit": false,
+        "error_pct": 6.66
+      },
+      {
+        "test_date": "2024-04-30",
+        "actual_close_t": 13.51,
+        "predicted_t5": 13.51,
+        "actual_t5": 13.66,
+        "pred_dir": "🔻看跌",
+        "actual_dir": "🔺漲",
+        "is_hit": false,
+        "error_pct": 1.1
+      },
+      {
+        "test_date": "2024-05-31",
+        "actual_close_t": 13.96,
+        "predicted_t5": 13.87,
+        "actual_t5": 15.25,
+        "pred_dir": "🔻看跌",
+        "actual_dir": "🔺漲",
+        "is_hit": false,
+        "error_pct": 9.05
+      },
+      {
+        "test_date": "2024-07-03",
+        "actual_close_t": 16.14,
+        "predicted_t5": 16.49,
+        "actual_t5": 16.49,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔺漲",
+        "is_hit": true,
+        "error_pct": 0.0
+      },
+      {
+        "test_date": "2024-08-06",
+        "actual_close_t": 14.5,
+        "predicted_t5": 14.83,
+        "actual_t5": 15.64,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔺漲",
+        "is_hit": true,
+        "error_pct": 5.18
+      },
+      {
+        "test_date": "2024-09-05",
+        "actual_close_t": 16.04,
+        "predicted_t5": 16.97,
+        "actual_t5": 15.84,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔻跌",
+        "is_hit": false,
+        "error_pct": 7.13
+      },
+      {
+        "test_date": "2024-10-11",
+        "actual_close_t": 16.63,
+        "predicted_t5": 17.37,
+        "actual_t5": 17.57,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔺漲",
+        "is_hit": true,
+        "error_pct": 1.14
+      },
+      {
+        "test_date": "2024-11-13",
+        "actual_close_t": 16.73,
+        "predicted_t5": 16.93,
+        "actual_t5": 17.08,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔺漲",
+        "is_hit": true,
+        "error_pct": 0.88
+      },
+      {
+        "test_date": "2024-12-13",
+        "actual_close_t": 17.92,
+        "predicted_t5": 17.64,
+        "actual_t5": 17.08,
+        "pred_dir": "🔻看跌",
+        "actual_dir": "🔻跌",
+        "is_hit": true,
+        "error_pct": 3.28
+      },
+      {
+        "test_date": "2025-01-15",
+        "actual_close_t": 16.83,
+        "predicted_t5": 16.97,
+        "actual_t5": 17.13,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔺漲",
+        "is_hit": true,
+        "error_pct": 0.93
+      },
+      {
+        "test_date": "2025-02-25",
+        "actual_close_t": 17.92,
+        "predicted_t5": 17.9,
+        "actual_t5": 18.12,
+        "pred_dir": "🔻看跌",
+        "actual_dir": "🔺漲",
+        "is_hit": false,
+        "error_pct": 1.21
+      },
+      {
+        "test_date": "2025-03-28",
+        "actual_close_t": 17.57,
+        "predicted_t5": 17.87,
+        "actual_t5": 14.95,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔻跌",
+        "is_hit": false,
+        "error_pct": 9.8
+      },
+      {
+        "test_date": "2025-05-02",
+        "actual_close_t": 16.29,
+        "predicted_t5": 16.59,
+        "actual_t5": 16.04,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔻跌",
+        "is_hit": false,
+        "error_pct": 3.43
+      },
+      {
+        "test_date": "2025-06-04",
+        "actual_close_t": 17.48,
+        "predicted_t5": 17.5,
+        "actual_t5": 16.09,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔻跌",
+        "is_hit": false,
+        "error_pct": 8.76
+      },
+      {
+        "test_date": "2025-07-04",
+        "actual_close_t": 14.75,
+        "predicted_t5": 14.63,
+        "actual_t5": 15.1,
+        "pred_dir": "🔻看跌",
+        "actual_dir": "🔺漲",
+        "is_hit": false,
+        "error_pct": 3.11
+      },
+      {
+        "test_date": "2025-08-06",
+        "actual_close_t": 15.35,
+        "predicted_t5": 15.37,
+        "actual_t5": 15.59,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔺漲",
+        "is_hit": true,
+        "error_pct": 1.41
+      },
+      {
+        "test_date": "2025-09-05",
+        "actual_close_t": 15.25,
+        "predicted_t5": 15.11,
+        "actual_t5": 15.3,
+        "pred_dir": "🔻看跌",
+        "actual_dir": "🔺漲",
+        "is_hit": false,
+        "error_pct": 1.24
+      },
+      {
+        "test_date": "2025-10-09",
+        "actual_close_t": 15.15,
+        "predicted_t5": 15.35,
+        "actual_t5": 15.75,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔺漲",
+        "is_hit": true,
+        "error_pct": 2.54
+      },
+      {
+        "test_date": "2025-11-12",
+        "actual_close_t": 16.05,
+        "predicted_t5": 15.87,
+        "actual_t5": 15.3,
+        "pred_dir": "🔻看跌",
+        "actual_dir": "🔻跌",
+        "is_hit": true,
+        "error_pct": 3.73
+      },
+      {
+        "test_date": "2025-12-12",
+        "actual_close_t": 17.05,
+        "predicted_t5": 16.88,
+        "actual_t5": 17.55,
+        "pred_dir": "🔻看跌",
+        "actual_dir": "🔺漲",
+        "is_hit": false,
+        "error_pct": 3.82
+      },
+      {
+        "test_date": "2026-01-15",
+        "actual_close_t": 17.55,
+        "predicted_t5": 17.83,
+        "actual_t5": 17.75,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔺漲",
+        "is_hit": true,
+        "error_pct": 0.45
+      },
+      {
+        "test_date": "2026-02-25",
+        "actual_close_t": 20.9,
+        "predicted_t5": 20.8,
+        "actual_t5": 20.3,
+        "pred_dir": "🔻看跌",
+        "actual_dir": "🔻跌",
+        "is_hit": true,
+        "error_pct": 2.46
+      },
+      {
+        "test_date": "2026-03-30",
+        "actual_close_t": 19.4,
+        "predicted_t5": 19.83,
+        "actual_t5": 21.35,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔺漲",
+        "is_hit": true,
+        "error_pct": 7.12
+      }
+    ],
+    "ml_train_samples": 706
+  },
+  "4958.TW": {
+    "symbol": "4958.TW",
+    "updated_at": "2026-10-20 22:43:48",
+    "weights": [
+      0.0019761932544228437,
+      -0.058830136205266115,
+      0.005488863365995364,
+      0.01377357366301219,
+      -0.01604339532969442,
+      0.0006665323132930746,
+      0.005628587940180024,
+      -0.0010347621791970568,
+      -0.04011555108267242,
+      0.039403649227103994,
+      -0.0033087806719163853,
+      -0.0026597689241721284,
+      0.0035210482485484623,
+      0.014074929928210824,
+      0.000316190920763667,
+      -0.00019761932543879915,
+      0.0033546836523637154,
+      0.00013190390102520662
+    ],
+    "directional_accuracy": 50.8,
+    "mape_pct": 5.01,
+    "verif_samples": [
+      {
+        "test_date": "2024-01-15",
+        "actual_close_t": 102.0,
+        "predicted_t5": 103.11,
+        "actual_t5": 101.5,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔻跌",
+        "is_hit": false,
+        "error_pct": 1.59
+      },
+      {
+        "test_date": "2024-02-23",
+        "actual_close_t": 98.4,
+        "predicted_t5": 99.92,
+        "actual_t5": 100.5,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔺漲",
+        "is_hit": true,
+        "error_pct": 0.58
+      },
+      {
+        "test_date": "2024-03-27",
+        "actual_close_t": 115.5,
+        "predicted_t5": 117.02,
+        "actual_t5": 129.5,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔺漲",
+        "is_hit": true,
+        "error_pct": 9.64
+      },
+      {
+        "test_date": "2024-04-30",
+        "actual_close_t": 116.0,
+        "predicted_t5": 117.37,
+        "actual_t5": 120.0,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔺漲",
+        "is_hit": true,
+        "error_pct": 2.19
+      },
+      {
+        "test_date": "2024-05-31",
+        "actual_close_t": 122.0,
+        "predicted_t5": 122.27,
+        "actual_t5": 116.5,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔻跌",
+        "is_hit": false,
+        "error_pct": 4.95
+      },
+      {
+        "test_date": "2024-07-03",
+        "actual_close_t": 132.0,
+        "predicted_t5": 134.22,
+        "actual_t5": 148.5,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔺漲",
+        "is_hit": true,
+        "error_pct": 9.62
+      },
+      {
+        "test_date": "2024-08-06",
+        "actual_close_t": 123.0,
+        "predicted_t5": 119.58,
+        "actual_t5": 127.5,
+        "pred_dir": "🔻看跌",
+        "actual_dir": "🔺漲",
+        "is_hit": false,
+        "error_pct": 6.21
+      },
+      {
+        "test_date": "2024-09-05",
+        "actual_close_t": 124.5,
+        "predicted_t5": 123.13,
+        "actual_t5": 118.0,
+        "pred_dir": "🔻看跌",
+        "actual_dir": "🔻跌",
+        "is_hit": true,
+        "error_pct": 4.35
+      },
+      {
+        "test_date": "2024-10-11",
+        "actual_close_t": 112.5,
+        "predicted_t5": 114.37,
+        "actual_t5": 112.0,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔻跌",
+        "is_hit": false,
+        "error_pct": 2.12
+      },
+      {
+        "test_date": "2024-11-13",
+        "actual_close_t": 120.0,
+        "predicted_t5": 121.29,
+        "actual_t5": 117.0,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔻跌",
+        "is_hit": false,
+        "error_pct": 3.67
+      },
+      {
+        "test_date": "2024-12-13",
+        "actual_close_t": 117.0,
+        "predicted_t5": 118.88,
+        "actual_t5": 123.0,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔺漲",
+        "is_hit": true,
+        "error_pct": 3.35
+      },
+      {
+        "test_date": "2025-01-15",
+        "actual_close_t": 115.5,
+        "predicted_t5": 114.8,
+        "actual_t5": 119.5,
+        "pred_dir": "🔻看跌",
+        "actual_dir": "🔺漲",
+        "is_hit": false,
+        "error_pct": 3.93
+      },
+      {
+        "test_date": "2025-02-25",
+        "actual_close_t": 121.0,
+        "predicted_t5": 119.96,
+        "actual_t5": 116.0,
+        "pred_dir": "🔻看跌",
+        "actual_dir": "🔻跌",
+        "is_hit": true,
+        "error_pct": 3.41
+      },
+      {
+        "test_date": "2025-03-28",
+        "actual_close_t": 108.5,
+        "predicted_t5": 111.31,
+        "actual_t5": 93.3,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔻跌",
+        "is_hit": false,
+        "error_pct": 9.8
+      },
+      {
+        "test_date": "2025-05-02",
+        "actual_close_t": 99.6,
+        "predicted_t5": 100.27,
+        "actual_t5": 103.0,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔺漲",
+        "is_hit": true,
+        "error_pct": 2.65
+      },
+      {
+        "test_date": "2025-06-04",
+        "actual_close_t": 106.5,
+        "predicted_t5": 107.74,
+        "actual_t5": 107.0,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔺漲",
+        "is_hit": true,
+        "error_pct": 0.69
+      },
+      {
+        "test_date": "2025-07-04",
+        "actual_close_t": 103.0,
+        "predicted_t5": 103.04,
+        "actual_t5": 111.0,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔺漲",
+        "is_hit": true,
+        "error_pct": 7.17
+      },
+      {
+        "test_date": "2025-08-06",
+        "actual_close_t": 122.0,
+        "predicted_t5": 125.42,
+        "actual_t5": 161.0,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔺漲",
+        "is_hit": true,
+        "error_pct": 9.8
+      },
+      {
+        "test_date": "2025-09-05",
+        "actual_close_t": 174.0,
+        "predicted_t5": 175.39,
+        "actual_t5": 169.0,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔻跌",
+        "is_hit": false,
+        "error_pct": 3.78
+      },
+      {
+        "test_date": "2025-10-09",
+        "actual_close_t": 166.0,
+        "predicted_t5": 160.96,
+        "actual_t5": 148.0,
+        "pred_dir": "🔻看跌",
+        "actual_dir": "🔻跌",
+        "is_hit": true,
+        "error_pct": 8.76
+      },
+      {
+        "test_date": "2025-11-12",
+        "actual_close_t": 144.5,
+        "predicted_t5": 141.47,
+        "actual_t5": 136.0,
+        "pred_dir": "🔻看跌",
+        "actual_dir": "🔻跌",
+        "is_hit": true,
+        "error_pct": 4.02
+      },
+      {
+        "test_date": "2025-12-12",
+        "actual_close_t": 143.0,
+        "predicted_t5": 136.47,
+        "actual_t5": 139.0,
+        "pred_dir": "🔻看跌",
+        "actual_dir": "🔻跌",
+        "is_hit": true,
+        "error_pct": 1.82
+      },
+      {
+        "test_date": "2026-01-15",
+        "actual_close_t": 167.5,
+        "predicted_t5": 165.0,
+        "actual_t5": 164.5,
+        "pred_dir": "🔻看跌",
+        "actual_dir": "🔻跌",
+        "is_hit": true,
+        "error_pct": 0.3
+      },
+      {
+        "test_date": "2026-02-25",
+        "actual_close_t": 205.5,
+        "predicted_t5": 214.81,
+        "actual_t5": 177.5,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔻跌",
+        "is_hit": false,
+        "error_pct": 9.8
+      },
+      {
+        "test_date": "2026-03-30",
+        "actual_close_t": 226.5,
+        "predicted_t5": 225.99,
+        "actual_t5": 247.5,
+        "pred_dir": "🔻看跌",
+        "actual_dir": "🔺漲",
+        "is_hit": false,
+        "error_pct": 8.69
+      }
+    ],
+    "ml_train_samples": 706
+  },
+  "2356.TW": {
+    "symbol": "2356.TW",
+    "updated_at": "2026-10-20 22:43:52",
+    "weights": [
+      0.0011036795998770814,
+      -0.04062633525814428,
+      -0.028021724180279428,
+      -0.02327427749828434,
+      -0.015103397121349421,
+      0.005538139362648072,
+      0.02653049876449594,
+      0.04506072191810058,
+      0.01977645208328622,
+      0.004361090417694713,
+      0.016791210205565024,
+      -0.003265052941961267,
+      -0.0008990558592973394,
+      0.00048410927157056284,
+      0.00044147183996683396,
+      0.0006622077597545799,
+      0.0006055836419787153,
+      0.003436534682117086
+    ],
+    "directional_accuracy": 52.5,
+    "mape_pct": 4.21,
+    "verif_samples": [
+      {
+        "test_date": "2024-01-15",
+        "actual_close_t": 50.5,
+        "predicted_t5": 51.54,
+        "actual_t5": 56.0,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔺漲",
+        "is_hit": true,
+        "error_pct": 7.96
+      },
+      {
+        "test_date": "2024-02-23",
+        "actual_close_t": 55.1,
+        "predicted_t5": 54.23,
+        "actual_t5": 55.6,
+        "pred_dir": "🔻看跌",
+        "actual_dir": "🔺漲",
+        "is_hit": false,
+        "error_pct": 2.46
+      },
+      {
+        "test_date": "2024-03-27",
+        "actual_close_t": 58.7,
+        "predicted_t5": 63.12,
+        "actual_t5": 59.2,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔺漲",
+        "is_hit": true,
+        "error_pct": 6.62
+      },
+      {
+        "test_date": "2024-04-30",
+        "actual_close_t": 53.1,
+        "predicted_t5": 54.78,
+        "actual_t5": 54.4,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔺漲",
+        "is_hit": true,
+        "error_pct": 0.7
+      },
+      {
+        "test_date": "2024-05-31",
+        "actual_close_t": 53.5,
+        "predicted_t5": 52.64,
+        "actual_t5": 53.0,
+        "pred_dir": "🔻看跌",
+        "actual_dir": "🔻跌",
+        "is_hit": true,
+        "error_pct": 0.68
+      },
+      {
+        "test_date": "2024-07-03",
+        "actual_close_t": 55.3,
+        "predicted_t5": 56.34,
+        "actual_t5": 57.0,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔺漲",
+        "is_hit": true,
+        "error_pct": 1.16
+      },
+      {
+        "test_date": "2024-08-06",
+        "actual_close_t": 42.95,
+        "predicted_t5": 45.35,
+        "actual_t5": 47.8,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔺漲",
+        "is_hit": true,
+        "error_pct": 5.13
+      },
+      {
+        "test_date": "2024-09-05",
+        "actual_close_t": 41.8,
+        "predicted_t5": 39.8,
+        "actual_t5": 42.85,
+        "pred_dir": "🔻看跌",
+        "actual_dir": "🔺漲",
+        "is_hit": false,
+        "error_pct": 7.12
+      },
+      {
+        "test_date": "2024-10-11",
+        "actual_close_t": 44.4,
+        "predicted_t5": 44.33,
+        "actual_t5": 45.5,
+        "pred_dir": "🔻看跌",
+        "actual_dir": "🔺漲",
+        "is_hit": false,
+        "error_pct": 2.57
+      },
+      {
+        "test_date": "2024-11-13",
+        "actual_close_t": 51.0,
+        "predicted_t5": 52.3,
+        "actual_t5": 49.0,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔻跌",
+        "is_hit": false,
+        "error_pct": 6.73
+      },
+      {
+        "test_date": "2024-12-13",
+        "actual_close_t": 49.6,
+        "predicted_t5": 50.92,
+        "actual_t5": 49.45,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔻跌",
+        "is_hit": false,
+        "error_pct": 2.97
+      },
+      {
+        "test_date": "2025-01-15",
+        "actual_close_t": 48.6,
+        "predicted_t5": 49.05,
+        "actual_t5": 49.3,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔺漲",
+        "is_hit": true,
+        "error_pct": 0.51
+      },
+      {
+        "test_date": "2025-02-25",
+        "actual_close_t": 47.7,
+        "predicted_t5": 49.55,
+        "actual_t5": 47.65,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔻跌",
+        "is_hit": false,
+        "error_pct": 3.99
+      },
+      {
+        "test_date": "2025-03-28",
+        "actual_close_t": 44.05,
+        "predicted_t5": 44.15,
+        "actual_t5": 36.7,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔻跌",
+        "is_hit": false,
+        "error_pct": 9.8
+      },
+      {
+        "test_date": "2025-05-02",
+        "actual_close_t": 41.7,
+        "predicted_t5": 41.47,
+        "actual_t5": 41.4,
+        "pred_dir": "🔻看跌",
+        "actual_dir": "🔻跌",
+        "is_hit": true,
+        "error_pct": 0.17
+      },
+      {
+        "test_date": "2025-06-04",
+        "actual_close_t": 41.6,
+        "predicted_t5": 42.48,
+        "actual_t5": 42.1,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔺漲",
+        "is_hit": true,
+        "error_pct": 0.9
+      },
+      {
+        "test_date": "2025-07-04",
+        "actual_close_t": 44.0,
+        "predicted_t5": 43.0,
+        "actual_t5": 42.0,
+        "pred_dir": "🔻看跌",
+        "actual_dir": "🔻跌",
+        "is_hit": true,
+        "error_pct": 2.38
+      },
+      {
+        "test_date": "2025-08-06",
+        "actual_close_t": 43.95,
+        "predicted_t5": 44.23,
+        "actual_t5": 41.9,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔻跌",
+        "is_hit": false,
+        "error_pct": 5.56
+      },
+      {
+        "test_date": "2025-09-05",
+        "actual_close_t": 41.7,
+        "predicted_t5": 42.1,
+        "actual_t5": 43.4,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔺漲",
+        "is_hit": true,
+        "error_pct": 3.0
+      },
+      {
+        "test_date": "2025-10-09",
+        "actual_close_t": 46.35,
+        "predicted_t5": 47.33,
+        "actual_t5": 43.85,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔻跌",
+        "is_hit": false,
+        "error_pct": 7.94
+      },
+      {
+        "test_date": "2025-11-12",
+        "actual_close_t": 42.8,
+        "predicted_t5": 41.82,
+        "actual_t5": 40.65,
+        "pred_dir": "🔻看跌",
+        "actual_dir": "🔻跌",
+        "is_hit": true,
+        "error_pct": 2.88
+      },
+      {
+        "test_date": "2025-12-12",
+        "actual_close_t": 43.65,
+        "predicted_t5": 43.71,
+        "actual_t5": 43.0,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔻跌",
+        "is_hit": false,
+        "error_pct": 1.65
+      },
+      {
+        "test_date": "2026-01-15",
+        "actual_close_t": 44.15,
+        "predicted_t5": 43.98,
+        "actual_t5": 51.2,
+        "pred_dir": "🔻看跌",
+        "actual_dir": "🔺漲",
+        "is_hit": false,
+        "error_pct": 9.8
+      },
+      {
+        "test_date": "2026-02-25",
+        "actual_close_t": 46.4,
+        "predicted_t5": 46.1,
+        "actual_t5": 41.9,
+        "pred_dir": "🔻看跌",
+        "actual_dir": "🔻跌",
+        "is_hit": true,
+        "error_pct": 9.8
+      },
+      {
+        "test_date": "2026-03-30",
+        "actual_close_t": 41.4,
+        "predicted_t5": 41.38,
+        "actual_t5": 42.65,
+        "pred_dir": "🔻看跌",
+        "actual_dir": "🔺漲",
+        "is_hit": false,
+        "error_pct": 2.98
+      }
+    ],
+    "ml_train_samples": 706
+  },
+  "6278.TW": {
+    "symbol": "6278.TW",
+    "updated_at": "2026-10-20 22:43:54",
+    "weights": [
+      0.0006151959194944298,
+      0.019756527489043663,
+      0.028165711892854706,
+      0.0016743390250668515,
+      0.015551576661082145,
+      0.013272992849880047,
+      -0.08742269114122017,
+      0.03296923052021689,
+      -0.028818194208266007,
+      -0.04292406838248131,
+      -0.025332792181670144,
+      -0.007151830442243039,
+      0.005561592400715206,
+      0.008022023976265572,
+      0.00019686269425959216,
+      0.00012303918387940833,
+      0.002483799360600008,
+      -0.014549953040172061
+    ],
+    "directional_accuracy": 45.9,
+    "mape_pct": 3.97,
+    "verif_samples": [
+      {
+        "test_date": "2024-01-15",
+        "actual_close_t": 94.0,
+        "predicted_t5": 94.54,
+        "actual_t5": 92.2,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔻跌",
+        "is_hit": false,
+        "error_pct": 2.54
+      },
+      {
+        "test_date": "2024-02-23",
+        "actual_close_t": 96.4,
+        "predicted_t5": 94.65,
+        "actual_t5": 97.3,
+        "pred_dir": "🔻看跌",
+        "actual_dir": "🔺漲",
+        "is_hit": false,
+        "error_pct": 2.72
+      },
+      {
+        "test_date": "2024-03-27",
+        "actual_close_t": 104.5,
+        "predicted_t5": 103.5,
+        "actual_t5": 110.0,
+        "pred_dir": "🔻看跌",
+        "actual_dir": "🔺漲",
+        "is_hit": false,
+        "error_pct": 5.91
+      },
+      {
+        "test_date": "2024-04-30",
+        "actual_close_t": 119.5,
+        "predicted_t5": 121.34,
+        "actual_t5": 121.0,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔺漲",
+        "is_hit": true,
+        "error_pct": 0.28
+      },
+      {
+        "test_date": "2024-05-31",
+        "actual_close_t": 114.0,
+        "predicted_t5": 114.71,
+        "actual_t5": 114.5,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔺漲",
+        "is_hit": true,
+        "error_pct": 0.18
+      },
+      {
+        "test_date": "2024-07-03",
+        "actual_close_t": 139.0,
+        "predicted_t5": 146.18,
+        "actual_t5": 131.0,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔻跌",
+        "is_hit": false,
+        "error_pct": 9.8
+      },
+      {
+        "test_date": "2024-08-06",
+        "actual_close_t": 111.5,
+        "predicted_t5": 107.19,
+        "actual_t5": 117.0,
+        "pred_dir": "🔻看跌",
+        "actual_dir": "🔺漲",
+        "is_hit": false,
+        "error_pct": 8.38
+      },
+      {
+        "test_date": "2024-09-05",
+        "actual_close_t": 110.5,
+        "predicted_t5": 112.41,
+        "actual_t5": 107.5,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔻跌",
+        "is_hit": false,
+        "error_pct": 4.57
+      },
+      {
+        "test_date": "2024-10-11",
+        "actual_close_t": 108.5,
+        "predicted_t5": 106.62,
+        "actual_t5": 110.0,
+        "pred_dir": "🔻看跌",
+        "actual_dir": "🔺漲",
+        "is_hit": false,
+        "error_pct": 3.07
+      },
+      {
+        "test_date": "2024-11-13",
+        "actual_close_t": 105.0,
+        "predicted_t5": 105.07,
+        "actual_t5": 101.0,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔻跌",
+        "is_hit": false,
+        "error_pct": 4.03
+      },
+      {
+        "test_date": "2024-12-13",
+        "actual_close_t": 106.0,
+        "predicted_t5": 105.66,
+        "actual_t5": 108.0,
+        "pred_dir": "🔻看跌",
+        "actual_dir": "🔺漲",
+        "is_hit": false,
+        "error_pct": 2.17
+      },
+      {
+        "test_date": "2025-01-15",
+        "actual_close_t": 105.0,
+        "predicted_t5": 105.5,
+        "actual_t5": 104.5,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔻跌",
+        "is_hit": false,
+        "error_pct": 0.96
+      },
+      {
+        "test_date": "2025-02-25",
+        "actual_close_t": 110.0,
+        "predicted_t5": 111.19,
+        "actual_t5": 111.0,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔺漲",
+        "is_hit": true,
+        "error_pct": 0.17
+      },
+      {
+        "test_date": "2025-03-28",
+        "actual_close_t": 109.0,
+        "predicted_t5": 111.56,
+        "actual_t5": 90.9,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔻跌",
+        "is_hit": false,
+        "error_pct": 9.8
+      },
+      {
+        "test_date": "2025-05-02",
+        "actual_close_t": 103.0,
+        "predicted_t5": 103.17,
+        "actual_t5": 103.0,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔺漲",
+        "is_hit": true,
+        "error_pct": 0.17
+      },
+      {
+        "test_date": "2025-06-04",
+        "actual_close_t": 109.0,
+        "predicted_t5": 111.81,
+        "actual_t5": 113.5,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔺漲",
+        "is_hit": true,
+        "error_pct": 1.49
+      },
+      {
+        "test_date": "2025-07-04",
+        "actual_close_t": 109.0,
+        "predicted_t5": 110.62,
+        "actual_t5": 104.0,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔻跌",
+        "is_hit": false,
+        "error_pct": 6.37
+      },
+      {
+        "test_date": "2025-08-06",
+        "actual_close_t": 109.0,
+        "predicted_t5": 107.63,
+        "actual_t5": 105.0,
+        "pred_dir": "🔻看跌",
+        "actual_dir": "🔻跌",
+        "is_hit": true,
+        "error_pct": 2.5
+      },
+      {
+        "test_date": "2025-09-05",
+        "actual_close_t": 105.0,
+        "predicted_t5": 102.24,
+        "actual_t5": 105.0,
+        "pred_dir": "🔻看跌",
+        "actual_dir": "🔺漲",
+        "is_hit": false,
+        "error_pct": 2.63
+      },
+      {
+        "test_date": "2025-10-09",
+        "actual_close_t": 108.5,
+        "predicted_t5": 110.34,
+        "actual_t5": 106.0,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔻跌",
+        "is_hit": false,
+        "error_pct": 4.09
+      },
+      {
+        "test_date": "2025-11-12",
+        "actual_close_t": 105.5,
+        "predicted_t5": 107.03,
+        "actual_t5": 98.3,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔻跌",
+        "is_hit": false,
+        "error_pct": 8.88
+      },
+      {
+        "test_date": "2025-12-12",
+        "actual_close_t": 98.8,
+        "predicted_t5": 99.36,
+        "actual_t5": 95.7,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔻跌",
+        "is_hit": false,
+        "error_pct": 3.82
+      },
+      {
+        "test_date": "2026-01-15",
+        "actual_close_t": 96.1,
+        "predicted_t5": 97.13,
+        "actual_t5": 97.4,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔺漲",
+        "is_hit": true,
+        "error_pct": 0.28
+      },
+      {
+        "test_date": "2026-02-25",
+        "actual_close_t": 101.0,
+        "predicted_t5": 100.42,
+        "actual_t5": 101.0,
+        "pred_dir": "🔻看跌",
+        "actual_dir": "🔺漲",
+        "is_hit": false,
+        "error_pct": 0.57
+      },
+      {
+        "test_date": "2026-03-30",
+        "actual_close_t": 94.7,
+        "predicted_t5": 94.33,
+        "actual_t5": 94.7,
+        "pred_dir": "🔻看跌",
+        "actual_dir": "🔺漲",
+        "is_hit": false,
+        "error_pct": 0.39
+      }
+    ],
+    "ml_train_samples": 706
+  },
+  "3354.TWO": {
+    "symbol": "3354.TWO",
+    "updated_at": "2026-10-20 22:43:56",
+    "weights": [
+      0.00213373859299981,
+      0.05252083144388353,
+      0.008625164985386138,
+      -0.019598806715538895,
+      -0.006925972704769579,
+      0.0014573261946990413,
+      -0.032302548087457465,
+      0.038438887586128755,
+      0.00886023868924656,
+      -0.0017222118158754423,
+      0.008698597492028542,
+      0.003333138927384251,
+      -0.0018181419483315564,
+      -0.012428639453264372,
+      0.0006827963500066153,
+      0.001280243155501602,
+      -0.0032059956072375403,
+      -0.01145437739506373
+    ],
+    "directional_accuracy": 50.8,
+    "mape_pct": 6.03,
+    "verif_samples": [
+      {
+        "test_date": "2024-01-15",
+        "actual_close_t": 16.85,
+        "predicted_t5": 16.5,
+        "actual_t5": 20.75,
+        "pred_dir": "🔻看跌",
+        "actual_dir": "🔺漲",
+        "is_hit": false,
+        "error_pct": 9.8
+      },
+      {
+        "test_date": "2024-02-23",
+        "actual_close_t": 28.7,
+        "predicted_t5": 30.51,
+        "actual_t5": 29.0,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔺漲",
+        "is_hit": true,
+        "error_pct": 5.21
+      },
+      {
+        "test_date": "2024-03-27",
+        "actual_close_t": 24.5,
+        "predicted_t5": 25.59,
+        "actual_t5": 24.0,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔻跌",
+        "is_hit": false,
+        "error_pct": 6.62
+      },
+      {
+        "test_date": "2024-04-30",
+        "actual_close_t": 23.0,
+        "predicted_t5": 23.85,
+        "actual_t5": 22.45,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔻跌",
+        "is_hit": false,
+        "error_pct": 6.24
+      },
+      {
+        "test_date": "2024-05-31",
+        "actual_close_t": 24.5,
+        "predicted_t5": 24.99,
+        "actual_t5": 24.05,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔻跌",
+        "is_hit": false,
+        "error_pct": 3.91
+      },
+      {
+        "test_date": "2024-07-03",
+        "actual_close_t": 24.1,
+        "predicted_t5": 25.14,
+        "actual_t5": 23.0,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔻跌",
+        "is_hit": false,
+        "error_pct": 9.3
+      },
+      {
+        "test_date": "2024-08-06",
+        "actual_close_t": 17.6,
+        "predicted_t5": 15.84,
+        "actual_t5": 18.8,
+        "pred_dir": "🔻看跌",
+        "actual_dir": "🔺漲",
+        "is_hit": false,
+        "error_pct": 9.8
+      },
+      {
+        "test_date": "2024-09-05",
+        "actual_close_t": 21.65,
+        "predicted_t5": 20.96,
+        "actual_t5": 21.55,
+        "pred_dir": "🔻看跌",
+        "actual_dir": "🔻跌",
+        "is_hit": true,
+        "error_pct": 2.74
+      },
+      {
+        "test_date": "2024-10-11",
+        "actual_close_t": 25.1,
+        "predicted_t5": 23.59,
+        "actual_t5": 30.1,
+        "pred_dir": "🔻看跌",
+        "actual_dir": "🔺漲",
+        "is_hit": false,
+        "error_pct": 9.8
+      },
+      {
+        "test_date": "2024-11-13",
+        "actual_close_t": 24.5,
+        "predicted_t5": 23.19,
+        "actual_t5": 24.15,
+        "pred_dir": "🔻看跌",
+        "actual_dir": "🔻跌",
+        "is_hit": true,
+        "error_pct": 3.98
+      },
+      {
+        "test_date": "2024-12-13",
+        "actual_close_t": 22.2,
+        "predicted_t5": 22.91,
+        "actual_t5": 21.45,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔻跌",
+        "is_hit": false,
+        "error_pct": 6.81
+      },
+      {
+        "test_date": "2025-01-15",
+        "actual_close_t": 20.2,
+        "predicted_t5": 21.29,
+        "actual_t5": 20.4,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔺漲",
+        "is_hit": true,
+        "error_pct": 4.36
+      },
+      {
+        "test_date": "2025-02-25",
+        "actual_close_t": 21.1,
+        "predicted_t5": 22.29,
+        "actual_t5": 20.6,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔻跌",
+        "is_hit": false,
+        "error_pct": 8.2
+      },
+      {
+        "test_date": "2025-03-28",
+        "actual_close_t": 20.5,
+        "predicted_t5": 21.61,
+        "actual_t5": 15.9,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔻跌",
+        "is_hit": false,
+        "error_pct": 9.8
+      },
+      {
+        "test_date": "2025-05-02",
+        "actual_close_t": 16.8,
+        "predicted_t5": 17.28,
+        "actual_t5": 15.8,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔻跌",
+        "is_hit": false,
+        "error_pct": 9.37
+      },
+      {
+        "test_date": "2025-06-04",
+        "actual_close_t": 16.8,
+        "predicted_t5": 16.33,
+        "actual_t5": 16.15,
+        "pred_dir": "🔻看跌",
+        "actual_dir": "🔻跌",
+        "is_hit": true,
+        "error_pct": 1.11
+      },
+      {
+        "test_date": "2025-07-04",
+        "actual_close_t": 16.6,
+        "predicted_t5": 16.23,
+        "actual_t5": 16.4,
+        "pred_dir": "🔻看跌",
+        "actual_dir": "🔻跌",
+        "is_hit": true,
+        "error_pct": 1.04
+      },
+      {
+        "test_date": "2025-08-06",
+        "actual_close_t": 18.35,
+        "predicted_t5": 18.72,
+        "actual_t5": 18.8,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔺漲",
+        "is_hit": true,
+        "error_pct": 0.43
+      },
+      {
+        "test_date": "2025-09-05",
+        "actual_close_t": 18.55,
+        "predicted_t5": 18.74,
+        "actual_t5": 17.45,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔻跌",
+        "is_hit": false,
+        "error_pct": 7.39
+      },
+      {
+        "test_date": "2025-10-09",
+        "actual_close_t": 16.7,
+        "predicted_t5": 17.13,
+        "actual_t5": 16.35,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔻跌",
+        "is_hit": false,
+        "error_pct": 4.77
+      },
+      {
+        "test_date": "2025-11-12",
+        "actual_close_t": 16.9,
+        "predicted_t5": 16.94,
+        "actual_t5": 15.5,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔻跌",
+        "is_hit": false,
+        "error_pct": 9.29
+      },
+      {
+        "test_date": "2025-12-12",
+        "actual_close_t": 21.15,
+        "predicted_t5": 21.04,
+        "actual_t5": 20.7,
+        "pred_dir": "🔻看跌",
+        "actual_dir": "🔻跌",
+        "is_hit": true,
+        "error_pct": 1.64
+      },
+      {
+        "test_date": "2026-01-15",
+        "actual_close_t": 32.2,
+        "predicted_t5": 35.42,
+        "actual_t5": 29.1,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔻跌",
+        "is_hit": false,
+        "error_pct": 9.8
+      },
+      {
+        "test_date": "2026-02-25",
+        "actual_close_t": 24.2,
+        "predicted_t5": 24.2,
+        "actual_t5": 28.0,
+        "pred_dir": "🔻看跌",
+        "actual_dir": "🔺漲",
+        "is_hit": false,
+        "error_pct": 9.8
+      },
+      {
+        "test_date": "2026-03-30",
+        "actual_close_t": 24.45,
+        "predicted_t5": 24.43,
+        "actual_t5": 25.45,
+        "pred_dir": "🔻看跌",
+        "actual_dir": "🔺漲",
+        "is_hit": false,
+        "error_pct": 4.01
+      }
+    ],
+    "ml_train_samples": 706
+  },
+  "5498.TWO": {
+    "symbol": "5498.TWO",
+    "updated_at": "2026-10-20 22:44:00",
+    "weights": [
+      0.002992416333162277,
+      -0.055401057817260554,
+      -0.02020654490502919,
+      0.006275718588864475,
+      0.013441940480980505,
+      -0.0022822701815878215,
+      0.06593398214929987,
+      0.052971268899360845,
+      -0.052410838897372906,
+      0.0007824840900462728,
+      0.02597292478744824,
+      -0.008390897144384967,
+      0.0007015233632804747,
+      0.018450393095728705,
+      0.0009575732267080254,
+      -0.00029924163325801195,
+      0.0029111715784663136,
+      0.0005272541102166584
+    ],
+    "directional_accuracy": 50.8,
+    "mape_pct": 5.61,
+    "verif_samples": [
+      {
+        "test_date": "2024-01-15",
+        "actual_close_t": 10.95,
+        "predicted_t5": 10.99,
+        "actual_t5": 11.25,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔺漲",
+        "is_hit": true,
+        "error_pct": 2.31
+      },
+      {
+        "test_date": "2024-02-23",
+        "actual_close_t": 12.8,
+        "predicted_t5": 12.61,
+        "actual_t5": 12.85,
+        "pred_dir": "🔻看跌",
+        "actual_dir": "🔺漲",
+        "is_hit": false,
+        "error_pct": 1.87
+      },
+      {
+        "test_date": "2024-03-27",
+        "actual_close_t": 14.2,
+        "predicted_t5": 14.53,
+        "actual_t5": 13.3,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔻跌",
+        "is_hit": false,
+        "error_pct": 9.25
+      },
+      {
+        "test_date": "2024-04-30",
+        "actual_close_t": 12.5,
+        "predicted_t5": 12.79,
+        "actual_t5": 13.65,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔺漲",
+        "is_hit": true,
+        "error_pct": 6.3
+      },
+      {
+        "test_date": "2024-05-31",
+        "actual_close_t": 15.75,
+        "predicted_t5": 15.38,
+        "actual_t5": 15.6,
+        "pred_dir": "🔻看跌",
+        "actual_dir": "🔻跌",
+        "is_hit": true,
+        "error_pct": 1.41
+      },
+      {
+        "test_date": "2024-07-03",
+        "actual_close_t": 16.3,
+        "predicted_t5": 17.41,
+        "actual_t5": 16.55,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔺漲",
+        "is_hit": true,
+        "error_pct": 5.2
+      },
+      {
+        "test_date": "2024-08-06",
+        "actual_close_t": 12.2,
+        "predicted_t5": 12.73,
+        "actual_t5": 13.75,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔺漲",
+        "is_hit": true,
+        "error_pct": 7.42
+      },
+      {
+        "test_date": "2024-09-05",
+        "actual_close_t": 13.95,
+        "predicted_t5": 13.52,
+        "actual_t5": 13.5,
+        "pred_dir": "🔻看跌",
+        "actual_dir": "🔻跌",
+        "is_hit": true,
+        "error_pct": 0.15
+      },
+      {
+        "test_date": "2024-10-11",
+        "actual_close_t": 13.1,
+        "predicted_t5": 13.22,
+        "actual_t5": 13.3,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔺漲",
+        "is_hit": true,
+        "error_pct": 0.6
+      },
+      {
+        "test_date": "2024-11-13",
+        "actual_close_t": 12.55,
+        "predicted_t5": 12.2,
+        "actual_t5": 12.25,
+        "pred_dir": "🔻看跌",
+        "actual_dir": "🔻跌",
+        "is_hit": true,
+        "error_pct": 0.41
+      },
+      {
+        "test_date": "2024-12-13",
+        "actual_close_t": 11.85,
+        "predicted_t5": 12.25,
+        "actual_t5": 11.3,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔻跌",
+        "is_hit": false,
+        "error_pct": 8.41
+      },
+      {
+        "test_date": "2025-01-15",
+        "actual_close_t": 10.35,
+        "predicted_t5": 10.45,
+        "actual_t5": 10.4,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔺漲",
+        "is_hit": true,
+        "error_pct": 0.48
+      },
+      {
+        "test_date": "2025-02-25",
+        "actual_close_t": 11.3,
+        "predicted_t5": 11.4,
+        "actual_t5": 10.9,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔻跌",
+        "is_hit": false,
+        "error_pct": 4.59
+      },
+      {
+        "test_date": "2025-03-28",
+        "actual_close_t": 10.1,
+        "predicted_t5": 10.27,
+        "actual_t5": 8.1,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔻跌",
+        "is_hit": false,
+        "error_pct": 9.8
+      },
+      {
+        "test_date": "2025-05-02",
+        "actual_close_t": 9.25,
+        "predicted_t5": 9.41,
+        "actual_t5": 9.03,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔻跌",
+        "is_hit": false,
+        "error_pct": 4.21
+      },
+      {
+        "test_date": "2025-06-04",
+        "actual_close_t": 8.78,
+        "predicted_t5": 8.82,
+        "actual_t5": 8.89,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔺漲",
+        "is_hit": true,
+        "error_pct": 0.79
+      },
+      {
+        "test_date": "2025-07-04",
+        "actual_close_t": 13.1,
+        "predicted_t5": 12.55,
+        "actual_t5": 12.9,
+        "pred_dir": "🔻看跌",
+        "actual_dir": "🔻跌",
+        "is_hit": true,
+        "error_pct": 2.71
+      },
+      {
+        "test_date": "2025-08-06",
+        "actual_close_t": 19.4,
+        "predicted_t5": 19.89,
+        "actual_t5": 24.55,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔺漲",
+        "is_hit": true,
+        "error_pct": 9.8
+      },
+      {
+        "test_date": "2025-09-05",
+        "actual_close_t": 19.25,
+        "predicted_t5": 18.44,
+        "actual_t5": 19.35,
+        "pred_dir": "🔻看跌",
+        "actual_dir": "🔺漲",
+        "is_hit": false,
+        "error_pct": 4.7
+      },
+      {
+        "test_date": "2025-10-09",
+        "actual_close_t": 20.75,
+        "predicted_t5": 21.23,
+        "actual_t5": 18.75,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔻跌",
+        "is_hit": false,
+        "error_pct": 9.8
+      },
+      {
+        "test_date": "2025-11-12",
+        "actual_close_t": 25.9,
+        "predicted_t5": 27.36,
+        "actual_t5": 26.25,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔺漲",
+        "is_hit": true,
+        "error_pct": 4.23
+      },
+      {
+        "test_date": "2025-12-12",
+        "actual_close_t": 29.4,
+        "predicted_t5": 27.69,
+        "actual_t5": 36.9,
+        "pred_dir": "🔻看跌",
+        "actual_dir": "🔺漲",
+        "is_hit": false,
+        "error_pct": 9.8
+      },
+      {
+        "test_date": "2026-01-15",
+        "actual_close_t": 66.5,
+        "predicted_t5": 73.15,
+        "actual_t5": 66.3,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔻跌",
+        "is_hit": false,
+        "error_pct": 9.8
+      },
+      {
+        "test_date": "2026-02-25",
+        "actual_close_t": 64.0,
+        "predicted_t5": 62.28,
+        "actual_t5": 59.5,
+        "pred_dir": "🔻看跌",
+        "actual_dir": "🔻跌",
+        "is_hit": true,
+        "error_pct": 4.67
+      },
+      {
+        "test_date": "2026-03-30",
+        "actual_close_t": 56.0,
+        "predicted_t5": 54.05,
+        "actual_t5": 59.2,
+        "pred_dir": "🔻看跌",
+        "actual_dir": "🔺漲",
+        "is_hit": false,
+        "error_pct": 8.7
+      }
+    ],
+    "ml_train_samples": 706
+  },
+  "2313.TW": {
+    "symbol": "2313.TW",
+    "updated_at": "2026-10-20 22:44:02",
+    "weights": [
+      0.006085136751693652,
+      -0.0669921975482043,
+      -0.0017468037826000246,
+      -0.0025437236208179885,
+      0.0020073396466610905,
+      -0.020554607347164727,
+      -0.008763954975996524,
+      0.014121015452074805,
+      -0.10753128051217464,
+      0.10251043361549922,
+      -0.005285739601794789,
+      0.000751512161121831,
+      0.0023254279431470415,
+      0.023038712641189094,
+      0.00048681094024431655,
+      0.0012170273502652533,
+      -0.004593015058465338,
+      -0.00479979917320018
+    ],
+    "directional_accuracy": 57.4,
+    "mape_pct": 4.54,
+    "verif_samples": [
+      {
+        "test_date": "2024-01-15",
+        "actual_close_t": 67.9,
+        "predicted_t5": 68.95,
+        "actual_t5": 66.9,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔻跌",
+        "is_hit": false,
+        "error_pct": 3.06
+      },
+      {
+        "test_date": "2024-02-23",
+        "actual_close_t": 78.4,
+        "predicted_t5": 80.4,
+        "actual_t5": 77.0,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔻跌",
+        "is_hit": false,
+        "error_pct": 4.42
+      },
+      {
+        "test_date": "2024-03-27",
+        "actual_close_t": 77.7,
+        "predicted_t5": 79.07,
+        "actual_t5": 79.6,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔺漲",
+        "is_hit": true,
+        "error_pct": 0.67
+      },
+      {
+        "test_date": "2024-04-30",
+        "actual_close_t": 77.2,
+        "predicted_t5": 79.41,
+        "actual_t5": 78.8,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔺漲",
+        "is_hit": true,
+        "error_pct": 0.77
+      },
+      {
+        "test_date": "2024-05-31",
+        "actual_close_t": 73.2,
+        "predicted_t5": 73.36,
+        "actual_t5": 71.3,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔻跌",
+        "is_hit": false,
+        "error_pct": 2.89
+      },
+      {
+        "test_date": "2024-07-03",
+        "actual_close_t": 79.5,
+        "predicted_t5": 78.84,
+        "actual_t5": 86.0,
+        "pred_dir": "🔻看跌",
+        "actual_dir": "🔺漲",
+        "is_hit": false,
+        "error_pct": 8.33
+      },
+      {
+        "test_date": "2024-08-06",
+        "actual_close_t": 65.1,
+        "predicted_t5": 67.91,
+        "actual_t5": 72.1,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔺漲",
+        "is_hit": true,
+        "error_pct": 5.81
+      },
+      {
+        "test_date": "2024-09-05",
+        "actual_close_t": 73.1,
+        "predicted_t5": 73.05,
+        "actual_t5": 72.6,
+        "pred_dir": "🔻看跌",
+        "actual_dir": "🔻跌",
+        "is_hit": true,
+        "error_pct": 0.62
+      },
+      {
+        "test_date": "2024-10-11",
+        "actual_close_t": 62.2,
+        "predicted_t5": 67.01,
+        "actual_t5": 62.1,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔻跌",
+        "is_hit": false,
+        "error_pct": 7.91
+      },
+      {
+        "test_date": "2024-11-13",
+        "actual_close_t": 62.8,
+        "predicted_t5": 65.26,
+        "actual_t5": 61.2,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔻跌",
+        "is_hit": false,
+        "error_pct": 6.63
+      },
+      {
+        "test_date": "2024-12-13",
+        "actual_close_t": 66.8,
+        "predicted_t5": 69.07,
+        "actual_t5": 69.1,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔺漲",
+        "is_hit": true,
+        "error_pct": 0.04
+      },
+      {
+        "test_date": "2025-01-15",
+        "actual_close_t": 66.2,
+        "predicted_t5": 66.7,
+        "actual_t5": 68.8,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔺漲",
+        "is_hit": true,
+        "error_pct": 3.05
+      },
+      {
+        "test_date": "2025-02-25",
+        "actual_close_t": 67.6,
+        "predicted_t5": 70.05,
+        "actual_t5": 66.6,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔻跌",
+        "is_hit": false,
+        "error_pct": 5.18
+      },
+      {
+        "test_date": "2025-03-28",
+        "actual_close_t": 61.5,
+        "predicted_t5": 63.22,
+        "actual_t5": 49.05,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔻跌",
+        "is_hit": false,
+        "error_pct": 9.8
+      },
+      {
+        "test_date": "2025-05-02",
+        "actual_close_t": 56.8,
+        "predicted_t5": 57.94,
+        "actual_t5": 61.1,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔺漲",
+        "is_hit": true,
+        "error_pct": 5.17
+      },
+      {
+        "test_date": "2025-06-04",
+        "actual_close_t": 60.8,
+        "predicted_t5": 61.25,
+        "actual_t5": 59.4,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔻跌",
+        "is_hit": false,
+        "error_pct": 3.11
+      },
+      {
+        "test_date": "2025-07-04",
+        "actual_close_t": 58.8,
+        "predicted_t5": 60.18,
+        "actual_t5": 60.6,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔺漲",
+        "is_hit": true,
+        "error_pct": 0.69
+      },
+      {
+        "test_date": "2025-08-06",
+        "actual_close_t": 64.5,
+        "predicted_t5": 63.75,
+        "actual_t5": 71.1,
+        "pred_dir": "🔻看跌",
+        "actual_dir": "🔺漲",
+        "is_hit": false,
+        "error_pct": 9.8
+      },
+      {
+        "test_date": "2025-09-05",
+        "actual_close_t": 75.8,
+        "predicted_t5": 75.29,
+        "actual_t5": 77.3,
+        "pred_dir": "🔻看跌",
+        "actual_dir": "🔺漲",
+        "is_hit": false,
+        "error_pct": 2.6
+      },
+      {
+        "test_date": "2025-10-09",
+        "actual_close_t": 87.0,
+        "predicted_t5": 89.69,
+        "actual_t5": 85.9,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔻跌",
+        "is_hit": false,
+        "error_pct": 4.41
+      },
+      {
+        "test_date": "2025-11-12",
+        "actual_close_t": 83.9,
+        "predicted_t5": 83.48,
+        "actual_t5": 77.3,
+        "pred_dir": "🔻看跌",
+        "actual_dir": "🔻跌",
+        "is_hit": true,
+        "error_pct": 7.99
+      },
+      {
+        "test_date": "2025-12-12",
+        "actual_close_t": 85.4,
+        "predicted_t5": 88.94,
+        "actual_t5": 87.8,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔺漲",
+        "is_hit": true,
+        "error_pct": 1.3
+      },
+      {
+        "test_date": "2026-01-15",
+        "actual_close_t": 141.0,
+        "predicted_t5": 149.69,
+        "actual_t5": 155.5,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔺漲",
+        "is_hit": true,
+        "error_pct": 3.74
+      },
+      {
+        "test_date": "2026-02-25",
+        "actual_close_t": 209.5,
+        "predicted_t5": 221.03,
+        "actual_t5": 205.0,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔻跌",
+        "is_hit": false,
+        "error_pct": 7.82
+      },
+      {
+        "test_date": "2026-03-30",
+        "actual_close_t": 263.0,
+        "predicted_t5": 269.21,
+        "actual_t5": 274.0,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔺漲",
+        "is_hit": true,
+        "error_pct": 1.75
+      }
+    ],
+    "ml_train_samples": 706
+  },
+  "2887.TW": {
+    "symbol": "2887.TW",
+    "updated_at": "2026-10-20 22:44:03",
+    "weights": [
+      0.0006837271638940637,
+      -0.019997634987335585,
+      0.00494051610941212,
+      -0.002835463307681032,
+      0.012589787727722358,
+      0.0039107941845917815,
+      0.008769593165576257,
+      -0.0007448836362607305,
+      -0.04075217683350685,
+      0.006696819705340972,
+      0.002865647200552538,
+      -0.00042904963920318575,
+      0.0009550304176290479,
+      0.008243560483673282,
+      0.0,
+      0.00041023629823756075,
+      -0.0015725348993594302,
+      0.0013745187421414446
+    ],
+    "directional_accuracy": 52.5,
+    "mape_pct": 2.78,
+    "verif_samples": [
+      {
+        "test_date": "2024-01-15",
+        "actual_close_t": 16.76,
+        "predicted_t5": 16.63,
+        "actual_t5": 16.18,
+        "pred_dir": "🔻看跌",
+        "actual_dir": "🔻跌",
+        "is_hit": true,
+        "error_pct": 2.78
+      },
+      {
+        "test_date": "2024-02-23",
+        "actual_close_t": 16.47,
+        "predicted_t5": 16.69,
+        "actual_t5": 16.52,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔺漲",
+        "is_hit": true,
+        "error_pct": 1.03
+      },
+      {
+        "test_date": "2024-03-27",
+        "actual_close_t": 17.18,
+        "predicted_t5": 17.26,
+        "actual_t5": 17.04,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔻跌",
+        "is_hit": false,
+        "error_pct": 1.29
+      },
+      {
+        "test_date": "2024-04-30",
+        "actual_close_t": 17.09,
+        "predicted_t5": 17.0,
+        "actual_t5": 17.8,
+        "pred_dir": "🔻看跌",
+        "actual_dir": "🔺漲",
+        "is_hit": false,
+        "error_pct": 4.49
+      },
+      {
+        "test_date": "2024-05-31",
+        "actual_close_t": 17.52,
+        "predicted_t5": 17.4,
+        "actual_t5": 17.9,
+        "pred_dir": "🔻看跌",
+        "actual_dir": "🔺漲",
+        "is_hit": false,
+        "error_pct": 2.79
+      },
+      {
+        "test_date": "2024-07-03",
+        "actual_close_t": 18.28,
+        "predicted_t5": 18.28,
+        "actual_t5": 18.8,
+        "pred_dir": "🔻看跌",
+        "actual_dir": "🔺漲",
+        "is_hit": false,
+        "error_pct": 2.77
+      },
+      {
+        "test_date": "2024-08-06",
+        "actual_close_t": 17.38,
+        "predicted_t5": 16.84,
+        "actual_t5": 18.12,
+        "pred_dir": "🔻看跌",
+        "actual_dir": "🔺漲",
+        "is_hit": false,
+        "error_pct": 7.06
+      },
+      {
+        "test_date": "2024-09-05",
+        "actual_close_t": 18.02,
+        "predicted_t5": 17.97,
+        "actual_t5": 18.12,
+        "pred_dir": "🔻看跌",
+        "actual_dir": "🔺漲",
+        "is_hit": false,
+        "error_pct": 0.83
+      },
+      {
+        "test_date": "2024-10-11",
+        "actual_close_t": 17.57,
+        "predicted_t5": 17.56,
+        "actual_t5": 17.38,
+        "pred_dir": "🔻看跌",
+        "actual_dir": "🔻跌",
+        "is_hit": true,
+        "error_pct": 1.04
+      },
+      {
+        "test_date": "2024-11-13",
+        "actual_close_t": 16.88,
+        "predicted_t5": 16.81,
+        "actual_t5": 17.18,
+        "pred_dir": "🔻看跌",
+        "actual_dir": "🔺漲",
+        "is_hit": false,
+        "error_pct": 2.15
+      },
+      {
+        "test_date": "2024-12-13",
+        "actual_close_t": 17.28,
+        "predicted_t5": 17.18,
+        "actual_t5": 16.93,
+        "pred_dir": "🔻看跌",
+        "actual_dir": "🔻跌",
+        "is_hit": true,
+        "error_pct": 1.48
+      },
+      {
+        "test_date": "2025-01-15",
+        "actual_close_t": 17.23,
+        "predicted_t5": 17.16,
+        "actual_t5": 17.28,
+        "pred_dir": "🔻看跌",
+        "actual_dir": "🔺漲",
+        "is_hit": false,
+        "error_pct": 0.69
+      },
+      {
+        "test_date": "2025-02-25",
+        "actual_close_t": 17.28,
+        "predicted_t5": 17.23,
+        "actual_t5": 17.23,
+        "pred_dir": "🔻看跌",
+        "actual_dir": "🔻跌",
+        "is_hit": true,
+        "error_pct": 0.0
+      },
+      {
+        "test_date": "2025-03-28",
+        "actual_close_t": 17.43,
+        "predicted_t5": 17.46,
+        "actual_t5": 15.1,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔻跌",
+        "is_hit": false,
+        "error_pct": 9.8
+      },
+      {
+        "test_date": "2025-05-02",
+        "actual_close_t": 16.29,
+        "predicted_t5": 16.55,
+        "actual_t5": 16.04,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔻跌",
+        "is_hit": false,
+        "error_pct": 3.18
+      },
+      {
+        "test_date": "2025-06-04",
+        "actual_close_t": 16.58,
+        "predicted_t5": 16.69,
+        "actual_t5": 16.49,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔻跌",
+        "is_hit": false,
+        "error_pct": 1.21
+      },
+      {
+        "test_date": "2025-07-04",
+        "actual_close_t": 15.79,
+        "predicted_t5": 16.35,
+        "actual_t5": 18.12,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔺漲",
+        "is_hit": true,
+        "error_pct": 9.77
+      },
+      {
+        "test_date": "2025-08-06",
+        "actual_close_t": 16.53,
+        "predicted_t5": 16.79,
+        "actual_t5": 15.99,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔻跌",
+        "is_hit": false,
+        "error_pct": 5.0
+      },
+      {
+        "test_date": "2025-09-05",
+        "actual_close_t": 16.93,
+        "predicted_t5": 16.95,
+        "actual_t5": 17.13,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔺漲",
+        "is_hit": true,
+        "error_pct": 1.05
+      },
+      {
+        "test_date": "2025-10-09",
+        "actual_close_t": 18.61,
+        "predicted_t5": 18.18,
+        "actual_t5": 19.21,
+        "pred_dir": "🔻看跌",
+        "actual_dir": "🔺漲",
+        "is_hit": false,
+        "error_pct": 5.36
+      },
+      {
+        "test_date": "2025-11-12",
+        "actual_close_t": 18.96,
+        "predicted_t5": 18.96,
+        "actual_t5": 18.22,
+        "pred_dir": "🔻看跌",
+        "actual_dir": "🔻跌",
+        "is_hit": true,
+        "error_pct": 4.06
+      },
+      {
+        "test_date": "2025-12-12",
+        "actual_close_t": 19.21,
+        "predicted_t5": 19.22,
+        "actual_t5": 21.19,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔺漲",
+        "is_hit": true,
+        "error_pct": 9.3
+      },
+      {
+        "test_date": "2026-01-15",
+        "actual_close_t": 21.39,
+        "predicted_t5": 21.24,
+        "actual_t5": 21.88,
+        "pred_dir": "🔻看跌",
+        "actual_dir": "🔺漲",
+        "is_hit": false,
+        "error_pct": 2.93
+      },
+      {
+        "test_date": "2026-02-25",
+        "actual_close_t": 24.65,
+        "predicted_t5": 24.91,
+        "actual_t5": 24.31,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔻跌",
+        "is_hit": false,
+        "error_pct": 2.47
+      },
+      {
+        "test_date": "2026-03-30",
+        "actual_close_t": 23.51,
+        "predicted_t5": 23.64,
+        "actual_t5": 24.46,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔺漲",
+        "is_hit": true,
+        "error_pct": 3.35
+      }
+    ],
+    "ml_train_samples": 706
+  },
+  "2890.TW": {
+    "symbol": "2890.TW",
+    "updated_at": "2026-10-20 22:44:06",
+    "weights": [
+      0.0012137164536046715,
+      0.028423009755024514,
+      0.02395240128504376,
+      0.0014522096865410724,
+      -0.0016736565188473576,
+      -0.00342628334671589,
+      0.012120392514214802,
+      -0.04455142016990163,
+      0.007800913459699209,
+      0.009795482274651277,
+      0.07141189235348101,
+      0.0010195715651419664,
+      -0.000959521704860264,
+      -0.006402080377874793,
+      0.0,
+      0.0007282298719570755,
+      -0.0034010373735715665,
+      0.0018392725752232454
+    ],
+    "directional_accuracy": 55.7,
+    "mape_pct": 2.5,
+    "verif_samples": [
+      {
+        "test_date": "2024-01-15",
+        "actual_close_t": 17.67,
+        "predicted_t5": 17.79,
+        "actual_t5": 17.53,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔻跌",
+        "is_hit": false,
+        "error_pct": 1.48
+      },
+      {
+        "test_date": "2024-02-23",
+        "actual_close_t": 18.36,
+        "predicted_t5": 18.43,
+        "actual_t5": 18.5,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔺漲",
+        "is_hit": true,
+        "error_pct": 0.38
+      },
+      {
+        "test_date": "2024-03-27",
+        "actual_close_t": 19.89,
+        "predicted_t5": 20.11,
+        "actual_t5": 19.43,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔻跌",
+        "is_hit": false,
+        "error_pct": 3.5
+      },
+      {
+        "test_date": "2024-04-30",
+        "actual_close_t": 20.3,
+        "predicted_t5": 20.36,
+        "actual_t5": 21.0,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔺漲",
+        "is_hit": true,
+        "error_pct": 3.05
+      },
+      {
+        "test_date": "2024-05-31",
+        "actual_close_t": 21.32,
+        "predicted_t5": 21.29,
+        "actual_t5": 21.74,
+        "pred_dir": "🔻看跌",
+        "actual_dir": "🔺漲",
+        "is_hit": false,
+        "error_pct": 2.07
+      },
+      {
+        "test_date": "2024-07-03",
+        "actual_close_t": 24.42,
+        "predicted_t5": 24.78,
+        "actual_t5": 24.42,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔺漲",
+        "is_hit": true,
+        "error_pct": 1.47
+      },
+      {
+        "test_date": "2024-08-06",
+        "actual_close_t": 23.22,
+        "predicted_t5": 23.48,
+        "actual_t5": 24.74,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔺漲",
+        "is_hit": true,
+        "error_pct": 5.09
+      },
+      {
+        "test_date": "2024-09-05",
+        "actual_close_t": 22.14,
+        "predicted_t5": 22.17,
+        "actual_t5": 22.47,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔺漲",
+        "is_hit": true,
+        "error_pct": 1.34
+      },
+      {
+        "test_date": "2024-10-11",
+        "actual_close_t": 22.23,
+        "predicted_t5": 22.18,
+        "actual_t5": 22.76,
+        "pred_dir": "🔻看跌",
+        "actual_dir": "🔺漲",
+        "is_hit": false,
+        "error_pct": 2.55
+      },
+      {
+        "test_date": "2024-11-13",
+        "actual_close_t": 21.67,
+        "predicted_t5": 21.48,
+        "actual_t5": 21.9,
+        "pred_dir": "🔻看跌",
+        "actual_dir": "🔺漲",
+        "is_hit": false,
+        "error_pct": 1.92
+      },
+      {
+        "test_date": "2024-12-13",
+        "actual_close_t": 22.38,
+        "predicted_t5": 22.75,
+        "actual_t5": 21.81,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔻跌",
+        "is_hit": false,
+        "error_pct": 4.31
+      },
+      {
+        "test_date": "2025-01-15",
+        "actual_close_t": 21.62,
+        "predicted_t5": 21.71,
+        "actual_t5": 21.52,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔻跌",
+        "is_hit": false,
+        "error_pct": 0.88
+      },
+      {
+        "test_date": "2025-02-25",
+        "actual_close_t": 21.48,
+        "predicted_t5": 21.62,
+        "actual_t5": 21.48,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔺漲",
+        "is_hit": true,
+        "error_pct": 0.65
+      },
+      {
+        "test_date": "2025-03-28",
+        "actual_close_t": 21.19,
+        "predicted_t5": 21.26,
+        "actual_t5": 19.2,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔻跌",
+        "is_hit": false,
+        "error_pct": 9.8
+      },
+      {
+        "test_date": "2025-05-02",
+        "actual_close_t": 20.48,
+        "predicted_t5": 20.49,
+        "actual_t5": 22.0,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔺漲",
+        "is_hit": true,
+        "error_pct": 6.86
+      },
+      {
+        "test_date": "2025-06-04",
+        "actual_close_t": 21.76,
+        "predicted_t5": 21.83,
+        "actual_t5": 22.76,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔺漲",
+        "is_hit": true,
+        "error_pct": 4.09
+      },
+      {
+        "test_date": "2025-07-04",
+        "actual_close_t": 23.32,
+        "predicted_t5": 23.77,
+        "actual_t5": 23.85,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔺漲",
+        "is_hit": true,
+        "error_pct": 0.34
+      },
+      {
+        "test_date": "2025-08-06",
+        "actual_close_t": 24.79,
+        "predicted_t5": 25.03,
+        "actual_t5": 24.84,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔺漲",
+        "is_hit": true,
+        "error_pct": 0.76
+      },
+      {
+        "test_date": "2025-09-05",
+        "actual_close_t": 23.82,
+        "predicted_t5": 24.04,
+        "actual_t5": 24.71,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔺漲",
+        "is_hit": true,
+        "error_pct": 2.71
+      },
+      {
+        "test_date": "2025-10-09",
+        "actual_close_t": 25.78,
+        "predicted_t5": 26.02,
+        "actual_t5": 25.59,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔻跌",
+        "is_hit": false,
+        "error_pct": 1.68
+      },
+      {
+        "test_date": "2025-11-12",
+        "actual_close_t": 26.42,
+        "predicted_t5": 26.44,
+        "actual_t5": 25.93,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔻跌",
+        "is_hit": false,
+        "error_pct": 1.97
+      },
+      {
+        "test_date": "2025-12-12",
+        "actual_close_t": 27.06,
+        "predicted_t5": 26.97,
+        "actual_t5": 28.53,
+        "pred_dir": "🔻看跌",
+        "actual_dir": "🔺漲",
+        "is_hit": false,
+        "error_pct": 5.47
+      },
+      {
+        "test_date": "2026-01-15",
+        "actual_close_t": 28.43,
+        "predicted_t5": 28.16,
+        "actual_t5": 28.43,
+        "pred_dir": "🔻看跌",
+        "actual_dir": "🔺漲",
+        "is_hit": false,
+        "error_pct": 0.95
+      },
+      {
+        "test_date": "2026-02-25",
+        "actual_close_t": 32.11,
+        "predicted_t5": 32.07,
+        "actual_t5": 31.03,
+        "pred_dir": "🔻看跌",
+        "actual_dir": "🔻跌",
+        "is_hit": true,
+        "error_pct": 3.35
+      },
+      {
+        "test_date": "2026-03-30",
+        "actual_close_t": 30.15,
+        "predicted_t5": 30.43,
+        "actual_t5": 32.06,
+        "pred_dir": "🔺看漲",
+        "actual_dir": "🔺漲",
+        "is_hit": true,
+        "error_pct": 5.08
+      }
+    ],
+    "ml_train_samples": 706
   }
 }
