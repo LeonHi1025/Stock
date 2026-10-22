@@ -10806,6 +10806,12 @@
     "industry": "半導體業"
   },
   {
+    "symbol": "6898.TWO",
+    "name": "程曦資訊",
+    "market": "上櫃",
+    "industry": "資訊服務業"
+  },
+  {
     "symbol": "6899.TWO",
     "name": "創為精密",
     "market": "上櫃",
@@ -10858,6 +10864,12 @@
     "name": "佑全",
     "market": "上櫃",
     "industry": "生技醫療業"
+  },
+  {
+    "symbol": "6938.TWO",
+    "name": "藍新資訊",
+    "market": "上櫃",
+    "industry": "資訊服務業"
   },
   {
     "symbol": "6945.TWO",
