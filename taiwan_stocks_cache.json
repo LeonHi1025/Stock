@@ -1393,7 +1393,7 @@
   },
   {
     "symbol": "2072.TW",
-    "name": "世紀風電",
+    "name": "世紀能源",
     "market": "上市",
     "industry": "綠能環保"
   },
@@ -5638,6 +5638,12 @@
     "name": "三商餐飲",
     "market": "上市",
     "industry": "觀光餐旅"
+  },
+  {
+    "symbol": "7710.TW",
+    "name": "東擎科技",
+    "market": "上市",
+    "industry": "電腦及週邊設備業"
   },
   {
     "symbol": "7711.TW",
