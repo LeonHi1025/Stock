@@ -5772,6 +5772,12 @@
     "industry": "其他業"
   },
   {
+    "symbol": "7867.TW",
+    "name": "特力屋",
+    "market": "上市",
+    "industry": "居家生活"
+  },
+  {
     "symbol": "8011.TW",
     "name": "台通",
     "market": "上市",
@@ -10696,6 +10702,12 @@
     "name": "濾能",
     "market": "上櫃",
     "industry": "半導體業"
+  },
+  {
+    "symbol": "6825.TWO",
+    "name": "和暢科技",
+    "market": "上櫃",
+    "industry": "電腦及週邊設備業"
   },
   {
     "symbol": "6829.TWO",
